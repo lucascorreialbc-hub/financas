@@ -255,6 +255,43 @@ select.ci{text-align:left;width:auto;min-width:120px}
 .manual .sec ul.indice{padding-left:0}
 @media (max-width:520px){.indice{columns:1}}
 
+.dgrid{display:grid;gap:14px;margin-top:10px}
+@media (min-width:900px){.dgrid.g2{grid-template-columns:1fr 1fr}.dgrid.hero{grid-template-columns:minmax(300px,380px) 1fr}}
+.d3wrap{position:relative;overflow:hidden;border-radius:14px;border:1px solid #1d355c;color:#e6edf7;background:radial-gradient(120% 140% at 0% 0%,#173560 0%,#0b1a33 52%,#060e1e 100%);box-shadow:0 10px 30px rgba(6,14,30,.18)}
+.d3wrap::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.05),transparent 30%)}
+.d3h{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:14px 16px 4px}
+.d3h b{font-size:13.5px;font-weight:600;letter-spacing:.02em}.d3h small{color:#9fb3d1;font-size:12px}
+.d3host{position:relative;height:320px;cursor:grab}
+.d3host canvas{display:block;width:100%!important;height:100%!important}
+.d3tip{position:absolute;z-index:3;pointer-events:none;background:rgba(6,14,30,.94);border:1px solid #2b4a7a;color:#fff;font-size:12.5px;line-height:1.35;padding:7px 10px;border-radius:8px;white-space:nowrap;opacity:0;transition:opacity .12s;max-width:260px;overflow:hidden;text-overflow:ellipsis}
+.d3fall{color:#9fb3d1;padding:40px 18px;text-align:center;font-size:13.5px}
+.d3leg{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:14px;padding:0 16px 14px;font-size:12px;color:#9fb3d1}
+.d3leg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.score-c{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;text-align:center;z-index:2}
+.score-c b{display:block;font-size:46px;font-weight:700;letter-spacing:-.03em;line-height:1}.score-c small{color:#9fb3d1;font-size:12px}
+.dks{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;padding:8px 16px 6px;position:relative;z-index:1}
+@media (min-width:640px){.dks{grid-template-columns:repeat(4,1fr)}}
+.dk{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);border-radius:10px;padding:10px 12px}
+.dk small{display:block;color:#9fb3d1;text-transform:uppercase;font-size:10.5px;letter-spacing:.06em;font-weight:600}
+.dk b{display:block;font-size:19px;font-weight:700;margin-top:3px;white-space:nowrap}.dk i{display:block;font-style:normal;font-size:11.5px;color:#9fb3d1;margin-top:1px}
+.prio{position:relative;z-index:1;margin:2px 0 0;padding:0 16px 14px 36px;font-size:13.5px;color:#dbe6f5}
+.prio li{margin:5px 0}.prio .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;vertical-align:1px}
+.ach{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:10px;margin-bottom:8px;break-inside:avoid}
+.ach summary{list-style:none;display:flex;align-items:center;gap:10px;padding:11px 13px;cursor:pointer}
+.ach summary::-webkit-details-marker{display:none}
+.ach .nv{flex:none;font-size:10.5px;font-weight:700;letter-spacing:.03em;padding:3px 8px;border-radius:99px;color:#fff;background:var(--c)}
+.ach .at{flex:1;min-width:0}.ach .at b{display:block;font-size:14.5px}.ach .at small{color:var(--muted);font-size:12.5px}
+.ach .ch{color:var(--muted);transition:transform .15s}.ach[open] .ch{transform:rotate(180deg)}
+.ach .ab{padding:0 14px 12px 14px;border-top:1px solid var(--line)}
+.ach h4{margin:10px 0 3px;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.ach p,.ach li{font-size:14px;margin:2px 0}.ach ul{padding-left:18px;margin:2px 0}
+.pdfbtn{float:right;margin:12px 0 0 10px;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:7px;padding:6px 10px;font-size:13px;font-weight:500}
+.pmode .pdfbtn,.pmode .subnav,.pmode .btn,.pmode .mes button,.pmode .x,.pmode [data-add],.pmode [data-padd],.pmode #semLimpa,.pmode #ajQ,.pmode .indice,.pmode #paTodas{display:none!important}
+.pmode .tw{overflow:visible}
+.pmode .tb2 td:first-child,.pmode .tb2 th:first-child{position:static}
+.pmode .d3host{cursor:default}
+.pmode .chip:not([aria-pressed="true"]){opacity:.55}
+
 [hidden]{display:none!important}
 @media (prefers-reduced-motion:no-preference){.sheet .box{animation:up .18s ease-out}@keyframes up{from{transform:translateY(30px);opacity:.6}}}
 @media (min-width:900px){
@@ -366,7 +403,8 @@ const ICP={
   home:'<path d="M3 11 12 3l9 8"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/>',
   wa:'<path d="M20.5 11.6a8.5 8.5 0 0 1-12.7 7.4L3.5 20.5l1.6-4.2a8.5 8.5 0 1 1 15.4-4.7z"/><path d="M9 8.5c0 3.5 2.5 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2.4-1.8-2.8-2.8l.8-1-1-2z"/>',
   report:'<path d="M4 4h16v16H4z"/><path d="M8 16v-4M12 16V8M16 16v-6"/>',
-  pie:'<path d="M21 12A9 9 0 1 1 12 3v9z"/><path d="M15 3.5A9 9 0 0 1 20.5 9H15z"/>'
+  pie:'<path d="M21 12A9 9 0 1 1 12 3v9z"/><path d="M15 3.5A9 9 0 0 1 20.5 9H15z"/>',
+  cube:'<path d="M12 2.5 3.5 7v10l8.5 4.5 8.5-4.5V7z"/><path d="M3.5 7 12 11.5 20.5 7M12 11.5v10"/>'
 };
 const ic=(n,cl)=>`<svg class="ic${cl?" "+cl:""}" viewBox="0 0 24 24" aria-hidden="true">${ICP[n]||""}</svg>`;
 const PAL=["#1D4E89","#2E6F6A","#6B4E9B","#9A5B2A","#3D6B2E","#8A3B52","#2F5D8C","#5B6576","#7A5C1E","#36577A","#5E3A7A","#2B6B4F"];
@@ -661,7 +699,7 @@ async function iniciar(){
   assinarMes();
 }
 function assinarMes(){if(S.unMes)S.unMes();const m=S.mes;S.mesSingles=[];S.unMes=Store.watch("lanc",[["plano","==",false],["mes","==",m]],d=>{if(m===S.mes){S.mesSingles=d;refresh()}})}
-function refresh(forte){atualizarBadge();if(!S.pronto)return;if(["lancar","ajustes","pdf","intel","ajuda","invest"].includes(S.tab)&&!forte)return;if(S.tab==="intel")return;if(S.tab==="lancar"&&forte&&document.activeElement&&document.activeElement.tagName==="INPUT")return;render()}
+function refresh(forte){if(S.pdfModo)return;atualizarBadge();if(!S.pronto)return;if(["lancar","ajustes","pdf","intel","ajuda","invest"].includes(S.tab)&&!forte)return;if(S.tab==="intel")return;if(S.tab==="lancar"&&forte&&document.activeElement&&document.activeElement.tagName==="INPUT")return;render()}
 async function salvarCfg(parcial){
   Object.assign(S.cfg,clone(parcial));
   try{await Store.update("config","app",parcial)}catch(e){try{await Store.set("config","app",S.cfg)}catch(e2){toast("Não foi possível salvar o ajuste")}}}
@@ -678,10 +716,10 @@ async function migrarV1(old){
 
 /* ================= navegação ================= */
 const TABS=[["lancar","plus","Lançar"],["extrato","list","Extrato"],["painel","chart","Painel"],["agenda","cal","Vencimentos"],["mais","more","Mais"]];
-const SIDE=[["Movimento"],["lancar","plus","Lançar"],["extrato","list","Extrato"],["painel","chart","Painel"],["agenda","cal","Vencimentos"],["Controle"],["cartoes","card","Cartões"],["contas","bank","Contas"],["emprestimos","swap","Empréstimos"],["metas","target","Metas e reservas"],["Planejamento"],["invest","pie","Plano de investimentos"],["intel","gauge","Inteligência financeira","pj"],["dre","report","DRE anual","pj"],["Sistema"],["pdf","file","Relatórios em PDF"],["ajustes","gear","Ajustes"],["ajuda","msg","Manual do app"]];
+const SIDE=[["Movimento"],["lancar","plus","Lançar"],["extrato","list","Extrato"],["painel","chart","Painel"],["dash","cube","Dashboard 3D"],["agenda","cal","Vencimentos"],["Controle"],["cartoes","card","Cartões"],["contas","bank","Contas"],["emprestimos","swap","Empréstimos"],["metas","target","Metas e reservas"],["Planejamento"],["invest","pie","Plano de investimentos"],["intel","gauge","Inteligência financeira","pj"],["dre","report","DRE anual","pj"],["Sistema"],["pdf","file","Relatórios em PDF"],["ajustes","gear","Ajustes"],["ajuda","msg","Manual do app"]];
 function desenharNav(){
   const n=S.pronto?contAlerta():0,b=k=>k==="agenda"&&n?`<span class="badge">${n}</span>`:"";
-  const atual=k=>S.tab===k||(k==="mais"&&["cartoes","contas","emprestimos","metas","pdf","ajustes","invest","intel","dre","ajuda"].includes(S.tab));
+  const atual=k=>S.tab===k||(k==="mais"&&["cartoes","contas","emprestimos","metas","pdf","ajustes","invest","intel","dre","ajuda","dash"].includes(S.tab));
   $("#tabNav").innerHTML=TABS.map(([k,i,l])=>`<button type="button" data-tab="${k}" ${atual(k)?'aria-current="page"':""}><span class="i">${ic(i)}</span>${l}${b(k)}</button>`).join("");
   const nm=(S.cfg&&S.cfg.nomeApp)||"Nossas Finanças";
   $("#sideNav").innerHTML=`<div class="brandname"><span class="lg">${esc(sigla(nm))}</span><span>${esc(nm)}</span></div>`+SIDE.filter(([k,i,l,pj])=>!pj||isPJ()).map(([k,i,l])=>i?`<button type="button" data-tab="${k}" ${S.tab===k?'aria-current="page"':""}><span class="i">${ic(i)}</span>${l}${b(k)}</button>`:`<div class="sg">${k}</div>`).join("");
@@ -701,9 +739,9 @@ function render(){
   desenharNav();desenharCtx();
   if(!S.pronto){$("#app").innerHTML='<p class="empty">Carregando…</p>';return}
   $("#savebar").hidden=S.tab!=="lancar";
-  if(loginCfg()&&!S.usuario){$("#app").innerHTML="";return}
-  const f={lancar:telaLancar,extrato:telaExtrato,painel:telaPainel,agenda:telaAgenda,mais:telaMais,cartoes:telaCartoes,contas:telaContas,emprestimos:telaEmprestimos,metas:telaMetas,pdf:telaPDF,ajustes:telaAjustes,invest:telaInvest,intel:telaIntel,dre:telaDRE,ajuda:telaAjuda}[S.tab]||telaLancar;
-  f();
+  limparCenas();if(loginCfg()&&!S.usuario){$("#app").innerHTML="";return}
+  const f={lancar:telaLancar,extrato:telaExtrato,painel:telaPainel,agenda:telaAgenda,mais:telaMais,cartoes:telaCartoes,contas:telaContas,emprestimos:telaEmprestimos,metas:telaMetas,pdf:telaPDF,ajustes:telaAjustes,invest:telaInvest,intel:telaIntel,dre:telaDRE,ajuda:telaAjuda,dash:telaDash}[S.tab]||telaLancar;
+  f();botaoPDFTela();
   if(Store.mode==="local"&&S.tab==="painel"){const u=lsGet("nf_ultBackup");const dd=u?Math.round((Date.now()-new Date(u))/864e5):null;if(dd==null||dd>=30)$("#app").insertAdjacentHTML("beforeend",`<p class="note" style="margin-top:18px"><b>Backup:</b> ${dd==null?"você ainda não fez nenhum backup":"o último backup foi há "+dd+" dias"}. Os dados ficam só neste aparelho; baixe uma cópia em Ajustes → Backup e planilha.</p>`)}
   hidratar()}
 function abrirSheet(html,ligar){fecharSheet();const s=document.createElement("div");s.className="sheet";s.innerHTML=`<div class="box" role="dialog" aria-modal="true">${html}</div>`;s.onclick=e=>{if(e.target===s)fecharSheet()};document.body.appendChild(s);ligar&&ligar(s.querySelector(".box"));hidratar();const f=s.querySelector("input,button");f&&f.focus({preventScroll:true})}
@@ -1189,7 +1227,7 @@ function telaAgenda(){
 /* ================= MAIS ================= */
 function telaMais(){
   const pj=isPJ();
-  const it=[["cartoes","card","Cartões de crédito","Limite, uso e faturas"],["contas","bank",pj?"Contas e caixa":"Contas e cheque especial","Saldo, limite, juros, IOF e tarifa"],["emprestimos","swap",pj?"Empréstimos e financiamentos":"Empréstimos",pj?"Capital de giro, sócios e terceiros":"Quem te deve e o que você deve"],["metas","target",pj?"Reservas da empresa":"Metas de economia","Quanto guardar por mês"],["invest","pie","Plano de investimentos","Onde investir, nota de 0 a 10 e ordem de prioridade"]].concat(pj?[["intel","gauge","Inteligência financeira","Produção, margem, caixa, cenário e indicadores"],["dre","report","DRE anual","12 meses, total do ano e % da receita"]]:[]).concat([["pdf","file","Relatórios em PDF",pj?"DRE, lançamentos e comprovantes":"Qualquer período, com comprovantes"],["ajustes","gear","Ajustes","Empresa, categorias, login, segurança e backup"],["ajuda","msg","Manual do app","Como funciona cada aba, com índice"]]);
+  const it=[["dash","cube","Dashboard 3D","Saúde financeira, riscos e como melhorar e escalar"],["cartoes","card","Cartões de crédito","Limite, uso e faturas"],["contas","bank",pj?"Contas e caixa":"Contas e cheque especial","Saldo, limite, juros, IOF e tarifa"],["emprestimos","swap",pj?"Empréstimos e financiamentos":"Empréstimos",pj?"Capital de giro, sócios e terceiros":"Quem te deve e o que você deve"],["metas","target",pj?"Reservas da empresa":"Metas de economia","Quanto guardar por mês"],["invest","pie","Plano de investimentos","Onde investir, nota de 0 a 10 e ordem de prioridade"]].concat(pj?[["intel","gauge","Inteligência financeira","Produção, margem, caixa, cenário e indicadores"],["dre","report","DRE anual","12 meses, total do ano e % da receita"]]:[]).concat([["pdf","file","Relatórios em PDF",pj?"DRE, lançamentos e comprovantes":"Qualquer período, com comprovantes"],["ajustes","gear","Ajustes","Empresa, categorias, login, segurança e backup"],["ajuda","msg","Manual do app","Como funciona cada aba, com índice"]]);
   $("#app").innerHTML=`<div class="ctxlbl">${esc(nomeCtx(S.ctx))}</div><h1 class="tt">Mais</h1><div class="menu" style="margin-top:12px">${it.map(([k,i,n,s])=>`<button type="button" class="mi" data-go="${k}"><span>${ic(i)}</span><span>${n}<small>${s}</small></span></button>`).join("")}</div>`;
   $$("[data-go]").forEach(b=>b.onclick=()=>irPara(b.dataset.go))}
 
@@ -1486,7 +1524,7 @@ function telaPDF(){
   const presets=[["Este mês",()=>[CUR()+"-01",HOJE()]],["Mês passado",()=>{const m=addMonth(CUR(),-1);return[m+"-01",ymd(new Date(hoje.getFullYear(),hoje.getMonth(),0))]}],["Últimos 30 dias",()=>[ymd(new Date(Date.now()-29*864e5)),HOJE()]],["Este ano",()=>[hoje.getFullYear()+"-01-01",HOJE()]],["Próximos 3 meses",()=>[HOJE(),ymd(new Date(hoje.getFullYear(),hoje.getMonth()+3,0))]]];
   const ch=(attr,arr,val)=>arr.map(([k,n])=>`<button type="button" class="chip" data-${attr}="${esc(k)}" aria-pressed="${val===k}">${esc(n)}</button>`).join("");
   const pj=isPJ(),uns=unidadesCtx();if(pj&&P.un!=="Todas"&&P.un!==""&&!uns.some(u=>u.nome===P.un))P.un="Todas";
-  $("#app").innerHTML=`<div class="ctxlbl">${esc(nomeCtx(S.ctx))}</div><h1 class="tt">Relatórios em PDF</h1><p class="hint">Escolha o período pelas datas de vencimento e gere o arquivo para salvar ou compartilhar. O relatório sai do ambiente selecionado no topo.</p>
+  $("#app").innerHTML=`<div class="ctxlbl">${esc(nomeCtx(S.ctx))}</div><h1 class="tt">Relatórios em PDF</h1><h2>Lançamentos do período</h2><p class="hint">Escolha o período pelas datas de vencimento e gere o arquivo para salvar ou compartilhar. O relatório sai do ambiente selecionado no topo.</p>
   <h2>Período</h2><div class="chips">${presets.map((p,i)=>`<button type="button" class="chip" data-pr="${i}">${p[0]}</button>`).join("")}</div>
   <div class="g2" style="margin-top:10px"><label class="lb"><span>De</span><input type="date" id="pIni" class="field" value="${P.ini}"></label><label class="lb"><span>Até</span><input type="date" id="pFim" class="field" value="${P.fim}"></label></div>
   ${pj&&uns.length?`<h2>Unidade</h2><div class="chips">${ch("pu",[["Todas","Todas"],["","Geral / rateio"]].concat(uns.map(u=>[u.nome,u.nome])),P.un)}</div>`:""}
@@ -1495,12 +1533,12 @@ function telaPDF(){
   <h2>Tipo</h2><div class="chips">${ch("pn",[["tudo","Todos"],["fixa","Só fixas"],["variavel","Só variáveis"]],P.nat)}</div>
   ${pj?`<label class="ck" style="margin-top:8px"><input type="checkbox" id="pDre" ${P.dre?"checked":""}> Incluir DRE do período</label>`:""}
   <label class="ck" style="margin-top:4px"><input type="checkbox" id="pFotos" ${P.fotos?"checked":""}> Anexar fotos dos comprovantes no final</label>
-  <div style="margin-top:14px;max-width:420px"><button class="btn" id="gerar" type="button" ${P.gerando?"disabled":""}>${P.gerando?"Gerando o PDF…":"Gerar PDF"}</button></div>`;
+  <div style="margin-top:14px;max-width:420px"><button class="btn" id="gerar" type="button" ${P.gerando?"disabled":""}>${P.gerando?"Gerando o PDF…":"Gerar PDF de lançamentos"}</button></div>`+blocoPDFAbas();
   $$("[data-pr]").forEach(b=>b.onclick=()=>{[P.ini,P.fim]=presets[+b.dataset.pr][1]();telaPDF()});
   $("#pIni").onchange=e=>P.ini=e.target.value;$("#pFim").onchange=e=>P.fim=e.target.value;
   $$("[data-pq]").forEach(b=>b.onclick=()=>{P.quem=b.dataset.pq;telaPDF()});$$("[data-pt]").forEach(b=>b.onclick=()=>{P.tipo=b.dataset.pt;telaPDF()});$$("[data-pn]").forEach(b=>b.onclick=()=>{P.nat=b.dataset.pn;telaPDF()});
   $$("[data-pu]").forEach(b=>b.onclick=()=>{P.un=b.dataset.pu;telaPDF()});if($("#pDre"))$("#pDre").onchange=e=>P.dre=e.target.checked;
-  $("#pFotos").onchange=e=>P.fotos=e.target.checked;$("#gerar").onclick=gerarPDF}
+  $("#pFotos").onchange=e=>P.fotos=e.target.checked;$("#gerar").onclick=gerarPDF;ligarPDFAbas()}
 const lat=s=>String(s??"").replace(/[·•]/g,"-").replace(/[^\x20-\xFF]/g,"").replace(/\s+/g," ").trim();
 const b2d=b=>new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result);r.onerror=rej;r.readAsDataURL(b)});
 const imgSize=src=>new Promise(res=>{const i=new Image();i.onload=()=>res([i.naturalWidth,i.naturalHeight]);i.onerror=()=>res([4,3]);i.src=src});
@@ -1898,7 +1936,7 @@ function rerenderMantendo(fn){setTimeout(()=>{const a=document.activeElement,k=a
   if(k){const n=$(`.ci[data-k="${CSS.escape(k)}"]`);if(n){n.focus({preventScroll:true});if(n.select)try{n.select()}catch(e){}}}},0)}
 function tbl(cols,rows,o){o=o||{};return`<div class="tw"${o.id?` id="${o.id}"`:""}><table class="tb2"><thead><tr>${cols.map(c=>`<th class="${c.cl||""}">${c.t}</th>`).join("")}</tr></thead><tbody>${rows.map(r=>`<tr class="${r.cl||""}"${r.attr||""}>${r.c.map((x,i)=>`<td class="${(cols[i]&&cols[i].cl)||""}${r.tdcl&&r.tdcl[i]?" "+r.tdcl[i]:""}">${x??""}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`}
 const stB=(ok,t1,t2)=>`<span class="st ${ok?"ok":"at"}">${ok?(t1||"OK"):(t2||"ATENÇÃO")}</span>`;
-async function carregarScript(src,glob){if(window[glob])return window[glob];await new Promise((res,rej)=>{const s=document.createElement("script");s.src=src;s.onload=res;s.onerror=()=>rej(new Error("load"));document.head.appendChild(s)});return window[glob]}
+const _scr={};async function carregarScript(src,glob){if(window[glob])return window[glob];if(!_scr[src])_scr[src]=new Promise((res,rej)=>{const s=document.createElement("script");s.src=src;s.onload=res;s.onerror=()=>{delete _scr[src];rej(new Error("load"))};document.head.appendChild(s)});await _scr[src];return window[glob]}
 async function exportarXLSX(nome,abas){
   try{const X=await carregarScript("https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js","XLSX");const wb=X.utils.book_new();
     abas.forEach(a=>{const ws=X.utils.aoa_to_sheet(a.linhas);if(a.larg)ws["!cols"]=a.larg.map(w=>({wch:w}));X.utils.book_append_sheet(wb,ws,a.nome.slice(0,31).replace(/[\\\/\?\*\[\]:]/g,"-"))});
@@ -2151,7 +2189,7 @@ function assinarIntel(){const e=empresaAtual();if(!e)return;if(IV.emp===e.id)ret
   IV.unM=Store.watch("intelmes",[["emp","==",e.id]],d=>{if(IV.emp!==e.id)return;if(IV.pendM&&Date.now()-IV.pendM<4000)return;IV.meses=d;if(S.tab==="intel"&&!document.activeElement.classList.contains("ci"))render()})}
 function salvarP(){IV.pendP=Date.now();clearTimeout(IV.tP);IV.tP=setTimeout(async()=>{try{await Store.set("intel",IV.emp,IV.P)}catch(e){toast("Não foi possível salvar as premissas")}IV.pendP=Date.now()},500)}
 function mesDoc(m){return IV.meses.find(x=>x.mes===m)||null}
-function salvarM(M){IV.pendM=Date.now();const i=IV.meses.findIndex(x=>x.mes===M.mes);if(i<0)IV.meses.push(M);clearTimeout(IV.tM);IV.tM=setTimeout(async()=>{try{await Store.set("intelmes",IV.emp+"_"+M.mes,Object.assign(clone(M),{emp:IV.emp}))}catch(e){toast("Não foi possível salvar o mês")}IV.pendM=Date.now()},500)}
+function salvarM(M){delete M.exemplo;IV.pendM=Date.now();const i=IV.meses.findIndex(x=>x.mes===M.mes);if(i<0)IV.meses.push(M);clearTimeout(IV.tM);IV.tM=setTimeout(async()=>{try{await Store.set("intelmes",IV.emp+"_"+M.mes,Object.assign(clone(M),{emp:IV.emp}))}catch(e){toast("Não foi possível salvar o mês")}IV.pendM=Date.now()},500)}
 function mesAnteriorCom(m){return IV.meses.filter(x=>x.mes<m).sort((a,b)=>b.mes.localeCompare(a.mes))[0]||null}
 function comecarMes(m){const ant=mesAnteriorCom(m),uns=intelUns();const M={mes:m,prod:{},vendaProd:{},regulares:[],naoReg:[],caixa:{plPago:{},aporte:{},retirada:{}},indic:{},caixaIni:{}};
   if(ant){M.regulares=clone(ant.regulares||[]);M.naoReg=(ant.naoReg||[]).map(r=>({id:r.id,nome:r.nome,v:{}}));const R=calcIntel(IV.P,ant,uns);uns.forEach(u=>M.caixaIni[u]=Math.round(R.U[u].fim*100)/100)}
@@ -2198,10 +2236,10 @@ function telaIntel(){
     `<p class="note"><b>${oks===3?"Diagnóstico: empresa saudável nos 3 números.":`Diagnóstico: ${oks} de 3 números no verde. Prioridade é fechar os que estão em ATENÇÃO.`}</b></p>
     <div class="row" style="gap:8px;flex-wrap:wrap"><button class="btn ghost sm" id="inXls" type="button" style="width:auto">${ic("dl")} Exportar mês para Excel</button></div>`}
   else if(sub==="producao"){
-    h+=`<p class="hint">Digite quantos atendimentos cada profissional fez de cada serviço no mês. Profissionais e serviços são cadastrados em Premissas.</p><div class="legenda"><span><i></i>Você preenche</span></div>`;
+    h+=`<p class="hint">Digite quantos atendimentos cada profissional fez de cada serviço no mês. Toque no nome para trocar o nome do colaborador. Função, unidade e salário ficam em Premissas → Equipe.</p><div class="legenda"><span><i></i>Você preenche</span></div>`;
     uns.forEach(u=>{const ps=R.profs.filter(p=>p.e.un===u);
       h+=`<h2>${esc(u)}</h2>`+(ps.length?tbl([{t:"Profissional"},{t:"Vínculo"}].concat((P.servicos||[]).map(s=>({t:esc(s.nome),cl:"num"}))).concat([{t:"Atendimentos",cl:"num"},{t:"Faturamento",cl:"num"},{t:"Parte do parceiro",cl:"num"},{t:"Parte do salão",cl:"num"},{t:"Horas ocupadas",cl:"num"},{t:"Produto usado",cl:"num"}]),
-        ps.map(p=>({c:[`${esc(p.e.nome)}<small class="mut" style="display:block">${esc(p.e.funcao||"")}</small>`,esc(p.e.vinculo)].concat((P.servicos||[]).map(s=>ci(M,"prod."+p.e.id+"."+s.id,"int","0","64px"))).concat([fmtD(p.n),BRL0(p.fat),BRL0(p.parc),BRL0(p.salao),fmtD(p.h,1),BRL0(p.prod)])}))
+        ps.map(p=>({c:[`${ci(P,"equipe."+(P.equipe||[]).indexOf(p.e)+".nome","txt","Nome do colaborador","170px")}<small class="mut" style="display:block;margin-top:2px">${esc(p.e.funcao||"")}</small>`,cs(P,"equipe."+(P.equipe||[]).indexOf(p.e)+".vinculo",["CLT","Parceiro"],"Vínculo")].concat((P.servicos||[]).map(s=>ci(M,"prod."+p.e.id+"."+s.id,"int","0","64px"))).concat([fmtD(p.n),BRL0(p.fat),BRL0(p.parc),BRL0(p.salao),fmtD(p.h,1),BRL0(p.prod)])}))
         .concat([{cl:"tot",c:["Total",""].concat((P.servicos||[]).map(s=>fmtD(ps.reduce((a,p)=>a+p.porS[s.id],0)))).concat([fmtD(ps.reduce((a,p)=>a+p.n,0)),BRL0(ps.reduce((a,p)=>a+p.fat,0)),BRL0(ps.reduce((a,p)=>a+p.parc,0)),BRL0(ps.reduce((a,p)=>a+p.salao,0)),fmtD(ps.reduce((a,p)=>a+p.h,0),1),BRL0(ps.reduce((a,p)=>a+p.prod,0))])}])):'<p class="hint">Nenhum profissional nesta unidade. Cadastre em Premissas → Equipe.</p>')});
     h+=`<h2>Venda de produtos no mês</h2>`+tbl([{t:"Unidade"},{t:"Venda de produtos (R$)",cl:"num"}],uns.map(u=>({c:[esc(u),ci(M,"vendaProd."+u,"num","0,00")]})))+
     `<p class="hint">Parceiro: a parte do profissional sai do % definido em Premissas → Serviços. CLT: o faturamento fica todo com o salão e o salário entra em Seres humanos.</p>`}
@@ -2507,6 +2545,248 @@ function telaAjuda(){
   ${secs.length?secs.map((s,i)=>`${i===0||secs[i-1].g!==s.g?`<h2>${esc(s.g)}</h2>`:""}<div class="sec" id="aj-${s.id}"><h3>${esc(s.t)}</h3>${s.h}</div>`).join(""):'<div class="empty">Nada encontrado para essa busca.</div>'}</div>`;
   $("#ajQ").oninput=e=>{S.ajudaQ=e.target.value;clearTimeout(S.ajT);S.ajT=setTimeout(()=>{telaAjuda();const i=$("#ajQ");i.focus();i.setSelectionRange(i.value.length,i.value.length)},250)};
   $$("[data-aj]").forEach(b=>b.onclick=()=>{const el=$("#aj-"+b.dataset.aj);if(el)el.scrollIntoView({behavior:"smooth",block:"start"})})}
+
+
+/* ================= DASHBOARD 3D + DIAGNÓSTICO ================= */
+const CENAS=[];
+function limparCenas(){while(CENAS.length){try{CENAS.pop().dispose()}catch(e){}}}
+const THREE_URL="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js";
+function rotulo(T,txt,cor,px){const c=document.createElement("canvas");c.width=512;c.height=128;const x=c.getContext("2d");x.font=`600 ${px||46}px Inter,system-ui,sans-serif`;x.fillStyle=cor||"#cfdcf0";x.textAlign="center";x.textBaseline="middle";x.fillText(txt,256,64);
+  const tx=new T.CanvasTexture(c);tx.minFilter=T.LinearFilter;const s=new T.Sprite(new T.SpriteMaterial({map:tx,transparent:true,depthWrite:false}));s.scale.set(2.4,.6,1);return s}
+async function cena3D(host,montar,o){
+  o=o||{};let T=null;try{T=await carregarScript(THREE_URL,"THREE")}catch(e){}
+  if(!host.isConnected)return null;
+  const falha=()=>{host.innerHTML='<p class="d3fall">A visão 3D não está disponível neste aparelho. Os números e o diagnóstico abaixo continuam valendo.</p>';return null};
+  if(!T)return falha();let rd;try{rd=new T.WebGLRenderer({antialias:true,alpha:true,preserveDrawingBuffer:true,powerPreference:"high-performance"})}catch(e){return falha()}
+  const W=()=>Math.max(10,host.clientWidth),H=()=>Math.max(10,host.clientHeight);
+  rd.setPixelRatio(Math.min(2,window.devicePixelRatio||1));rd.setSize(W(),H());rd.outputEncoding=T.sRGBEncoding;host.appendChild(rd.domElement);
+  const scene=new T.Scene(),cam=new T.PerspectiveCamera(o.fov||38,W()/H(),.1,200);cam.position.set(...(o.cam||[0,6,12]));cam.lookAt(0,o.alvoY||0,0);
+  scene.add(new T.AmbientLight(0xffffff,.5));const d1=new T.DirectionalLight(0xffffff,.95);d1.position.set(6,12,8);scene.add(d1);
+  const p1=new T.PointLight(0x5b9dff,1.1,60);p1.position.set(-7,7,-5);scene.add(p1);const p2=new T.PointLight(0x2fd3b0,.6,60);p2.position.set(7,3,6);scene.add(p2);
+  const g=new T.Group();scene.add(g);
+  const api={T,scene,cam,g,rd,hover:[],anim:null,dispose:null};
+  montar(api);
+  let rotY=o.rotY??-.45,rotX=o.rotX??.05,drag=null,auto=o.auto!==false&&!matchMedia("(prefers-reduced-motion: reduce)").matches,vis=true,raf=0,sujo=true,sel=null;
+  if(S.pdfModo&&api.final){api.final();api.anim=null}
+  const tip=document.createElement("div");tip.className="d3tip";host.appendChild(tip);
+  const ray=new T.Raycaster(),mv=new T.Vector2();
+  const pick=e=>{const r=rd.domElement.getBoundingClientRect();mv.x=((e.clientX-r.left)/r.width)*2-1;mv.y=-((e.clientY-r.top)/r.height)*2+1;ray.setFromCamera(mv,cam);const hit=ray.intersectObjects(api.hover,false)[0];return hit?hit.object:null};
+  const realce=m=>{if(sel===m)return;if(sel&&sel.material.emissiveIntensity!=null)sel.material.emissiveIntensity=sel.userData.ei??.15;sel=m;if(m&&m.material.emissiveIntensity!=null)m.material.emissiveIntensity=.6;sujo=true};
+  const el=rd.domElement;el.style.touchAction="pan-y";
+  el.addEventListener("pointerdown",e=>{drag={x:e.clientX,y:e.clientY,ry:rotY,rx:rotX,mov:false};auto=false});
+  el.addEventListener("pointermove",e=>{if(drag){const dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)>4)drag.mov=true;rotY=drag.ry+dx*.008;rotX=Math.max(-.35,Math.min(.6,drag.rx+dy*.004));sujo=true;return}
+    const m=pick(e);realce(m);if(m&&m.userData.tip){const r=host.getBoundingClientRect();tip.innerHTML=m.userData.tip;tip.style.left=Math.min(r.width-170,Math.max(4,e.clientX-r.left+12))+"px";tip.style.top=Math.max(4,e.clientY-r.top-34)+"px";tip.style.opacity=1;el.style.cursor=m.userData.click?"pointer":"default"}else{tip.style.opacity=0;el.style.cursor="grab"}});
+  el.addEventListener("pointerup",e=>{if(drag&&!drag.mov){const m=pick(e);if(m&&m.userData.click)m.userData.click()}drag=null});
+  el.addEventListener("pointerleave",()=>{drag=null;tip.style.opacity=0;realce(null)});
+  const t0=performance.now();
+  const loop=t=>{raf=requestAnimationFrame(loop);if(!vis&&!api.anim)return;if(api.anim){if(api.anim((t-t0)/1000)===false)api.anim=null;sujo=true}
+    if(auto&&vis){if(o.osc){rotY=(o.rotY??0)+Math.sin((t-t0)/1000*.35)*o.osc}else rotY+=.0022;sujo=true}if(!sujo)return;g.rotation.y=rotY;g.rotation.x=rotX;rd.render(scene,cam);sujo=false};
+  g.rotation.y=rotY;g.rotation.x=rotX;rd.render(scene,cam);raf=requestAnimationFrame(loop);
+  const io=new IntersectionObserver(es=>{vis=es[0].isIntersecting;if(vis)sujo=true});io.observe(host);
+  const ro=new ResizeObserver(()=>{rd.setSize(W(),H());cam.aspect=W()/H();cam.updateProjectionMatrix();sujo=true;rd.render(scene,cam)});ro.observe(host);
+  api.dispose=()=>{cancelAnimationFrame(raf);io.disconnect();ro.disconnect();scene.traverse(x=>{if(x.geometry)x.geometry.dispose();const ms=x.material?[].concat(x.material):[];ms.forEach(m=>{if(m.map)m.map.dispose();m.dispose()})});rd.dispose();try{rd.forceContextLoss()}catch(e){}};
+  CENAS.push(api);return api}
+const ease=x=>1-Math.pow(1-Math.min(1,Math.max(0,x)),3);
+function cenaBarras(host,dados,lb){return cena3D(host,api=>{const{T,g}=api;const n=dados.length,mx=Math.max(1,...dados.map(d=>Math.max(d.r,d.d))),alt=4.6,esp=1.05;
+  const chao=new T.Mesh(new T.PlaneGeometry(n*esp+1.6,3.6),new T.MeshStandardMaterial({color:0x0d1d38,metalness:.2,roughness:.8,transparent:true,opacity:.85}));chao.rotation.x=-Math.PI/2;g.add(chao);
+  const grid=new T.GridHelper(n*esp+1.6,n+1,0x2b4a7a,0x1a3156);grid.position.y=.002;g.add(grid);
+  const bar=new T.BoxGeometry(.38,1,.38);bar.translate(0,.5,0);const barras=[];
+  const mk=(cor,x,z,v,tipTxt)=>{const m=new T.MeshStandardMaterial({color:cor,metalness:.35,roughness:.3,emissive:cor,emissiveIntensity:.15});const b=new T.Mesh(bar,m);b.position.set(x,0,z);const h=Math.max(.02,v/mx*alt);b.userData={h,tip:tipTxt,ei:.15};b.scale.y=.001;g.add(b);api.hover.push(b);barras.push(b)};
+  const pts=[];dados.forEach((d,i)=>{const x=(i-(n-1)/2)*esp,ml=MESES[+d.m.slice(5)-1].slice(0,3)+"/"+d.m.slice(2,4);
+    mk(0x2fbf71,x,-.26,d.r,`<b>${ml}</b><br>${lb[0]}: ${BRL0(d.r)}`);mk(0xef5b5b,x,.26,d.d,`<b>${ml}</b><br>${lb[1]}: ${BRL0(d.d)}`);
+    const s=d.r-d.d,y=Math.max(.06,Math.max(0,s)/mx*alt)+.02;const sp=new T.Mesh(new T.SphereGeometry(.13,20,14),new T.MeshStandardMaterial({color:s>=0?0xffc24b:0xff6b6b,emissive:s>=0?0xffb020:0xff3b3b,emissiveIntensity:.5,metalness:.2,roughness:.3}));
+    sp.position.set(x,y,.9);sp.userData={tip:`<b>${ml}</b><br>${lb[2]}: ${BRL0(s)}`,ei:.5};g.add(sp);api.hover.push(sp);pts.push(new T.Vector3(x,y,.9));
+    const r=rotulo(T,ml,"#b9c9e2",54);r.position.set(x,.05,1.9);r.scale.set(2.1,.52,1);g.add(r)});
+  if(pts.length>1){const ln=new T.Line(new T.BufferGeometry().setFromPoints(pts),new T.LineBasicMaterial({color:0xffc24b,transparent:true,opacity:.8}));g.add(ln)}
+  api.final=()=>barras.forEach(b=>b.scale.y=b.userData.h);
+  api.anim=t=>{let fim=true;barras.forEach((b,i)=>{const k=ease((t-i*.035)/.9);b.scale.y=Math.max(.001,b.userData.h*k);if(k<1)fim=false});return!fim}},{cam:[0,6.2,17],fov:34,alvoY:1.3,rotY:-.12,rotX:.1,osc:.32})}
+const NIVEL_COR={alto:0xef4444,medio:0xf59e0b,baixo:0x60a5fa,ok:0x22c55e};
+function cenaRiscos(host,ach){return cena3D(host,api=>{const{T,g}=api;const cols=[["melhoria","Melhorar"],["desenvolver","Desenvolver"],["forte","Pontos fortes"]];
+  const base=new T.Mesh(new T.CylinderGeometry(5.6,5.9,.18,72),new T.MeshStandardMaterial({color:0x0d1d38,metalness:.3,roughness:.6}));base.position.y=-.09;g.add(base);
+  const anel=new T.Mesh(new T.TorusGeometry(5.75,.03,8,120),new T.MeshBasicMaterial({color:0x3b6fb8}));anel.rotation.x=Math.PI/2;g.add(anel);
+  const hs={alto:3.2,medio:2.1,baixo:1.2,ok:.8},cil=[];
+  cols.forEach(([k,n],ci)=>{const xs=ach.map((a,i)=>Object.assign({i},a)).filter(a=>a.tipo===k);const x0=(ci-1)*3.4;
+    const r=rotulo(T,n,"#e2ebf7",58);r.position.set(x0,.3,3.9);r.scale.set(3,.75,1);g.add(r);
+    xs.forEach((a,j)=>{const col=j%3,row=Math.floor(j/3),x=x0+(col-1)*.95,z=-2.4+row*.95;const cor=NIVEL_COR[a.nivel]||0x60a5fa,h=hs[a.nivel]||1;
+      const m=new T.MeshStandardMaterial({color:cor,metalness:.3,roughness:.25,emissive:cor,emissiveIntensity:.2,transparent:true,opacity:.95});
+      const geo=new T.CylinderGeometry(.3,.34,1,28);geo.translate(0,.5,0);const c=new T.Mesh(geo,m);c.position.set(x,0,z);c.scale.y=.001;c.userData={h,ei:.2,tip:`<b>${esc(a.titulo)}</b><br>${esc(NIVEL_TXT[a.nivel])}${a.valor?" · "+esc(a.valor):""}`,click:()=>{const el=$("#ach-"+a.i);if(el){el.open=true;el.scrollIntoView({behavior:"smooth",block:"center"})}}};
+      g.add(c);api.hover.push(c);cil.push(c)})});
+  api.final=()=>cil.forEach(c=>c.scale.y=c.userData.h);
+  api.anim=t=>{let fim=true;cil.forEach((c,i)=>{const k=ease((t-i*.05)/.8);c.scale.y=Math.max(.001,c.userData.h*k);if(k<1)fim=false});return!fim}},{cam:[0,8.5,14.5],fov:36,alvoY:.8,rotY:0,rotX:.05})}
+function cenaScore(host,score){return cena3D(host,api=>{const{T,g}=api;const cor=score>=80?0x22c55e:score>=60?0xf59e0b:0xef4444;
+  const bg=new T.Mesh(new T.TorusGeometry(2,.2,24,160),new T.MeshStandardMaterial({color:0x1a3156,metalness:.4,roughness:.5}));g.add(bg);
+  const arcG=new T.TorusGeometry(2,.26,28,200,Math.max(.01,score/100*Math.PI*2));const arc=new T.Mesh(arcG,new T.MeshStandardMaterial({color:cor,emissive:cor,emissiveIntensity:.45,metalness:.3,roughness:.25}));arc.rotation.z=Math.PI/2;arc.scale.set(-1,1,1);g.add(arc);
+  const n=420,pos=new Float32Array(n*3);for(let i=0;i<n;i++){const a=Math.random()*Math.PI*2,r=2.4+Math.random()*1.1,y=(Math.random()-.5)*1.2;pos[i*3]=Math.cos(a)*r;pos[i*3+1]=Math.sin(a)*r;pos[i*3+2]=y}
+  const pg=new T.BufferGeometry();pg.setAttribute("position",new T.BufferAttribute(pos,3));const pts=new T.Points(pg,new T.PointsMaterial({color:0x7fb2ff,size:.035,transparent:true,opacity:.7}));g.add(pts);
+  api.final=()=>{arc.scale.set(-1,1,1)};api.anim=t=>{const k=ease(t/1.1);arc.scale.set(-Math.max(.001,k),Math.max(.001,k),1);pts.rotation.z=-t*.08;return t<1.1}},{cam:[0,0,7.2],alvoY:0,rotY:0,rotX:.25,auto:false})}
+const NIVEL_TXT={alto:"Risco alto",medio:"Risco médio",baixo:"Risco baixo",ok:"Ponto forte"};
+/* ---------- motor de diagnóstico ---------- */
+function serie12(ctx){const out=[];for(let i=11;i>=0;i--){const m=addMonth(S.mes,-i);const os=(S.hist?S.hist.singles:[]).filter(l=>ctxDe(l)===ctx).flatMap(l=>ocorr(l,m,m)).concat(S.planos.filter(l=>ctxDe(l)===ctx).flatMap(l=>ocorr(l,m,m)));out.push({m,os})}return out}
+const media=a=>a.length?a.reduce((x,y)=>x+y,0)/a.length:0;
+function analisar(){const ctx=S.ctx,pj=isPJ(),A=[],add=(tipo,nivel,area,titulo,valor,risco,melhorar,escalar)=>A.push({tipo,nivel,area,titulo,valor,risco,melhorar,escalar});
+  const s12=serie12(ctx),ocs=ocMes(S.mes),ag=montarAgenda().filter(i=>(i.ctx||"pf")===ctx);
+  const venc=ag.filter(i=>i.dias<0&&!i.receita),vencR=ag.filter(i=>i.dias<0&&i.receita);
+  if(!pj){
+    const tm=s12.map(x=>totais(x.os)),com=tm.slice(-4).filter(t=>t.r||t.d);const r=media(com.map(t=>t.r)),d=media(com.map(t=>t.d)),fx=media(com.map(t=>t.fx)),tx=r?(r-d)/r:null,cur=totais(ocs);
+    const k={renda:cur.r,gasto:cur.d,sobra:cur.s,tx:cur.r?cur.s/cur.r:null,r,d};
+    if(!r)add("desenvolver","medio","Renda","Registrar todas as entradas","Sem entradas recentes","Sem as entradas lançadas, o app não consegue medir quanto sobra nem o risco real do orçamento.",["Lance salário, pró-labore e outras rendas como entradas fixas.","Use a categoria certa para cada fonte de renda."],["Com a renda completa, o app passa a calcular taxa de economia, reserva ideal e limites por categoria."]);
+    else if(tx<0)add("melhoria","alto","Orçamento","Gastos maiores que a renda",PCT(tx)+" de sobra média","A família está consumindo mais do que ganha. O buraco tende a ir para o cartão ou para o cheque especial, que têm os juros mais caros do mercado.",["Liste as 3 maiores categorias variáveis e corte 15% em cada uma neste mês.","Defina limites em Ajustes → Limites do mês e acompanhe no Painel.","Renegocie ou cancele assinaturas e contas fixas que não são essenciais."],["Quando a sobra ficar positiva por 3 meses, direcione 100% dela para a reserva de emergência.","Depois, automatize um aporte fixo no dia em que o dinheiro entra."]);
+    else if(tx<.1)add("melhoria","medio","Orçamento","Sobra baixa no fim do mês",PCT(tx)+" de sobra média","Com menos de 10% de sobra, qualquer imprevisto (saúde, carro, escola) desequilibra o mês e vira dívida.",["Meta prática: chegar a 10% de sobra em 60 dias.","Revise gastos variáveis por pessoa no Painel e combine limites com a família.","Troque compras por impulso por uma lista semanal."],["Aumente a meta de sobra em 2 pontos por trimestre até 20%.","Separe a sobra no dia do recebimento, antes de gastar."]);
+    else if(tx<.2)add("desenvolver","baixo","Orçamento","Sobra pode crescer",PCT(tx)+" de sobra média","A família já guarda, mas abaixo dos 20% recomendados para construir patrimônio com segurança.",["Escolha uma categoria por mês para otimizar.","Revise contas fixas a cada 6 meses (planos, seguros, internet)."],["Leve a sobra para 20% e invista a diferença todo mês."]);
+    else add("forte","ok","Orçamento","Boa taxa de economia",PCT(tx)+" de sobra média","",[],["Mantenha o hábito e defina para onde vai cada real guardado: reserva, metas e investimentos."]);
+    if(r){const pf=fx/r;if(pf>.6)add("melhoria","alto","Contas fixas","Contas fixas pesadas",PCT(pf)+" da renda","Mais de 60% da renda já sai comprometida antes do mês começar. Sobra pouco espaço para imprevistos e para mudar de rota.",["Liste as fixas no Extrato e marque o que dá para reduzir ou trocar.","Renegocie aluguel, planos e financiamentos."],["Ao liberar espaço nas fixas, transforme a diferença em aporte fixo mensal."]);
+      else if(pf>.45)add("melhoria","medio","Contas fixas","Contas fixas acima do ideal",PCT(pf)+" da renda","Com fixas acima de 45%, a margem para emergências e investimentos fica apertada.",["Reveja assinaturas e serviços pouco usados.","Evite novas parcelas até as fixas voltarem para menos de 45%."],["Use o espaço liberado para acelerar metas."]);
+      else add("forte","ok","Contas fixas","Contas fixas sob controle",PCT(pf)+" da renda","",[],["Boa base: dá para assumir metas maiores sem apertar o mês."])}
+    const res=S.metas.filter(m=>ctxDe(m)==="pf"&&/emerg|reserva/i.test(m.nome)).reduce((a,m)=>a+N0(m.guardado),0),cob=d?res/d:0;
+    if(!res)add("desenvolver","alto","Reserva","Montar a reserva de emergência","Sem reserva cadastrada","Sem reserva, qualquer imprevisto vira dívida cara. A recomendação é ter de 6 a 12 meses de gastos guardados em aplicação de liquidez diária.",["Crie uma meta “Reserva de emergência” em Metas com alvo de "+BRL0(d*6)+" (6 meses de gastos).","Comece com um valor fixo mensal, mesmo pequeno."],["Depois dos 6 meses, aumente para 12 e passe a investir o excedente com foco em longo prazo."]);
+    else if(cob<3)add("melhoria","medio","Reserva","Reserva de emergência curta",fmtD(cob,1)+" meses de gastos","A reserva cobre menos de 3 meses. Uma perda de renda ou um gasto grande consome tudo rapidamente.",["Priorize a reserva antes de novos investimentos ou compras parceladas.","Aporte automático no dia do recebimento."],["Chegue a 6 meses e depois direcione os aportes para metas de crescimento."]);
+    else if(cob<6)add("desenvolver","baixo","Reserva","Completar a reserva",fmtD(cob,1)+" meses de gastos","Boa proteção, mas abaixo dos 6 meses recomendados.",["Mantenha o aporte até completar 6 meses."],["Depois, diversifique: renda fixa, previdência e investimentos de longo prazo."]);
+    else add("forte","ok","Reserva","Reserva de emergência sólida",fmtD(cob,1)+" meses de gastos","",[],["Com a reserva completa, o próximo passo é fazer o patrimônio render acima da inflação."]);
+    cartoesCtx("pf").forEach(c=>{const u=usoCartao(c),p=c.limite?u/c.limite:0;if(p>.8)add("melhoria","alto","Cartões","Cartão "+c.nome+" quase no limite",PCT(p)+" do limite","Uso acima de 80% do limite aumenta o risco de rotativo (juros acima de 10% ao mês) e derruba o score de crédito.",["Pare novas compras neste cartão até a fatura fechar.","Antecipe parte da fatura se houver caixa.","Nunca pague só o mínimo."],["Mantenha o uso abaixo de 30% do limite para melhorar o score e conseguir crédito mais barato."]);else if(p>.5)add("melhoria","medio","Cartões","Uso alto do cartão "+c.nome,PCT(p)+" do limite","Acima de 50% do limite, a fatura começa a pesar no mês seguinte.",["Concentre compras parceladas em um único cartão e acompanhe em Cartões.","Evite parcelar compras pequenas."],["Use o cartão como meio de pagamento, não como extensão da renda."])});
+    contasCtx("pf").forEach(c=>{const{tot}=chequeResumo(c);if(tot.V<0||N0(c.saldo)<0)add("melhoria","alto","Cheque especial","Cheque especial em uso — "+c.nome,BRL0(Math.abs(tot.V||c.saldo))+(tot.juros?" · juros "+BRL0(tot.juros):""),"O cheque especial é uma das linhas de crédito mais caras. Cada dia no negativo gera juros e IOF.",["Cubra o saldo negativo com a primeira entrada disponível.","Se não for possível, troque por um empréstimo pessoal com juros menores."],["Com a conta no azul, programe um aporte para nunca mais depender do limite."])});
+    S.emp.filter(e=>ctxDe(e)==="pf"&&e.dir!=="emprestei").forEach(e=>{const ab=N0(e.n)-Object.keys(e.pagas||{}).length;if(ab>0)add("melhoria",e.juros?"alto":"medio","Dívidas","Empréstimo em aberto — "+(e.nome||""),ab+" parcela(s) restante(s)","Dívidas comprometem a renda futura e, com juros, custam mais a cada mês.",["Priorize quitar as dívidas com juros mais altos.","Veja se vale antecipar parcelas com desconto."],["Depois de quitar, transforme o valor da parcela em aporte para investimentos."])});
+    S.emp.filter(e=>ctxDe(e)==="pf"&&e.dir==="emprestei").forEach(e=>{const ab=N0(e.n)-Object.keys(e.pagas||{}).length;if(ab>0)add("melhoria","baixo","A receber","Dinheiro emprestado a receber — "+(e.nome||""),ab+" parcela(s)","Valores a receber sem cobrança combinada tendem a atrasar.",["Use o lembrete educado do WhatsApp em Vencimentos."],["Formalize prazos e Pix de recebimento em cada empréstimo."])});
+    if(venc.length)add("melhoria","alto","Vencimentos","Contas vencidas",venc.length+" item(ns) · "+BRL0(venc.reduce((a,i)=>a+N0(i.valor),0)),"Atraso gera multa, juros e pode negativar o nome.",["Pague hoje o que estiver vencido ou negocie novo prazo.","Ative os lembretes do calendário em Vencimentos."],["Coloque as contas fixas em débito automático."]);
+    const porCat={};ocs.filter(o=>o.l.tipo==="despesa").forEach(o=>porCat[o.l.cat]=(porCat[o.l.cat]||0)+o.valor);const top=Object.entries(porCat).sort((a,b)=>b[1]-a[1])[0];
+    if(top&&cur.d&&top[1]/cur.d>.35)add("melhoria","baixo","Gastos","Concentração em "+top[0],PCT(top[1]/cur.d)+" das saídas","Uma única categoria responde por mais de um terço das saídas do mês.",["Defina um limite mensal para "+top[0]+".","Compare preços e fornecedores dessa categoria."],["Use o detalhe por itens para descobrir onde está o maior peso."]);
+    S.cfg.categorias.filter(c=>c.tipo==="despesa"&&c.orcamento>0&&(porCat[c.nome]||0)>c.orcamento).forEach(c=>add("melhoria","medio","Limites","Limite estourado: "+c.nome,BRL0(porCat[c.nome])+" de "+BRL0(c.orcamento),"Quando os limites estouram com frequência, o orçamento perde a função.",["Segure novos gastos nesta categoria até o próximo mês.","Se o limite for irreal, ajuste em Ajustes → Limites do mês."],["Revise todos os limites a cada trimestre."]));
+    const ds=tm.slice(-4).map(t=>t.d);if(ds.length===4&&ds[1]>ds[0]&&ds[2]>ds[1]&&ds[3]>ds[2]&&ds[0]>0)add("melhoria","medio","Tendência","Gastos subindo há 3 meses",BRL0(ds[0])+" → "+BRL0(ds[3]),"Gastos em alta contínua corroem a sobra aos poucos, sem que se perceba.",["Compare mês a mês no Painel e identifique o que cresceu."],["Trave o crescimento das despesas abaixo do crescimento da renda."]);
+    if(!S.metas.filter(m=>ctxDe(m)==="pf").length)add("desenvolver","baixo","Metas","Definir metas de economia","Nenhuma meta","Sem metas claras, a sobra tende a ser gasta.",["Crie metas com valor e prazo em Metas (viagem, carro, escola, reserva)."],["Acompanhe o aporte mensal sugerido e celebre cada meta batida."]);
+    const iv=(S.invest||[]).filter(x=>ctxDe(x)==="pf"&&!x.oculto),semD=iv.filter(x=>N0(x.nota)>=7&&!x.data&&x.status!=="Feito"&&x.status!=="Descartado");
+    if(semD.length)add("desenvolver","medio","Investimentos pessoais","Prioridades sem data",semD.length+" item(ns) com nota ≥ 7","Nota alta sem data é só desejo: o investimento em você fica sempre para depois.",["Defina data e valor para cada item com nota 7 ou mais no Plano de investimentos."],["Reserve uma parte fixa da sobra para desenvolvimento pessoal."]);
+    else if(!iv.some(x=>x.nota!=null))add("desenvolver","baixo","Investimentos pessoais","Montar o plano de investimentos pessoal","Nenhum item avaliado","Sem plano, cursos, mentorias e rede de contatos ficam fora do orçamento.",["Abra Plano de investimentos e dê nota aos itens sugeridos."],["Siga a Ordem de investimento, de cima para baixo."]);
+    return{k,A,s12:tm.map((t,i)=>({m:s12[i].m,r:t.r,d:t.d}))}}
+  // ---------- EMPRESA ----------
+  const emp=empresaAtual()||{unidades:[]},dm=s12.map(x=>dre(x.os)),cur=dre(ocs),com=dm.slice(-4).filter(d=>d.RB||d.LL);
+  const RB=media(com.map(d=>d.RB)),LL=media(com.map(d=>d.LL)),ml=RB?LL/RB:null,meta=(emp.unidades||[]).reduce((a,u)=>a+N0(u.meta),0);
+  const hoje=new Date(),dmes=new Date(+S.mes.slice(0,4),+S.mes.slice(5,7),0).getDate(),dp=S.mes===CUR()?hoje.getDate():dmes,proj=cur.RB/dp*dmes;
+  const k={fat:cur.RB,lucro:cur.LL,ml:cur.RB?cur.LL/cur.RB:null,pe:cur.PE,meta,proj,pm:meta?proj/meta:null};
+  if(!RB)add("desenvolver","medio","Faturamento","Lançar o faturamento","Sem receitas recentes","Sem o faturamento lançado, não dá para medir margem, ponto de equilíbrio nem metas.",["Lance as receitas por unidade (serviços e venda de produtos), diariamente ou por fechamento semanal."],["Com receitas lançadas, o DRE anual e o painel passam a mostrar a saúde real de cada loja."]);
+  else{
+    if(ml<0)add("melhoria","alto","Rentabilidade","Empresa operando no prejuízo",PCT(ml)+" de margem média","A operação está consumindo caixa. Sem correção, o negócio depende de aporte dos sócios ou de crédito.",["Revise preços com o simulador da Inteligência financeira.","Corte despesas administrativas sem retorno direto.","Revise comissões e o custo de insumos por serviço."],["Com margem positiva, defina meta de 10% e depois 15% de margem líquida."]);
+    else if(ml<.1)add("melhoria","medio","Rentabilidade","Margem líquida apertada",PCT(ml)+" de margem média","Para salão, o saudável é de 10% a 20%. Abaixo disso, qualquer queda de movimento zera o lucro.",["Reajuste os serviços com menor sobra (Margem e preço).","Aumente o ticket com serviços combinados e venda de produtos."],["Chegue a 15% e reinvista parte do lucro em marketing e equipe."]);
+    else if(ml<.15)add("desenvolver","baixo","Rentabilidade","Margem pode subir",PCT(ml)+" de margem média","Margem razoável, mas abaixo do potencial do setor.",["Analise o DRE anual e ataque o grupo de despesa que mais cresceu."],["Com 15% ou mais, a empresa consegue financiar a própria expansão."]);
+    else add("forte","ok","Rentabilidade","Boa margem líquida",PCT(ml)+" de margem média","",[],["Use a margem para escalar: nova unidade, mais postos ou marketing com meta de retorno."]);
+    if(meta){const pm=proj/meta;if(pm<.8)add("melhoria","alto","Metas","Faturamento abaixo da meta",PCT(pm)+" da meta (projeção do mês)","Ficar 20% abaixo da meta compromete o caixa dos próximos meses e o pagamento das fixas.",["Ative a reativação da base de clientes pelo WhatsApp (Previsibilidade).","Preencha horários vagos com campanhas relâmpago.","Acompanhe a meta diária na reunião semanal."],["Com a meta batida por 3 meses, aumente a meta em 10%."]);
+      else if(pm<1)add("melhoria","medio","Metas","Meta de faturamento em risco",PCT(pm)+" da meta (projeção do mês)","No ritmo atual, o mês fecha abaixo da meta.",["Calcule quanto falta por dia no Painel e distribua entre as unidades.","Ofereça pacotes e retornos programados."],["Transforme clientes avulsos em recorrentes (clube, assinatura)."]);
+      else add("forte","ok","Metas","Meta de faturamento no ritmo",PCT(pm)+" da meta (projeção)","",[],["Hora de subir a meta e planejar capacidade (postos e equipe)."])}
+    if(cur.PE!=null&&cur.RB){const fg=(cur.RB-cur.PE)/cur.RB;if(cur.RB<cur.PE)add("melhoria","alto","Ponto de equilíbrio","Abaixo do ponto de equilíbrio",BRL0(cur.RB)+" de "+BRL0(cur.PE),"O faturamento do mês não cobre os custos fixos. Cada dia abaixo do empate é prejuízo.",["Reduza custos fixos ou aumente o volume com ações de venda imediatas.","Reveja os serviços de menor margem de contribuição."],["Construa folga de pelo menos 20% acima do ponto de equilíbrio."]);
+      else if(fg<.1)add("melhoria","medio","Ponto de equilíbrio","Pouca folga sobre o empate",PCT(fg)+" acima do ponto de equilíbrio","Uma semana fraca já leva o mês para o prejuízo.",["Aumente a margem de contribuição (preço, insumos, comissões)."],["Folga de 20% ou mais permite investir com segurança."])}
+    const pes=media(com.map(d=>d.RB?d.pes/d.RB:0));if(pes>.55)add("melhoria","alto","Equipe","Folha pesada",PCT(pes)+" da receita","A folha acima de 55% da receita deixa pouco para as demais despesas e para o lucro.",["Revise escalas e produtividade por profissional (Produção).","Avalie o modelo salão-parceiro para parte da equipe, com a contabilidade."],["Vincule parte da remuneração a metas de produção."]);else if(pes>.45)add("melhoria","medio","Equipe","Folha acima do ideal",PCT(pes)+" da receita","Acima de 45%, a folha começa a pressionar a margem.",["Acompanhe ocupação e ticket por profissional."],["Aumente o faturamento por profissional antes de contratar."]);
+    const mcp=media(com.map(d=>d.RB?d.MC/d.RB:0));if(mcp&&mcp<.35)add("melhoria","alto","Margem de contribuição","Margem de contribuição baixa",PCT(mcp),"Sobra pouco de cada venda para pagar as fixas. O ponto de equilíbrio fica alto e difícil de alcançar.",["Reduza custo de insumos por serviço e taxas de cartão.","Revise preços dos serviços mais vendidos."],["Com margem de contribuição acima de 50%, cada novo cliente gera lucro rápido."]);else if(mcp&&mcp<.5)add("melhoria","medio","Margem de contribuição","Margem de contribuição moderada",PCT(mcp),"Cada venda contribui pouco para as fixas.",["Negocie insumos e taxas da maquininha."],["Cresça com os serviços de maior contribuição."]);
+    if(cur.ret>Math.max(0,cur.LL))add("melhoria","alto","Caixa","Retiradas maiores que o lucro",BRL0(cur.ret)+" de retirada · lucro "+BRL0(cur.LL),"Tirar mais do que a empresa lucra descapitaliza o negócio e cria dependência de aporte no futuro.",["Defina pró-labore fixo e só distribua lucro depois de fechar o mês.","Monte a reserva da empresa antes de aumentar retiradas."],["Política: distribuir no máximo 50% do lucro e reinvestir o restante."]);
+    if(cur.apo>0)add("melhoria","medio","Caixa","Aporte dos sócios no mês",BRL0(cur.apo),"A empresa ainda não se paga sozinha neste mês.",["Identifique a causa (sazonalidade, investimento ou prejuízo operacional)."],["Meta VAZK: 3 meses seguidos sem colocar dinheiro do bolso."]);
+    const fin=media(com.map(d=>d.RB?d.finD/d.RB:0));if(fin>.02)add("melhoria","medio","Financeiro","Juros, multas e tarifas altos",PCT(fin)+" da receita","Despesa financeira alta indica atrasos ou uso de crédito caro.",["Pague em dia e renegocie dívidas caras.","Revise tarifas bancárias e da maquininha."],["Com caixa organizado, use o capital de giro próprio em vez de crédito."]);
+    const ds=dm.slice(-3).map(d=>d.RB);if(ds.length===3&&ds[0]>0&&ds[1]<ds[0]&&ds[2]<ds[1]&&S.mes!==CUR())add("melhoria","medio","Tendência","Faturamento em queda",BRL0(ds[0])+" → "+BRL0(ds[2]),"Duas quedas seguidas pedem ação comercial antes que virem tendência.",["Revise agenda, retorno de clientes e campanhas."],["Crie uma rotina mensal de campanha para a base."]);
+    const up=dm.slice(-4,-1).map(d=>d.RB);if(up.length===3&&up[0]>0&&up[1]>up[0]&&up[2]>up[1])add("forte","ok","Tendência","Faturamento crescendo",BRL0(up[0])+" → "+BRL0(up[2]),"",[],["Planeje capacidade: postos, horários e contratações antes de lotar."]);
+    (emp.unidades||[]).forEach(u=>{const os=ocs.filter(o=>(o.l.unid||"")===u.nome),r=os.filter(o=>o.l.tipo==="receita"&&grupoDe(o)==="receita").reduce((a,o)=>a+o.valor,0),dd=os.filter(o=>o.l.tipo==="despesa"&&!["retirada","investimento"].includes(grupoDe(o))).reduce((a,o)=>a+o.valor,0);
+      if(r&&r-dd<0)add("melhoria","alto","Unidades","Unidade "+u.nome+" no negativo",BRL0(r-dd)+" no mês","Uma unidade no prejuízo consome o resultado das outras.",["Compare ocupação, ticket e custos com a outra unidade.","Ajuste equipe e horários ao movimento real."],["Replique na unidade mais fraca os processos da mais forte."])})}
+  if(venc.length)add("melhoria","alto","Vencimentos","Contas da empresa vencidas",venc.length+" item(ns) · "+BRL0(venc.reduce((a,i)=>a+N0(i.valor),0)),"Atrasos geram multas, juros e podem afetar fornecedores e o crédito da empresa.",["Regularize hoje ou negocie novo prazo.","Organize o calendário de pagamentos em Vencimentos."],["Concentre os vencimentos em 2 ou 3 datas fixas por mês."]);
+  if(vencR.length)add("melhoria","medio","Recebíveis","Recebimentos atrasados",vencR.length+" item(ns) · "+BRL0(vencR.reduce((a,i)=>a+N0(i.valor),0)),"Inadimplência reduz o caixa disponível para pagar as contas.",["Cobre com a mensagem educada do WhatsApp em Vencimentos."],["Prefira Pix e cartão na hora do atendimento."]);
+  if(IV.P&&IV.emp===emp.id){const ult=IV.meses.slice().sort((a,b)=>b.mes.localeCompare(a.mes))[0];if(ult&&!ult.exemplo){const R=calcIntel(IV.P,ult,intelUns()),ml2=mesLabel(ult.mes);
+    if(R.T.reserva<1)add("melhoria","alto","Caixa","Reserva de caixa abaixo de 1 mês",fmtD(R.T.reserva,2)+" mês de saídas fixas ("+ml2+")","Sem 1 mês de fixas em caixa, um mês fraco obriga a usar crédito ou aporte.",["Separe um % fixo do faturamento para a reserva.","Evite retiradas extras até a reserva chegar a 1 mês."],["Depois de 1 mês, mire 3 meses de reserva para crescer com tranquilidade."]);
+    if(!R.plCompleto)add("melhoria","medio","Sócios","Pró-labore não pago completo",R.plSocio.map(s=>s.nome+" "+fmtD(s.pago)+"/"+fmtD(s.def)).join(" · "),"Sócios que não recebem o pró-labore definido acabam financiando a empresa sem perceber.",["Ajuste o pró-labore ao que a empresa realmente paga, ou corrija a margem."],["Pró-labore em dia todos os meses é um dos 3 números do diagnóstico VAZK."]);
+    if(R.T.ocup<.5)add("desenvolver","medio","Capacidade","Cadeiras ociosas",PCT(R.T.ocup)+" de ocupação ("+ml2+")","Mais da metade das horas disponíveis não gera receita, mas os custos fixos continuam.",["Campanhas para horários vagos (manhãs e início de semana).","Reativação da base de clientes inativos."],["Acima de 70% de ocupação, planeje mais postos ou nova unidade."]);
+    else if(R.T.ocup>.7)add("desenvolver","baixo","Capacidade","Ocupação alta: hora de expandir",PCT(R.T.ocup)+" de ocupação ("+ml2+")","Agenda cheia limita o crescimento e cansa a equipe.",["Revise preços dos horários mais disputados."],["Avalie mais postos, novo turno ou nova unidade (use o Cenário)."]);
+    const mt=IV.P.indicMetas||{},ind=ult.indic||{};intelUns().forEach(u=>{const nps=(ind[u]||{}).nps;if(nps!=null&&nps!==""&&N0(nps)<N0(mt.nps))add("desenvolver","medio","Clientes","NPS abaixo da meta — "+u,fmtD(nps)+" de "+fmtD(mt.nps),"Clientes pouco satisfeitos voltam menos e indicam menos.",["Leia os comentários da pesquisa e corrija os 3 motivos mais citados."],["NPS alto vira indicação: crie um programa de indicação."])})}}
+  const iv=(S.invest||[]).filter(x=>ctxDe(x)===ctx&&!x.oculto),gar=iv.filter(x=>N0(x.nota)>=9&&x.status!=="Feito"&&x.status!=="Descartado");
+  if(gar.length)add("desenvolver","medio","Investimentos","Gargalos do plano de investimentos",gar.map(x=>x.nome).slice(0,3).join(", "),"Itens com nota 9 ou 10 são o gargalo do crescimento hoje. Enquanto não saem do papel, o negócio trava.",["Coloque data e responsável em cada gargalo.","Separe a verba no caixa antes de começar."],["Siga a Ordem de investimento e reavalie as notas a cada trimestre."]);
+  else if(!iv.some(x=>x.nota!=null))add("desenvolver","baixo","Investimentos","Montar o plano de investimentos","Nenhum item avaliado","Sem plano, os investimentos acontecem por impulso e não pelo que destrava o crescimento.",["Abra Plano de investimentos e dê nota aos itens sugeridos de cada área."],["Use a ordem automática para decidir o próximo investimento."]);
+  if((emp.unidades||[]).length>1&&RB){const pr=(emp.unidades||[]).map(u=>s12.slice(-3).flatMap(x=>x.os).filter(o=>o.l.tipo==="receita"&&(o.l.unid||"")===u.nome).reduce((a,o)=>a+o.valor,0));const tt=pr.reduce((a,b)=>a+b,0);if(tt&&Math.max(...pr)/tt>.7)add("desenvolver","baixo","Unidades","Receita concentrada em uma unidade",PCT(Math.max(...pr)/tt),"Depender de uma única unidade aumenta o risco do negócio.",["Leve campanhas e profissionais de destaque para a unidade mais fraca."],["Equilibre as unidades antes de abrir uma nova."])}
+  return{k,A,s12:dm.map((d,i)=>({m:s12[i].m,r:d.RB,d:Math.max(0,d.RB-d.LL)}))}}
+function scoreDe(A){let s=100;A.forEach(a=>{s-=a.nivel==="alto"?16:a.nivel==="medio"?7:a.nivel==="baixo"?3:-2});return Math.max(0,Math.min(100,Math.round(s)))}
+function telaDash(){
+  limparCenas();const pj=isPJ();
+  if(!S.hist){$("#app").innerHTML=`<div class="ctxlbl">${esc(nomeCtx(S.ctx))}</div><h1 class="tt">Dashboard</h1><p class="empty">Analisando os últimos 12 meses…</p>`;carregarHist().then(()=>{if(S.tab==="dash")telaDash()});return}
+  if(pj){assinarIntel();if(!IV.P&&!S._dashEsp){S._dashEsp=1;setTimeout(()=>{S._dashEsp=0;if(S.tab==="dash"&&IV.P)telaDash()},1800)}}
+  assinarInvest();
+  const R=analisar(),A=R.A.sort((a,b)=>({alto:0,medio:1,baixo:2,ok:3}[a.nivel]-{alto:0,medio:1,baixo:2,ok:3}[b.nivel])),sc=scoreDe(A),k=R.k,f=S.dashF||"todos";
+  const nT=t=>A.filter(a=>a.tipo===t).length,lbl=sc>=80?"Saudável":sc>=60?"Atenção":"Crítico";
+  const kp=pj?[["Faturamento do mês",BRL0(k.fat),k.meta?`projeção ${BRL0(k.proj)}`:""],["Lucro líquido",BRL0(k.lucro),k.ml==null?"":PCT(k.ml)+" de margem"],["Ponto de equilíbrio",k.pe==null?"—":BRL0(k.pe),k.pe!=null&&k.fat?(k.fat>=k.pe?"acima do empate":"abaixo do empate"):""],["Meta do mês",k.meta?PCT(k.pm):"—",k.meta?"de "+BRL0(k.meta):"cadastre em Ajustes"]]
+    :[["Renda do mês",BRL0(k.renda),"média "+BRL0(k.r)],["Gastos do mês",BRL0(k.gasto),"média "+BRL0(k.d)],["Sobra do mês",BRL0(k.sobra),k.tx==null?"":PCT(k.tx)+" da renda"],["Riscos altos",String(A.filter(a=>a.nivel==="alto").length),A.filter(a=>a.nivel==="medio").length+" médios"]];
+  const prio=A.filter(a=>a.tipo!=="forte").slice(0,5);
+  const card=(a,i)=>`<details class="ach" id="ach-${i}" style="--c:${"#"+(NIVEL_COR[a.nivel]||0x60a5fa).toString(16).padStart(6,"0")}"><summary><span class="nv">${NIVEL_TXT[a.nivel]}</span><span class="at"><b>${esc(a.titulo)}</b><small>${esc(a.area)}${a.valor?" · "+esc(a.valor):""}</small></span><span class="ch">▾</span></summary>
+    <div class="ab">${a.risco?`<h4>Risco</h4><p>${esc(a.risco)}</p>`:""}${a.melhorar.length?`<h4>Como melhorar</h4><ul>${a.melhorar.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}${a.escalar.length?`<h4>Como escalar</h4><ul>${a.escalar.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}</div></details>`;
+  $("#app").innerHTML=`<div class="ctxlbl">${esc(nomeCtx(S.ctx))}</div><h1 class="tt">Dashboard</h1><p class="hint">Visão 3D interativa: arraste para girar e toque nas colunas para ver os detalhes.</p>`+mesNav()+`
+  <div class="dgrid hero"><div class="d3wrap"><div class="d3h"><b>Saúde financeira</b><small>${esc(lbl)}</small></div><div class="d3host" id="d3score" style="height:260px"><div class="score-c"><div><b>${sc}</b><small>de 100</small></div></div></div><div class="d3leg"><span>${A.filter(a=>a.nivel==="alto").length} altos</span><span>${A.filter(a=>a.nivel==="medio").length} médios</span><span>${nT("forte")} pontos fortes</span></div></div>
+   <div class="d3wrap"><div class="d3h"><b>Indicadores do mês</b><small>${esc(mesLabel(S.mes))}</small></div><div class="dks">${kp.map(([a,b,c])=>`<div class="dk"><small>${esc(a)}</small><b>${esc(b)}</b><i>${esc(c)}</i></div>`).join("")}</div>
+    <div class="d3h" style="padding-top:4px"><b>Prioridades dos próximos 30 dias</b></div><ol class="prio">${prio.length?prio.map(a=>`<li><span class="dot" style="background:#${(NIVEL_COR[a.nivel]).toString(16).padStart(6,"0")}"></span>${esc(a.titulo)}</li>`).join(""):"<li>Nenhum risco relevante encontrado. Foque em escalar.</li>"}</ol></div></div>
+  <div class="dgrid g2" style="margin-top:14px"><div class="d3wrap"><div class="d3h"><b>${pj?"Faturamento, despesas e lucro":"Entradas, saídas e sobra"} · 12 meses</b><small>3D</small></div><div class="d3host" id="d3bar"></div>
+    <div class="d3leg"><span><i style="background:#2fbf71"></i>${pj?"Faturamento":"Entradas"}</span><span><i style="background:#ef5b5b"></i>${pj?"Custos e despesas":"Saídas"}</span><span><i style="background:#ffc24b"></i>${pj?"Lucro":"Sobra"}</span></div></div>
+   <div class="d3wrap"><div class="d3h"><b>Mapa de riscos</b><small>altura = gravidade</small></div><div class="d3host" id="d3risk"></div>
+    <div class="d3leg"><span><i style="background:#ef4444"></i>Alto</span><span><i style="background:#f59e0b"></i>Médio</span><span><i style="background:#60a5fa"></i>Baixo</span><span><i style="background:#22c55e"></i>Forte</span></div></div></div>
+  <h2>Diagnóstico</h2><div class="chips">${[["todos","Todos",A.length],["melhoria","Pontos de melhoria",nT("melhoria")],["desenvolver","A desenvolver",nT("desenvolver")],["forte","Pontos fortes",nT("forte")]].map(([kk,n,q])=>`<button type="button" class="chip" data-df="${kk}" aria-pressed="${f===kk}">${n} <span class="mut" style="font-size:12px">${q}</span></button>`).join("")}</div>
+  <div style="margin-top:10px" class="cols2">${A.map((a,i)=>f==="todos"||a.tipo===f?card(a,i):"").join("")||'<div class="empty">Nada nesta categoria.</div>'}</div>
+  <p class="hint">O diagnóstico é calculado a partir dos seus lançamentos, contas, cartões, metas, plano de investimentos${pj?" e da Inteligência financeira":""}. Ele não substitui um contador ou consultor, mas mostra onde olhar primeiro.</p>`;
+  ligarMesNav();$$("[data-df]").forEach(b=>b.onclick=()=>{S.dashF=b.dataset.df;telaDash()});
+  cenaScore($("#d3score"),sc);cenaBarras($("#d3bar"),R.s12,pj?["Faturamento","Custos e despesas","Lucro"]:["Entradas","Saídas","Sobra"]);cenaRiscos($("#d3risk"),A)}
+
+/* ================= PDF DE QUALQUER ABA ================= */
+const TAB_NOMES={painel:"Painel",extrato:"Extrato",agenda:"Vencimentos",dash:"Dashboard",cartoes:"Cartões",contas:"Contas",emprestimos:"Empréstimos",metas:"Metas e reservas",invest:"Plano de investimentos",intel:"Inteligência financeira",dre:"DRE anual",ajuda:"Manual do app"};
+const PAISAGEM=["intel","dre","invest","dash"];
+const LIGHT_VARS="--bg:#ffffff;--surface:#ffffff;--surface2:#F5F7FA;--ink:#101828;--muted:#5B6576;--line:#DDE2E9;--brand:#0B2545;--brand-ink:#ffffff;--accent:#1D4E89;--gasto:#B42318;--ganho:#067647;--sun:#B54708;--chip:#ECEFF3;--bar:#1D4E89;color:#101828;";
+async function h2c(){try{return await carregarScript("https://cdn.jsdelivr.net/npm/html2canvas-pro@1.5.8/dist/html2canvas-pro.min.js","html2canvas")}catch(e){return carregarScript("https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js","html2canvas")}}
+const dormir=ms=>new Promise(r=>setTimeout(r,ms));
+async function prepararDados(tab){
+  if(["painel","dash","invest"].includes(tab)){try{await carregarHist()}catch(e){}}
+  if(tab==="dre"){await carregarAno(S.dreAno||S.mes.slice(0,4))}
+  if(tab==="intel"){assinarIntel();for(let i=0;i<30&&!IV.P;i++)await dormir(150)}
+  if(tab==="invest"||tab==="dash"){assinarInvest();for(let i=0;i<20&&!S.invest;i++)await dormir(100)}
+  if(tab==="dash"&&isPJ()){assinarIntel();for(let i=0;i<20&&!IV.P;i++)await dormir(100)}}
+const TELAS_PDF=()=>({painel:telaPainel,extrato:telaExtrato,agenda:telaAgenda,dash:telaDash,cartoes:telaCartoes,contas:telaContas,emprestimos:telaEmprestimos,metas:telaMetas,invest:telaInvest,intel:telaIntel,dre:telaDRE,ajuda:telaAjuda});
+async function capturarAba(item,larg){
+  const real=$("#app");limparCenas();real.innerHTML="";real.id="app_real";const off=document.createElement("div");off.id="app";off.className="wrap pmode";
+  off.style.cssText=`position:absolute;left:-30000px;top:0;width:${larg}px;max-width:none;margin:0;padding:8px 6px 10px;background:#fff;${LIGHT_VARS}`;document.body.appendChild(off);
+  const bk={tab:S.tab,intelSub:S.intelSub,invVista:S.invVista,dashF:S.dashF,ajudaQ:S.ajudaQ};
+  try{S.tab=item.tab;if(item.intelSub)S.intelSub=item.intelSub;if(item.invVista)S.invVista=item.invVista;if(item.tab==="dash")S.dashF="todos";if(item.tab==="ajuda")S.ajudaQ="";
+    await prepararDados(item.tab);TELAS_PDF()[item.tab]();
+    if(item.tab==="intel"&&!mesDoc(S.mes)&&["resumo","producao","saidas","margem","indicadores"].includes(S.intelSub||"resumo")){const ant=mesAnteriorCom(addMonth(S.mes,1));if(ant){const m0=S.mes;S.mes=ant.mes;TELAS_PDF().intel();S.mes=m0}}
+    if(item.tab==="dash"){for(let i=0;i<40&&off.querySelectorAll(".d3host canvas").length<3&&!off.querySelector(".d3fall");i++)await dormir(150);await dormir(250)}else await dormir(250);
+    off.querySelectorAll("details").forEach(d=>d.open=true);
+    const H=await h2c();const W=Math.max(larg,off.scrollWidth);off.style.width=W+"px";
+    const bp=[...new Set([...off.querySelectorAll("tr,.card,.kpi,.item,.ag,.hb,.li,h2,.sec,.ach,.tw,.dk,.d3wrap,.dia,.note,.dre .tr,.tb .tr,.mi")].map(e=>Math.round(e.getBoundingClientRect().bottom-off.getBoundingClientRect().top)))].sort((a,b)=>a-b);
+    const cv=await H(off,{scale:1.7,backgroundColor:"#ffffff",useCORS:true,logging:false,width:W,height:off.scrollHeight,windowWidth:W});
+    return{cv,bp:bp.map(y=>y*1.7),titulo:item.titulo}}
+  finally{off.remove();real.id="app";Object.assign(S,bk)}}
+async function gerarPDFAbas(itens,nome){
+  if(!itens.length)return toast("Escolha pelo menos uma aba");
+  const bar=document.createElement("div");bar.className="toast";bar.style.bottom="calc(80px + env(safe-area-inset-bottom,0px))";document.body.appendChild(bar);S.pdfModo=true;
+  try{await carregarScript("https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js","jspdf");const{jsPDF}=window.jspdf;let doc=null;
+    const app=S.cfg.nomeApp||"Nossas Finanças",amb=nomeCtx(S.ctx),quando=new Date().toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"});
+    const lat=s=>String(s).normalize("NFC").replace(/[−–—]/g,"-").replace(/[“”]/g,'"').replace(/[‘’]/g,"'").replace(/[^\x00-\xFF]/g,"");
+    if(itens.length>1){doc=new jsPDF({orientation:"portrait",unit:"mm",format:"a4"});doc.setFillColor("#0B2545");doc.rect(0,0,210,64,"F");doc.setTextColor("#FFFFFF");doc.setFont("helvetica","bold");doc.setFontSize(24);doc.text(lat(app),16,30);doc.setFont("helvetica","normal");doc.setFontSize(13);doc.text(lat("Relatório completo - "+amb),16,42);doc.setFontSize(10);doc.text(lat("Gerado em "+quando+"  |  referência: "+mesLabel(S.mes)),16,52);
+      doc.setTextColor("#101828");doc.setFont("helvetica","bold");doc.setFontSize(13);doc.text(lat("Conteúdo"),16,82);doc.setFont("helvetica","normal");doc.setFontSize(11);itens.forEach((it,i)=>doc.text(lat((i+1)+". "+it.titulo),20,92+i*7))}
+    for(let i=0;i<itens.length;i++){const it=itens[i];bar.textContent=`Gerando PDF: ${it.titulo} (${i+1} de ${itens.length})…`;
+      const pais=PAISAGEM.includes(it.tab),larg=pais?1180:820;const{cv,bp}=await capturarAba(it,larg);
+      const or=pais?"landscape":"portrait",pw=pais?297:210,ph=pais?210:297,mg=10,cw=pw-mg*2,top=18,bot=12,ch=ph-top-bot;
+      if(!doc)doc=new jsPDF({orientation:or,unit:"mm",format:"a4"});else doc.addPage("a4",or);
+      const pxmm=cv.width/cw,pageCH=Math.floor(ch*pxmm);let y=0,pg=0;
+      while(y<cv.height-4){if(pg>0)doc.addPage("a4",or);let cut=Math.min(cv.height,y+pageCH);if(cut<cv.height){const c=bp.filter(b=>b>y+pageCH*.45&&b<=y+pageCH).pop();if(c)cut=c}
+        const sl=document.createElement("canvas");sl.width=cv.width;sl.height=cut-y;sl.getContext("2d").drawImage(cv,0,y,cv.width,cut-y,0,0,cv.width,cut-y);
+        doc.setFillColor("#0B2545");doc.rect(0,0,pw,11,"F");doc.setTextColor("#FFFFFF");doc.setFont("helvetica","bold");doc.setFontSize(9.5);doc.text(lat(app+"  |  "+amb+"  |  "+it.titulo),mg,7.2);doc.setFont("helvetica","normal");doc.text(lat(quando),pw-mg,7.2,{align:"right"});
+        doc.addImage(sl.toDataURL("image/jpeg",.86),"JPEG",mg,top-3,cw,(cut-y)/pxmm,undefined,"FAST");
+        doc.setTextColor("#5B6576");doc.setFontSize(8);doc.text(lat(it.titulo+(pg?" (continuação)":"")),mg,ph-5);
+        y=cut;pg++}}
+    const n=doc.getNumberOfPages();for(let p=1;p<=n;p++){doc.setPage(p);const w=doc.internal.pageSize.getWidth(),h=doc.internal.pageSize.getHeight();doc.setFontSize(8);doc.setTextColor("#5B6576");doc.text(`${p} / ${n}`,w-10,h-5,{align:"right"})}
+    const st=await baixar(nome,doc.output("blob"));if(st==="saved")toast("PDF pronto")}
+  catch(e){console.warn(e);toast("Não foi possível gerar o PDF agora. Tente de novo.")}
+  finally{S.pdfModo=false;bar.remove();render()}}
+function itemAtualPDF(){const t=S.tab,it={tab:t,titulo:TAB_NOMES[t]||t};if(t==="intel"){const s=S.intelSub||"resumo";it.intelSub=s;it.titulo="Inteligência financeira - "+(SUBS.find(x=>x[0]===s)||["",""])[1]}if(t==="invest"){it.invVista=S.invVista||"resumo"}return it}
+function listaTodasAbas(pj){const L=[["painel"],["dash"],["extrato"],["agenda"],["cartoes"],["contas"],["emprestimos"],["metas"]].map(([t])=>({tab:t,titulo:TAB_NOMES[t]}));
+  L.push({tab:"invest",invVista:"resumo",titulo:"Plano de investimentos - Resumo"},{tab:"invest",invVista:"ordem",titulo:"Plano de investimentos - Ordem"});
+  if(pj){SUBS.filter(s=>s[0]!=="guia").forEach(([k,n])=>L.push({tab:"intel",intelSub:k,titulo:"Inteligência financeira - "+n}));L.push({tab:"dre",titulo:"DRE anual"})}
+  L.push({tab:"ajuda",titulo:"Manual do app"});return L}
+function botaoPDFTela(){if(["lancar","pdf","mais","ajustes"].includes(S.tab)||S.pdfModo)return;const app=$("#app");if(!app||!app.firstElementChild)return;
+  const b=document.createElement("button");b.type="button";b.className="pdfbtn";b.innerHTML=ic("file")+" PDF desta tela";b.onclick=()=>{const it=itemAtualPDF();gerarPDFAbas([it],`${(it.titulo||"tela").replace(/[^\wÀ-ú]+/g,"-").toLowerCase()}-${HOJE()}.pdf`)};app.insertBefore(b,app.firstChild)}
+function blocoPDFAbas(){const pj=isPJ(),L=listaTodasAbas(pj);const sel=S.pdfSel||(S.pdfSel={});
+  return`<h2>PDF das abas do app</h2><div class="card"><p class="hint" style="margin-top:0">Gera um PDF com a tela de cada aba escolhida, como aparece no app, do ambiente selecionado no topo (${esc(nomeCtx(S.ctx))}). Mês de referência: ${esc(mesLabel(S.mes))}.</p>
+  <div class="row" style="gap:8px;margin:6px 0 4px"><button class="chip" type="button" id="paTodas">Marcar todas</button><button class="chip" type="button" id="paNenhuma">Desmarcar</button></div>
+  <div class="cols2">${L.map((it,i)=>`<label class="ck"><input type="checkbox" data-pa="${i}" ${sel[it.titulo]!==false?"checked":""}> ${esc(it.titulo)}</label>`).join("")}</div>
+  <button class="btn" id="paGerar" type="button" style="margin-top:10px">${ic("file")} Gerar PDF das abas</button><p class="hint">Cada tela também tem o botão “PDF desta tela” no topo.</p></div>`}
+function ligarPDFAbas(){const L=listaTodasAbas(isPJ()),sel=S.pdfSel||(S.pdfSel={});
+  $$("[data-pa]").forEach(c=>c.onchange=()=>{sel[L[+c.dataset.pa].titulo]=c.checked});
+  $("#paTodas").onclick=()=>{L.forEach(it=>sel[it.titulo]=true);$$("[data-pa]").forEach(c=>c.checked=true)};$("#paNenhuma").onclick=()=>{L.forEach(it=>sel[it.titulo]=false);$$("[data-pa]").forEach(c=>c.checked=false)};
+  $("#paGerar").onclick=()=>{const its=L.filter(it=>sel[it.titulo]!==false);gerarPDFAbas(its,`relatorio-completo-${isPJ()?"empresa":"pessoal"}-${HOJE()}.pdf`)}}
 
 
 iniciar().catch(e=>{console.error(e);$("#app").innerHTML='<p class="note">Não foi possível iniciar o app. Recarregue a página.</p>'});
