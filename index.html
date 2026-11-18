@@ -201,6 +201,60 @@ label.ck input{width:19px;height:19px;accent-color:var(--accent);flex:none}
 .dre .tr.fim span:first-child{color:var(--ink)}
 .dre .tr small{color:var(--muted);font-weight:400;margin-left:6px}
 .dre .tr.out{opacity:.8;font-style:italic;border-bottom:0}
+
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface);-webkit-overflow-scrolling:touch}
+table.tb2{border-collapse:separate;border-spacing:0;width:100%;font-size:13.5px;min-width:max-content}
+.tb2 tr{background:var(--surface)}
+.tb2 thead tr{background:var(--surface2)}
+.tb2 th{text-align:left;font-weight:600;font-size:11.5px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);padding:9px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+.tb2 td{padding:7px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+.tb2 tr:last-child td{border-bottom:0}
+.tb2 td:first-child,.tb2 th:first-child{position:sticky;left:0;background:inherit;z-index:1;border-right:1px solid var(--line)}
+.tb2 .num{text-align:right;font-variant-numeric:tabular-nums}
+.tb2 tr.tot{background:var(--surface2)} .tb2 tr.tot td{font-weight:700}
+.tb2 tr.hd{background:var(--chip)} .tb2 tr.hd td{font-weight:700;color:var(--accent);font-size:11.5px;text-transform:uppercase;letter-spacing:.05em}
+.tb2 tr.sub td:first-child{padding-left:24px;color:var(--muted)}
+.tb2 tr.fim td{font-weight:700;font-size:14.5px;border-top:1.5px solid var(--ink)}
+.tb2 tr.pct td{color:var(--muted);font-style:italic}
+.tb2 tr.out td{color:var(--muted)}
+.tb2 tr.clk{cursor:pointer} .tb2 tr.clk:hover{background:var(--surface2)}
+.tb2 td.wrap{white-space:normal;min-width:220px;max-width:340px}
+.ci{width:92px;border:1px solid color-mix(in srgb,var(--sun) 35%,var(--line));background:color-mix(in srgb,var(--sun) 8%,var(--surface));border-radius:6px;padding:5px 7px;text-align:right;font-variant-numeric:tabular-nums;font-size:13.5px;min-height:32px}
+.ci.t{text-align:left;width:auto;min-width:150px}
+select.ci{text-align:left;width:auto;min-width:120px}
+.ci:focus{outline:2px solid var(--accent);outline-offset:0;background:var(--surface)}
+.subnav{display:flex;gap:6px;overflow-x:auto;padding:2px 0 6px;margin:10px 0 4px;scrollbar-width:thin}
+.subnav .chip{white-space:nowrap;flex:none}
+.st{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.03em;padding:2px 8px;border-radius:99px}
+.st.ok{background:color-mix(in srgb,var(--ganho) 15%,transparent);color:var(--ganho)}
+.st.at{background:color-mix(in srgb,var(--sun) 18%,transparent);color:var(--sun)}
+.st.ex{background:color-mix(in srgb,var(--sun) 14%,transparent);color:var(--sun);cursor:pointer;border:0}
+.st.re{background:color-mix(in srgb,var(--ganho) 14%,transparent);color:var(--ganho);cursor:pointer;border:0}
+.legenda{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);margin:6px 0 2px}
+.legenda i{display:inline-block;width:14px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:5px;border:1px solid color-mix(in srgb,var(--sun) 35%,var(--line));background:color-mix(in srgb,var(--sun) 8%,var(--surface))}
+.kgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:10px}
+.nota{display:flex;flex-wrap:wrap;gap:4px}
+.nota button{width:34px;height:34px;border:1px solid var(--line);background:var(--surface);border-radius:7px;font-weight:600;font-size:13.5px}
+.nota button[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:var(--brand-ink)}
+.nb{display:inline-grid;place-items:center;min-width:28px;height:24px;border-radius:6px;font-weight:700;font-size:12.5px;background:var(--chip);color:var(--muted);padding:0 6px}
+.nb.n9{background:var(--gasto);color:#fff}.nb.n7{background:var(--sun);color:#fff}.nb.n5{background:var(--accent);color:#fff}
+.loginf{width:100%;max-width:360px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 20px}
+.loginf h3{margin:0 0 14px}
+.codigo{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:20px;letter-spacing:.08em;text-align:center;padding:14px;border:1.5px dashed var(--accent);border-radius:10px;background:var(--surface2);margin:12px 0;user-select:all}
+.manual h2{scroll-margin-top:120px}
+.manual .sec{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:10px 0}
+.manual .sec h3{font-size:16.5px;margin:0 0 6px;font-weight:700;letter-spacing:-.01em;scroll-margin-top:120px}
+.manual .sec h4{font-size:14px;margin:12px 0 4px;font-weight:700}
+.manual .sec p,.manual .sec li{font-size:14.5px;color:var(--ink);line-height:1.55}
+.manual .sec ul,.manual .sec ol{padding-left:20px;margin:6px 0}
+.manual .sec .ex{background:var(--surface2);border-left:3px solid var(--accent);padding:8px 12px;border-radius:6px;font-size:13.5px;color:var(--muted);margin:8px 0}
+.indice{columns:2;column-gap:18px;margin:6px 0 0;padding:0;list-style:none}
+.indice li{break-inside:avoid;margin:0 0 2px}
+.indice button{border:0;background:none;padding:5px 0;text-align:left;color:var(--accent);font-size:14px;font-weight:500}
+.indice .g{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:10px 0 2px}
+.manual .sec ul.indice{padding-left:0}
+@media (max-width:520px){.indice{columns:1}}
+
 [hidden]{display:none!important}
 @media (prefers-reduced-motion:no-preference){.sheet .box{animation:up .18s ease-out}@keyframes up{from{transform:translateY(30px);opacity:.6}}}
 @media (min-width:900px){
@@ -392,7 +446,7 @@ const contasCtx=x=>S.cfg.contas.filter(c=>(c.ctx||"pf")===(x===undefined?S.ctx:x
 const cartoesCtx=x=>S.cfg.cartoes.filter(c=>(c.ctx||"pf")===(x===undefined?S.ctx:x));
 const unidadesCtx=x=>{const e=(S.cfg.empresas||[]).find(e=>e.id===(x===undefined?S.ctx:x));return e?(e.unidades||[]):[]};
 function setCtx(x){if(x!=="pf"&&!(S.cfg.empresas||[]).some(e=>e.id===x))x="pf";S.ctx=x;lsSet("nf_ctx",x);document.documentElement.setAttribute("data-ctx",x==="pf"?"pf":"pj");S.filtroUn="Todas";S.hist=null;S.histKey=""}
-function desenharCtx(){const el=$("#ctxBar");if(!el||!S.cfg)return;const ops=[["pf","Pessoal","home"]].concat((S.cfg.empresas||[]).map(e=>[e.id,e.nome,"building"]));
+function desenharCtx(){const el=$("#ctxBar");if(!el||!S.cfg)return;const ops=[["pf","Pessoal","home"]].concat((S.cfg.empresas||[]).map(e=>[e.id,e.nome,"building"])).filter(([k])=>podeCtx(k));
   el.innerHTML=`<div class="ctxseg" role="group" aria-label="Ambiente">${ops.map(([k,n,i])=>`<button type="button" data-ctx="${esc(k)}" aria-pressed="${S.ctx===k}">${ic(i)}<span style="overflow:hidden;text-overflow:ellipsis">${esc(n)}</span></button>`).join("")}</div>`;
   el.querySelectorAll("[data-ctx]").forEach(b=>b.onclick=()=>{if(S.ctx===b.dataset.ctx)return;if(S.editId){toast("Termine ou cancele a edição antes de trocar");return}setCtx(b.dataset.ctx);S.form=novoForm();S.fotosNovas=[];S.fotosAtuais=[];render()})}
 async function migrarV3(d){
@@ -577,7 +631,7 @@ function telaPIN(modo,done){
 
 /* ================= inicialização ================= */
 async function iniciar(){
-  aplicarTema();
+  aplicarTema();cortina();
   if(lsGet("nf_pin"))telaPIN("abrir");
   let db=null;
   if(window.claude&&typeof window.claude.use==="function"){
@@ -596,8 +650,9 @@ async function iniciar(){
     if(d.v===3){await migrarV4(d);return}
     S.cfg=Object.assign(cfgPadrao(),d);
     setCtx(S.ctx);
+    if(!(await verificarLogin()))return;
     if(!S.form.quem)S.form.quem=euNome();
-    atualizarEu();atualizarNome();if(!euNome())perguntarQuem();
+    atualizarEu();atualizarNome();if(!euNome()&&!S.usuario)perguntarQuem();
     refresh(true)});
   Store.watch("lanc",[["plano","==",true]],d=>{S.planos=d;S.hist=null;refresh()});
   Store.watch("lanc",[["plano","==",false],["mes",">=",CUR()]],d=>{S.futSingles=d;refresh()});
@@ -606,7 +661,7 @@ async function iniciar(){
   assinarMes();
 }
 function assinarMes(){if(S.unMes)S.unMes();const m=S.mes;S.mesSingles=[];S.unMes=Store.watch("lanc",[["plano","==",false],["mes","==",m]],d=>{if(m===S.mes){S.mesSingles=d;refresh()}})}
-function refresh(forte){atualizarBadge();if(!S.pronto)return;if(["lancar","ajustes","pdf"].includes(S.tab)&&!forte)return;if(S.tab==="lancar"&&forte&&document.activeElement&&document.activeElement.tagName==="INPUT")return;render()}
+function refresh(forte){atualizarBadge();if(!S.pronto)return;if(["lancar","ajustes","pdf","intel","ajuda","invest"].includes(S.tab)&&!forte)return;if(S.tab==="intel")return;if(S.tab==="lancar"&&forte&&document.activeElement&&document.activeElement.tagName==="INPUT")return;render()}
 async function salvarCfg(parcial){
   Object.assign(S.cfg,clone(parcial));
   try{await Store.update("config","app",parcial)}catch(e){try{await Store.set("config","app",S.cfg)}catch(e2){toast("Não foi possível salvar o ajuste")}}}
@@ -623,19 +678,19 @@ async function migrarV1(old){
 
 /* ================= navegação ================= */
 const TABS=[["lancar","plus","Lançar"],["extrato","list","Extrato"],["painel","chart","Painel"],["agenda","cal","Vencimentos"],["mais","more","Mais"]];
-const SIDE=[["Movimento"],["lancar","plus","Lançar"],["extrato","list","Extrato"],["painel","chart","Painel"],["agenda","cal","Vencimentos"],["Controle"],["cartoes","card","Cartões"],["contas","bank","Contas"],["emprestimos","swap","Empréstimos"],["metas","target","Metas e reservas"],["Sistema"],["pdf","report","Relatórios em PDF"],["ajustes","gear","Ajustes"]];
+const SIDE=[["Movimento"],["lancar","plus","Lançar"],["extrato","list","Extrato"],["painel","chart","Painel"],["agenda","cal","Vencimentos"],["Controle"],["cartoes","card","Cartões"],["contas","bank","Contas"],["emprestimos","swap","Empréstimos"],["metas","target","Metas e reservas"],["Planejamento"],["invest","pie","Plano de investimentos"],["intel","gauge","Inteligência financeira","pj"],["dre","report","DRE anual","pj"],["Sistema"],["pdf","file","Relatórios em PDF"],["ajustes","gear","Ajustes"],["ajuda","msg","Manual do app"]];
 function desenharNav(){
   const n=S.pronto?contAlerta():0,b=k=>k==="agenda"&&n?`<span class="badge">${n}</span>`:"";
-  const atual=k=>S.tab===k||(k==="mais"&&["cartoes","contas","emprestimos","metas","pdf","ajustes"].includes(S.tab));
+  const atual=k=>S.tab===k||(k==="mais"&&["cartoes","contas","emprestimos","metas","pdf","ajustes","invest","intel","dre","ajuda"].includes(S.tab));
   $("#tabNav").innerHTML=TABS.map(([k,i,l])=>`<button type="button" data-tab="${k}" ${atual(k)?'aria-current="page"':""}><span class="i">${ic(i)}</span>${l}${b(k)}</button>`).join("");
   const nm=(S.cfg&&S.cfg.nomeApp)||"Nossas Finanças";
-  $("#sideNav").innerHTML=`<div class="brandname"><span class="lg">${esc(sigla(nm))}</span><span>${esc(nm)}</span></div>`+SIDE.map(([k,i,l])=>i?`<button type="button" data-tab="${k}" ${S.tab===k?'aria-current="page"':""}><span class="i">${ic(i)}</span>${l}${b(k)}</button>`:`<div class="sg">${k}</div>`).join("");
+  $("#sideNav").innerHTML=`<div class="brandname"><span class="lg">${esc(sigla(nm))}</span><span>${esc(nm)}</span></div>`+SIDE.filter(([k,i,l,pj])=>!pj||isPJ()).map(([k,i,l])=>i?`<button type="button" data-tab="${k}" ${S.tab===k?'aria-current="page"':""}><span class="i">${ic(i)}</span>${l}${b(k)}</button>`:`<div class="sg">${k}</div>`).join("");
   $$("nav [data-tab]").forEach(x=>x.onclick=()=>irPara(x.dataset.tab))}
 function atualizarBadge(){desenharNav()}
-function irPara(t){S.tab=t;window.scrollTo(0,0);render()}
+function irPara(t){if(t==="dre")DREV.singles=null;S.tab=t;window.scrollTo(0,0);render()}
 function atualizarNome(){const n=(S.cfg&&S.cfg.nomeApp)||"Nossas Finanças";const h=$("header.top .bn");if(h)h.textContent=n;const lg=$("header.top .lg");if(lg)lg.textContent=sigla(n);document.title=n}
-function atualizarEu(){const n=euNome();$("#euBtn").innerHTML=n?"Você é <b>"+esc(n)+"</b>":"Quem é você?"}
-$("#euBtn").onclick=()=>perguntarQuem(true);
+function atualizarEu(){if(S.usuario){$("#euBtn").innerHTML=ic("user")+" <b>"+esc(S.usuario.nome)+"</b>";return}const n=euNome();$("#euBtn").innerHTML=n?"Você é <b>"+esc(n)+"</b>":"Quem é você?"}
+$("#euBtn").onclick=()=>{if(S.usuario)sheetConta();else perguntarQuem(true)};
 function perguntarQuem(forcar){
   if(!S.cfg||(!forcar&&document.querySelector(".sheet")))return;
   abrirSheet(`<h3>Quem está usando este aparelho?</h3><p class="hint" style="margin-bottom:14px">Os lançamentos já saem com esse nome.</p>
@@ -646,7 +701,8 @@ function render(){
   desenharNav();desenharCtx();
   if(!S.pronto){$("#app").innerHTML='<p class="empty">Carregando…</p>';return}
   $("#savebar").hidden=S.tab!=="lancar";
-  const f={lancar:telaLancar,extrato:telaExtrato,painel:telaPainel,agenda:telaAgenda,mais:telaMais,cartoes:telaCartoes,contas:telaContas,emprestimos:telaEmprestimos,metas:telaMetas,pdf:telaPDF,ajustes:telaAjustes}[S.tab];
+  if(loginCfg()&&!S.usuario){$("#app").innerHTML="";return}
+  const f={lancar:telaLancar,extrato:telaExtrato,painel:telaPainel,agenda:telaAgenda,mais:telaMais,cartoes:telaCartoes,contas:telaContas,emprestimos:telaEmprestimos,metas:telaMetas,pdf:telaPDF,ajustes:telaAjustes,invest:telaInvest,intel:telaIntel,dre:telaDRE,ajuda:telaAjuda}[S.tab]||telaLancar;
   f();
   if(Store.mode==="local"&&S.tab==="painel"){const u=lsGet("nf_ultBackup");const dd=u?Math.round((Date.now()-new Date(u))/864e5):null;if(dd==null||dd>=30)$("#app").insertAdjacentHTML("beforeend",`<p class="note" style="margin-top:18px"><b>Backup:</b> ${dd==null?"você ainda não fez nenhum backup":"o último backup foi há "+dd+" dias"}. Os dados ficam só neste aparelho; baixe uma cópia em Ajustes → Backup e planilha.</p>`)}
   hidratar()}
@@ -1094,7 +1150,7 @@ function telaPainelPJ(){
 
 /* ================= VENCIMENTOS ================= */
 function telaAgenda(){
-  const todos=montarAgenda(),it=todos.filter(i=>S.filtroAg==="tudo"||(i.ctx||"pf")===S.filtroAg),atras=it.filter(i=>i.dias<0),prox=it.filter(i=>i.dias>=0&&i.dias<=10),depois=it.filter(i=>i.dias>10);
+  const todos=montarAgenda().filter(i=>podeCtx(i.ctx||"pf")),it=todos.filter(i=>S.filtroAg==="tudo"||(i.ctx||"pf")===S.filtroAg),atras=it.filter(i=>i.dias<0),prox=it.filter(i=>i.dias>=0&&i.dias<=10),depois=it.filter(i=>i.dias>10);
   const tel=(S.cfg.telefones||{})[euNome()]||"";
   const card=(i,idx)=>{const dt=new Date(i.venc+"T12:00");
     const wa=i.tipo==="emp"&&i.e.dir==="emprestei"?`<button type="button" data-ag="${idx}" data-a="cobrar" style="background:#157347;color:#fff;border-color:#157347">${ic("wa")} Cobrar no WhatsApp</button>`:`<a target="_blank" rel="noopener" href="${esc(linkWA(tel,msgLembrete(i.titulo,i.valor,i.dias,i.venc)))}">${ic("wa")} WhatsApp</a>`;
@@ -1103,7 +1159,7 @@ function telaAgenda(){
       <small class="mut">${esc(i.sub)}</small> ${(i.ctx||"pf")!=="pf"&&S.filtroAg==="tudo"?`<span class="tag pj">${esc(nomeCtx(i.ctx))}</span>`:""}${selo(i.dias)}
       <div class="acts">${acao?`<button type="button" data-ag="${idx}" data-a="ok">${ic("check")} ${acao}</button>`:""}<button type="button" data-ag="${idx}" data-a="ics">${ic("cal")} Calendário</button>${wa}</div></div></div>`};
   const sec=(t,arr)=>arr.length?`<h2>${t}</h2>`+arr.map(i=>card(i,it.indexOf(i))).join(""):"";
-  const ops=[["tudo","Tudo"],["pf","Pessoal"]].concat((S.cfg.empresas||[]).map(e=>[e.id,e.nome]));
+  const ops=[["tudo","Tudo"],["pf","Pessoal"]].concat((S.cfg.empresas||[]).map(e=>[e.id,e.nome])).filter(([k])=>k==="tudo"||podeCtx(k));
   $("#app").innerHTML=`<h1 class="tt">Vencimentos</h1>
   <p class="hint">Contas fixas, parcelas, faturas, empréstimos e metas dos próximos 45 dias${S.filtroAg==="tudo"?", do Pessoal e da empresa":""}.</p>
   <div class="chips" style="margin-top:10px">${ops.map(([k,n])=>`<button type="button" class="chip" data-fa="${esc(k)}" aria-pressed="${S.filtroAg===k}">${esc(n)}${k!=="tudo"?` <span class="mut" style="font-size:12px">${todos.filter(i=>(i.ctx||"pf")===k&&i.dias<=10).length||""}</span>`:""}</button>`).join("")}</div>
@@ -1133,7 +1189,7 @@ function telaAgenda(){
 /* ================= MAIS ================= */
 function telaMais(){
   const pj=isPJ();
-  const it=[["cartoes","card","Cartões de crédito","Limite, uso e faturas"],["contas","bank",pj?"Contas e caixa":"Contas e cheque especial","Saldo, limite, juros, IOF e tarifa"],["emprestimos","swap",pj?"Empréstimos e financiamentos":"Empréstimos",pj?"Capital de giro, sócios e terceiros":"Quem te deve e o que você deve"],["metas","target",pj?"Reservas da empresa":"Metas de economia","Quanto guardar por mês"],["pdf","report","Relatórios em PDF",pj?"DRE, lançamentos e comprovantes":"Qualquer período, com comprovantes"],["ajustes","gear","Ajustes","Empresa, categorias, pessoas, segurança e backup"]];
+  const it=[["cartoes","card","Cartões de crédito","Limite, uso e faturas"],["contas","bank",pj?"Contas e caixa":"Contas e cheque especial","Saldo, limite, juros, IOF e tarifa"],["emprestimos","swap",pj?"Empréstimos e financiamentos":"Empréstimos",pj?"Capital de giro, sócios e terceiros":"Quem te deve e o que você deve"],["metas","target",pj?"Reservas da empresa":"Metas de economia","Quanto guardar por mês"],["invest","pie","Plano de investimentos","Onde investir, nota de 0 a 10 e ordem de prioridade"]].concat(pj?[["intel","gauge","Inteligência financeira","Produção, margem, caixa, cenário e indicadores"],["dre","report","DRE anual","12 meses, total do ano e % da receita"]]:[]).concat([["pdf","file","Relatórios em PDF",pj?"DRE, lançamentos e comprovantes":"Qualquer período, com comprovantes"],["ajustes","gear","Ajustes","Empresa, categorias, login, segurança e backup"],["ajuda","msg","Manual do app","Como funciona cada aba, com índice"]]);
   $("#app").innerHTML=`<div class="ctxlbl">${esc(nomeCtx(S.ctx))}</div><h1 class="tt">Mais</h1><div class="menu" style="margin-top:12px">${it.map(([k,i,n,s])=>`<button type="button" class="mi" data-go="${k}"><span>${ic(i)}</span><span>${n}<small>${s}</small></span></button>`).join("")}</div>`;
   $$("[data-go]").forEach(b=>b.onclick=()=>irPara(b.dataset.go))}
 
@@ -1521,7 +1577,7 @@ function telaAjustes(){
   const b=(id,i,t,s)=>`<button type="button" class="mi" id="${id}"><span>${ic(i)}</span><span>${esc(t)}<small>${esc(s)}</small></span></button>`;
   $("#app").innerHTML=`<h1 class="tt">Ajustes</h1><p class="hint">Categorias, limites, formas de pagamento, contas e cartões seguem o ambiente selecionado no topo (${esc(amb)}).</p><div class="dash" style="margin-top:6px"><div class="menu">
   <h2>Empresa</h2>
-  ${b("aEmp","building","Empresas e unidades",(S.cfg.empresas||[]).map(e=>e.nome+((e.unidades||[]).length?" ("+e.unidades.length+" unidade"+(e.unidades.length>1?"s":"")+")":"")).join(", ")||"Nenhuma")}
+  ${!ehAdmin()?"":b("aEmp","building","Empresas e unidades",(S.cfg.empresas||[]).map(e=>e.nome+((e.unidades||[]).length?" ("+e.unidades.length+" unidade"+(e.unidades.length>1?"s":"")+")":"")).join(", ")||"Nenhuma")}
   <h2>Cadastros · ${esc(amb)}</h2>
   ${b("aCats","tags","Categorias",catsCtx().length+" categorias"+(pj?": grupo do DRE, limite e detalhes":": limite e detalhes"))}
   ${b("aLim","gauge","Limites do mês","Orçamento de cada categoria de "+(pj?"despesa":"saída"))}
@@ -1538,21 +1594,23 @@ function telaAjustes(){
   <h2>Aparência</h2><div class="card"><div class="seg" role="group">${[["auto","Automático"],["claro","Claro"],["escuro","Escuro"]].map(([k,n])=>`<button type="button" data-tema="${k}" aria-pressed="${tema===k}">${n}</button>`).join("")}</div>
   <p class="hint" style="margin:12px 0 6px">Identificação das categorias</p><div class="seg" role="group">${[["sigla","Siglas"],["emoji","Ícones coloridos"]].map(([k,n])=>`<button type="button" data-ie="${k}" aria-pressed="${(S.cfg.iconeEstilo||"sigla")===k}">${n}</button>`).join("")}</div></div>
   <h2>Segurança e dados</h2>
+  ${ehAdmin()?b("aLogin","key","Login e senha",loginCfg()?loginCfg().usuarios.length+" usuário(s) · login ativo":"Desativado: pedir usuário e senha ao abrir"):""}
   ${b("aPin","lock",pin?"PIN ativado":"Criar PIN","Trava do app neste aparelho")}
-  ${b("aEu","user","Quem usa este aparelho",euNome()||"Não definido")}
-  ${b("aBk","dl","Backup e planilha","Baixar cópia, exportar para Excel ou restaurar")}
+  ${S.usuario?b("aConta","user","Minha conta",S.usuario.nome+" · trocar senha ou sair"):b("aEu","user","Quem usa este aparelho",euNome()||"Não definido")}
+  ${ehAdmin()?b("aBk","dl","Backup e planilha","Baixar cópia, exportar para Excel ou restaurar"):""}
+  ${b("aAjuda","msg","Manual do app","Como funciona cada aba, item por item")}
   <h2>Onde ficam os dados</h2><div class="card"><p style="margin:0" class="mut">${Store.mode==="cloud"?"Este link é da sua família: os dados ficam na nuvem do Claude e aparecem em todos os aparelhos de vocês. Para usar sem o Claude, abra a versão independente e restaure um backup feito aqui.":"Versão independente: funciona sem conta no Claude e os dados ficam salvos só neste aparelho e navegador. Faça backup com frequência; para levar os dados a outro aparelho, restaure o backup lá."}</p></div>
   </div></div>`;
   $$("[data-ie]").forEach(x=>x.onclick=async()=>{await salvarCfg({iconeEstilo:x.dataset.ie});telaAjustes()});
-  $("#aEmp").onclick=sheetEmpresas;
+  if($("#aEmp"))$("#aEmp").onclick=sheetEmpresas;if($("#aLogin"))$("#aLogin").onclick=sheetLogin;if($("#aConta"))$("#aConta").onclick=sheetConta;$("#aAjuda").onclick=()=>irPara("ajuda");
   $$("[data-tema]").forEach(x=>x.onclick=()=>{lsSet("nf_tema",x.dataset.tema);aplicarTema();telaAjustes()});
   $("#aNome").onclick=()=>abrirSheet(`${fechar}<h3>Nome do app</h3><input class="field" id="nN" value="${esc(S.cfg.nomeApp||"Nossas Finanças")}" maxlength="40" aria-label="Nome do app"><button class="btn" id="nOk" type="button" style="margin-top:12px">Salvar</button>`,box=>{ligaFechar(box);box.querySelector("#nOk").onclick=async()=>{const n=box.querySelector("#nN").value.trim()||"Nossas Finanças";fecharSheet();await salvarCfg({nomeApp:n});atualizarNome();render()}});
   $("#aCats").onclick=listaCats;$("#aLim").onclick=sheetLimites;$("#aFormas").onclick=sheetFormas;$("#aPess").onclick=sheetPessoas;
   $("#aCart").onclick=()=>irPara("cartoes");$("#aCont").onclick=()=>irPara("contas");
   $("#aRegras").onclick=()=>abrirSheet(`${fechar}<h3>Regras dos lançamentos</h3><label class="ck"><input type="checkbox" id="rC" ${S.cfg.exigirComprovante!==false?"checked":""}> Exigir foto do comprovante</label><p class="hint">Quando ligado, o app só salva compras pagas, no cartão ou parceladas com a foto do comprovante. Contas fixas e contas “a pagar” podem ser salvas sem foto; o comprovante é pedido na hora de marcar como paga.</p><button class="btn" id="rOk" type="button" style="margin-top:12px">Salvar</button>`,box=>{ligaFechar(box);box.querySelector("#rOk").onclick=async()=>{fecharSheet();await salvarCfg({exigirComprovante:box.querySelector("#rC").checked});render()}});
   $("#aPin").onclick=()=>{if(!lsGet("nf_pin"))return telaPIN("criar",()=>render());abrirSheet(`${fechar}<h3>PIN deste aparelho</h3><div class="btns"><button class="btn ghost" id="pT" type="button">Trocar PIN</button><button class="btn danger" id="pD" type="button">Desativar</button></div>`,box=>{ligaFechar(box);box.querySelector("#pT").onclick=()=>{fecharSheet();telaPIN("abrir",ok=>ok&&telaPIN("criar",()=>render()))};box.querySelector("#pD").onclick=()=>{fecharSheet();telaPIN("abrir",ok=>{if(ok){lsSet("nf_pin",null);toast("PIN desativado");render()}})}})};
-  $("#aEu").onclick=()=>perguntarQuem(true);
-  $("#aBk").onclick=sheetBackup;$("#aMsg").onclick=sheetMensagens;$("#aRec").onclick=sheetReceber}
+  if($("#aEu"))$("#aEu").onclick=()=>perguntarQuem(true);
+  if($("#aBk"))$("#aBk").onclick=sheetBackup;$("#aMsg").onclick=sheetMensagens;$("#aRec").onclick=sheetReceber}
 async function exportarCSV(){
   const docs=await Store.get("lanc",[]),fim=addMonth(CUR(),12);
   const rows=[["Ambiente","Unidade","Vencimento","Data da compra","Tipo","Fixa/Variável","Descrição","Categoria","Grupo DRE","Fornecedor/Cliente","Documento","Quem","Forma","Conta/Cartão","Parcela","Valor","Situação","Local","Detalhes"]];
@@ -1568,9 +1626,9 @@ async function restaurarDados(d){
   if(Store.mode==="local"){for(const[id,du]of Object.entries(fotos)){try{const db=await Fotos.idb(),bl=await d2b(du);await new Promise((res,rej)=>{const t=db.transaction("f","readwrite");t.objectStore("f").put(bl,id);t.oncomplete=res;t.onerror=()=>rej(t.error)})}catch(_){}}}
   else if(S.assets){const mapa={};for(const[id,du]of Object.entries(fotos)){if(!String(id).startsWith("loc_"))continue;try{mapa[id]=await Fotos.put(await d2b(du))}catch(_){}}
     if(Object.keys(mapa).length){const tr=a=>(a||[]).map(x=>mapa[x]||x);(d.lanc||[]).forEach(l=>{l.fotos=tr(l.fotos);l.fotosPag=tr(l.fotosPag);if(l.foto)l.foto=mapa[l.foto]||l.foto;Object.values(l.aj||{}).forEach(a=>{if(a&&a.fotos)a.fotos=tr(a.fotos)})})}}
-  if(Store.mode==="local"){Local.data={config:{app:d.config},lanc:{},emp:{},metas:{}};["lanc","emp","metas"].forEach(c=>(d[c]||[]).forEach(x=>{const y=Object.assign({},x),id=y.id;delete y.id;Local.data[c][id]=y}));Local.save();["config","lanc","emp","metas"].forEach(c=>Local.notify(c));return}
+  if(Store.mode==="local"){Local.data={config:{app:d.config},lanc:{},emp:{},metas:{},invest:{},intel:{},intelmes:{}};["lanc","emp","metas","invest","intel","intelmes"].forEach(c=>(d[c]||[]).forEach(x=>{const y=Object.assign({},x),id=y.id;delete y.id;Local.data[c][id]=y}));Local.save();["config","lanc","emp","metas","invest","intel","intelmes"].forEach(c=>Local.notify(c));return}
   const cfg=Object.assign({},d.config);cfg.vinculos=Object.assign({},d.config.vinculos||{},S.cfg.vinculos||{});await Store.set("config","app",cfg);
-  for(const c of["lanc","emp","metas"])for(const x of d[c]||[]){const y=Object.assign({},x),id=y.id;delete y.id;await Store.set(c,id,y)}}
+  for(const c of["lanc","emp","metas","invest","intel","intelmes"])for(const x of d[c]||[]){const y=Object.assign({},x),id=y.id;delete y.id;await Store.set(c,id,y)}}
 function sheetBackup(){
   abrirSheet(`${fechar}<h3>Backup e planilha</h3>
   <button class="btn" id="bJ" type="button">Baixar backup completo (.json)</button>
@@ -1583,7 +1641,7 @@ function sheetBackup(){
   <button class="btn danger" id="bOk" type="button" hidden style="margin-top:8px"></button>`,box=>{
     ligaFechar(box);let dados=null;
     box.querySelector("#bJ").onclick=async()=>{const bt=box.querySelector("#bJ");bt.disabled=true;const tx=bt.textContent;bt.textContent="Preparando…";
-      try{const d={app:"nossas-financas",versao:5,gerado:new Date().toISOString(),config:S.cfg,lanc:await Store.get("lanc",[]),emp:await Store.get("emp",[]),metas:await Store.get("metas",[])};
+      try{const d={app:"nossas-financas",versao:5,gerado:new Date().toISOString(),config:S.cfg,lanc:await Store.get("lanc",[]),emp:await Store.get("emp",[]),metas:await Store.get("metas",[]),invest:await Store.get("invest",[]),intel:await Store.get("intel",[]),intelmes:await Store.get("intelmes",[])};
       if(box.querySelector("#bF").checked){d.fotos={};let n=0;for(const fid of idsFotos(d.lanc)){try{d.fotos[fid]=await b2d(await Fotos.blob(fid));n++;bt.textContent="Fotos: "+n}catch(_){}}}
       const st=await baixar("backup-financas-"+HOJE()+".json",new Blob([JSON.stringify(d)],{type:"application/json"}));if(st==="saved"){lsSet("nf_ultBackup",new Date().toISOString());toast("Backup salvo")}}catch(e){toast("Não foi possível gerar o backup")}
       bt.disabled=false;bt.textContent=tx};
@@ -1676,6 +1734,779 @@ function sheetPessoas(){
       box.querySelectorAll("[data-pnm]").forEach(x=>{const i=+x.dataset.pnm,n=x.value.trim()||a[i],tel=box.querySelector(`[data-ptl="${i}"]`).value.trim();
         if(n!==a[i]&&!a.includes(n)){ren.push([a[i],n]);Object.keys(v).forEach(k=>{if(v[k]===a[i])v[k]=n});if(lsGet("nf_eu")===a[i])lsSet("nf_eu",n);a[i]=n}t[a[i]]=tel});
       fecharSheet();await salvarCfg({pessoas:a,telefones:t,vinculos:v});for(const[o,n]of ren)await renomear("quem",o,n);atualizarEu();toast("Pessoas salvas");render()}})}
+
+/* ================= INTELIGÊNCIA FINANCEIRA: motor de cálculo (modelo VAZK) ================= */
+const SIMPLES_TAB=[[0,.06,0,.04,0],[180000.01,.112,9360,.073,5940],[360000.01,.135,17640,.095,13860],[720000.01,.16,35640,.107,22500],[1800000.01,.21,125640,.143,87300],[3600000.01,.33,648000,.19,378000]];
+const ENC_REAL={rbt12:[],socios:["Sócio 1","Sócio 2"]};
+const N0=v=>Number(v)||0;
+const FER=1/12*4/3,DEC=1/12;
+function aliqSimples(rbt,anexo,P){
+  const im=P.imposto||{};const ai=anexo==="III"?1:3;
+  if(rbt>N0(im.teto||4800000))return N0(im.presumido);
+  if(rbt<=0)return SIMPLES_TAB[0][ai];
+  let f=SIMPLES_TAB[0];for(const x of SIMPLES_TAB)if(rbt>=x[0])f=x;
+  return(rbt*f[ai]-f[ai+1])/rbt}
+function custoPessoa(e,P){
+  const c=P.clt||{};if(e.vinculo!=="CLT")return{J:0,K:0,L:0,M:0,fer:0,dec:0,fgts:0};
+  const s=N0(e.salario),fer=s*FER,dec=s*DEC,fgts=(s+fer+dec)*N0(c.fgts),J=s+fer+dec+fgts,K=Math.max(0,N0(c.vt)-s*N0(c.vtDesc)),L=N0(c.alim);
+  return{J,K,L,M:J+K+L,fer,dec,fgts}}
+function taxaEfetiva(P){const r=P.receb||{};return N0(r.deb)*N0(r.taxaDeb)+N0(r.cred)*N0(r.taxaCred)}
+function aliqUnid(P,uns){const im=P.imposto||{},rb=im.rbt12||{},sep=im.separados!==false;const tot=uns.reduce((a,u)=>a+N0(rb[u]),0);
+  const o={};uns.forEach(u=>{const base=sep?N0(rb[u]):tot;o[u]={base,serv:aliqSimples(base,"III",P),prod:aliqSimples(base,"I",P)}});return o}
+function calcIntel(P,M,uns){
+  M=M||{};const S_=P.servicos||[],E_=P.equipe||[],pr=P.prod||{},taxa=taxaEfetiva(P),al=aliqUnid(P,uns);
+  const z=()=>{const o={};uns.forEach(u=>o[u]=0);return o};
+  const sum=o=>uns.reduce((a,u)=>a+N0(o[u]),0);
+  // produção por profissional
+  const profs=E_.map(e=>{const at=(M.prod||{})[e.id]||{};let n=0,fat=0,parc=0,h=0,prod=0;const porS={};
+    S_.forEach(s=>{const q=N0(at[s.id]);porS[s.id]=q;n+=q;fat+=q*N0(s.preco);parc+=e.vinculo==="Parceiro"?q*N0(s.preco)*(1-N0(s.salao)):0;h+=q*N0(s.tempo)/60;prod+=q*N0(s.produto)});
+    return{e,porS,n,fat,parc,salao:fat-parc,h,prod,custo:custoPessoa(e,P)}});
+  const porU=(fn)=>{const o=z();profs.forEach(p=>{if(o[p.e.un]!==undefined)o[p.e.un]+=fn(p)});return o};
+  const recServ=S_.map(s=>{const v=z();profs.forEach(p=>{if(v[p.e.un]!==undefined)v[p.e.un]+=p.porS[s.id]*N0(s.preco)});return{nome:s.nome,v}});
+  const venda=z();uns.forEach(u=>venda[u]=N0((M.vendaProd||{})[u]));
+  const fat=z();uns.forEach(u=>fat[u]=recServ.reduce((a,r)=>a+r.v[u],0)+venda[u]);
+  const parc=porU(p=>p.parc),propria=z();uns.forEach(u=>propria[u]=fat[u]-parc[u]);
+  const atend=porU(p=>p.n),horasOc=porU(p=>p.h),prodUsado=porU(p=>p.prod);
+  const L=[];const add=(g,nome,tipo,varia,v,obs)=>L.push({g,nome,tipo,varia,v,obs:obs||""});
+  (P.socios||[]).forEach(s=>{const v=z();uns.forEach(u=>v[u]=N0(s.prolabore)*N0((s.rateio||{})[u]));add("sh","Pró-labore — "+s.nome,"Despesa",false,v,"Definido nas premissas")});
+  add("sh","Repasse aos profissionais parceiros","Custo",true,parc,"Sai da produção de cada parceiro");
+  const grp=g=>{const v=z();profs.forEach(p=>{if(p.e.grupo===g&&v[p.e.un]!==undefined)v[p.e.un]+=p.custo.J});return v};
+  add("sh","Profissionais CLT (salário + FGTS + férias + 13º)","Custo",false,grp("Profissional"));
+  add("sh","Recepcionista (salário + encargos)","Despesa",false,grp("Recepcionista"));
+  add("sh","Auxiliar (salário + encargos)","Custo",false,grp("Auxiliar"));
+  add("sh","Transporte (vale-transporte)","Despesa",false,porU(p=>p.custo.K));
+  add("sh","Alimentação","Despesa",false,porU(p=>p.custo.L));
+  const com=z();uns.forEach(u=>com[u]=venda[u]*N0(pr.comissao));add("sh","Comissão sobre venda de produtos","Custo",true,com);
+  add("reg","Produtos usados nos serviços","Custo",true,prodUsado,"Atendimentos × produto por serviço");
+  const desc=z();uns.forEach(u=>desc[u]=atend[u]*N0(pr.descartavel));add("reg","Descartáveis","Custo",true,desc);
+  const cmv=z();uns.forEach(u=>cmv[u]=venda[u]*N0(pr.custo));add("reg","Produtos para revenda (custo do que foi vendido)","Custo",true,cmv);
+  const maq=z();uns.forEach(u=>maq[u]=fat[u]*taxa);add("reg","Taxa da maquininha","Despesa",true,maq,"Faturamento × taxa efetiva");
+  const imp=z();uns.forEach(u=>imp[u]=(propria[u]-venda[u])*al[u].serv+venda[u]*al[u].prod);add("reg","Imposto (Simples Nacional)","Imposto",true,imp,"Só sobre a parte do salão");
+  (M.regulares||[]).forEach(r=>{const v=z();uns.forEach(u=>v[u]=N0((r.v||{})[u]));add("reg",r.nome,r.tipo||"Despesa",!!r.varia,v,"",r)});
+  (M.naoReg||[]).forEach(r=>{const v=z();uns.forEach(u=>v[u]=N0((r.v||{})[u]));add("nreg",r.nome,"Despesa",false,v)});
+  const tg=g=>{const o=z();L.filter(l=>l.g===g).forEach(l=>uns.forEach(u=>o[u]+=l.v[u]));return o};
+  const SH=tg("sh"),REG=tg("reg"),NREG=tg("nreg"),SAI=z(),RES=z(),ML=z();
+  uns.forEach(u=>{SAI[u]=SH[u]+REG[u]+NREG[u];RES[u]=fat[u]-SAI[u];ML[u]=fat[u]?RES[u]/fat[u]:0});
+  const by=f=>{const o=z();L.filter(f).forEach(l=>uns.forEach(u=>o[u]+=l.v[u]));return o};
+  const custos=by(l=>l.tipo==="Custo"),variaveis=by(l=>l.varia),fixas=by(l=>!l.varia);
+  const geral=P.geral||{};const cx=M.caixa||{};
+  const U={};uns.forEach(u=>{
+    const g=geral[u]||{},hd=N0(g.postos)*N0(g.horasDia)*N0(g.dias);
+    const plDef=(P.socios||[]).reduce((a,s)=>a+N0(s.prolabore)*N0((s.rateio||{})[u]),0);
+    const plPago=(P.socios||[]).reduce((a,s,i)=>a+N0(((cx.plPago||{})[i]||{})[u]),0);
+    const ini=(M.caixaIni&&M.caixaIni[u]!=null&&M.caixaIni[u]!=="")?N0(M.caixaIni[u]):N0(g.caixaIni),ap=N0((cx.aporte||{})[u]),ret=N0((cx.retirada||{})[u]);
+    const fim=ini+RES[u]+(plDef-plPago)+ap-ret;
+    const mc=fat[u]-variaveis[u],mcp=fat[u]?mc/fat[u]:0,pe=mcp<=0?0:fixas[u]/mcp;
+    U[u]={fat:fat[u],venda:venda[u],parc:parc[u],propria:propria[u],SH:SH[u],REG:REG[u],NREG:NREG[u],sai:SAI[u],res:RES[u],ml:ML[u],
+      custos:custos[u],mb:fat[u]-custos[u],mbp:fat[u]?(fat[u]-custos[u])/fat[u]:0,variaveis:variaveis[u],mc,mcp,fixas:fixas[u],lucro:mc-fixas[u],pe,folga:fat[u]-pe,
+      hd,ho:horasOc[u],ocup:hd?horasOc[u]/hd:0,custoHora:hd?fixas[u]/hd:0,fatHora:horasOc[u]?(fat[u]-venda[u])/horasOc[u]:0,atend:atend[u],ticket:atend[u]?fat[u]/atend[u]:0,
+      ini,plDef,plPago,naoPago:plDef-plPago,aporte:ap,retirada:ret,fim,reserva:fixas[u]?fim/fixas[u]:0,meta:N0(g.meta),aliqServ:al[u].serv,aliqProd:al[u].prod}});
+  const T={};["fat","venda","parc","propria","SH","REG","NREG","sai","res","custos","variaveis","fixas","hd","ho","atend","ini","plDef","plPago","naoPago","aporte","retirada","fim","meta"].forEach(k=>T[k]=uns.reduce((a,u)=>a+U[u][k],0));
+  T.ml=T.fat?T.res/T.fat:0;T.mb=T.fat-T.custos;T.mbp=T.fat?T.mb/T.fat:0;T.mc=T.fat-T.variaveis;T.mcp=T.fat?T.mc/T.fat:0;T.lucro=T.mc-T.fixas;T.pe=T.mcp<=0?0:T.fixas/T.mcp;T.folga=T.fat-T.pe;
+  T.ocup=T.hd?T.ho/T.hd:0;T.custoHora=T.hd?T.fixas/T.hd:0;T.fatHora=T.ho?(T.fat-T.venda)/T.ho:0;T.ticket=T.atend?T.fat/T.atend:0;T.reserva=T.fixas?T.fim/T.fixas:0;
+  const avgServ=uns.length?uns.reduce((a,u)=>a+al[u].serv,0)/uns.length:0;
+  const margemServ=S_.map(s=>{const pc=N0(s.preco),C=N0(s.produto)+N0(pr.descartavel),D=pc*avgServ,E=pc*taxa,F=pc*(1-N0(s.salao)),G=pc-C-D*N0(s.salao)-E-F,I=N0(s.tempo)/60*T.custoHora,J=pc-C-D-E-I;
+    return{s,preco:pc,C,D,E,F,G,H:pc?G/pc:0,I,J,K:pc?J/pc:0}});
+  const plSocio=(P.socios||[]).map((s,i)=>({nome:s.nome,def:N0(s.prolabore),pago:uns.reduce((a,u)=>a+N0(((cx.plPago||{})[i]||{})[u]),0)}));
+  return{uns,profs,recServ,L,U,T,taxa,al,avgServ,margemServ,plSocio,plCompleto:plSocio.every(x=>x.pago>=x.def)}}
+function simuladorPreco(R,P,sim){
+  const ch=sim.loja&&R.U[sim.loja]?R.U[sim.loja].custoHora:R.T.custoHora;const pp=sim.parceiro?N0(sim.pctParc):0;
+  const cad=ch*N0(sim.tempo)/60,prod=N0(sim.produto)+N0((P.prod||{}).descartavel),pct=pp+R.avgServ*(1-pp)+R.taxa+N0(sim.lucro);
+  return{ch,cad,prod,pct,preco:pct>=1?null:(cad+prod)/(1-pct)}}
+function calcCenario(R,P,C,hist){
+  const uns=R.uns,T=R.T,nU=Math.max(1,uns.length),geral=P.geral||{};
+  const B9=uns.length?uns.reduce((a,u)=>a+N0((geral[u]||{}).horasDia)*N0((geral[u]||{}).dias),0)/uns.length:0;
+  const nr=(hist||[]).filter(h=>h&&h.nreg!=null);const B16=nr.length?nr.reduce((a,h)=>a+N0(h.nreg),0)/nr.length/nU:0;
+  const fatServ=T.fat-T.venda,B20=T.fat?T.venda/T.fat:0,B21=T.fatHora;
+  const fatParc=R.profs.filter(p=>p.e.vinculo==="Parceiro").reduce((a,p)=>a+p.fat,0);
+  const B22=fatServ?fatParc/fatServ:0,B23=fatParc?T.parc/fatParc:0;
+  const lin=n=>R.L.find(l=>l.nome===n);const sumL=l=>l?uns.reduce((a,u)=>a+l.v[u],0):0;
+  const B24=fatServ?(sumL(lin("Produtos usados nos serviços"))+sumL(lin("Descartáveis")))/fatServ:0;
+  const avgJ=(g,v)=>{const xs=R.profs.filter(p=>p.e.grupo===g&&(!v||p.e.vinculo===v)&&p.e.vinculo==="CLT").map(p=>p.custo.J);return xs.length?xs.reduce((a,b)=>a+b,0)/xs.length:0};
+  const B25=avgJ("Profissional","CLT"),B26=avgJ("Recepcionista"),B27=avgJ("Auxiliar"),cl=P.clt||{},B28=N0(cl.vt)+N0(cl.alim);
+  const regFix=R.L.filter(l=>l.g==="reg"&&!l.varia&&!/marketing/i.test(l.nome)&&!["Produtos usados nos serviços","Descartáveis","Produtos para revenda (custo do que foi vendido)","Taxa da maquininha","Imposto (Simples Nacional)"].includes(l.nome));
+  const B29=regFix.reduce((a,l)=>a+sumL(l),0)/nU;
+  const C32=C.periodo==="Anual"?N0(C.alvo)/12:N0(C.alvo),C33=C32*(1-B20),C34=B21?C33/B21:0,C35=Math.ceil(B9*N0(C.ocup)?C34/(B9*N0(C.ocup)):0),C36=Math.max(1,Math.ceil(N0(C.postos)?C35/N0(C.postos):0));
+  const C37=Math.ceil(C35*(1-B22)),C38=C35-C37,C39=C37+C36*(N0(C.recep)+N0(C.aux))+(C36>=3?1:0);
+  const sep=(P.imposto||{}).separados!==false,C40=C32*12*(1-B22*B23*(1-B20))/(sep?C36:1),C41=aliqSimples(C40,"III",P),C42=aliqSimples(C40,"I",P);
+  const acima=C40>N0((P.imposto||{}).teto||4800000),pr=P.prod||{};
+  const sh=[].concat((C.pl||[]).map((v,i)=>["Pró-labore "+(((P.socios||[])[i]||{}).nome||("sócio "+(i+1))),sumL(lin("Pró-labore — "+(((P.socios||[])[i]||{}).nome||""))),N0(v)]),[
+    ["Repasse aos parceiros",sumL(lin("Repasse aos profissionais parceiros")),C33*B22*B23],
+    ["Profissionais CLT",sumL(lin("Profissionais CLT (salário + FGTS + férias + 13º)")),C37*B25],
+    ["Recepcionistas",sumL(lin("Recepcionista (salário + encargos)")),C36*N0(C.recep)*B26],
+    ["Auxiliares",sumL(lin("Auxiliar (salário + encargos)")),C36*N0(C.aux)*B27],
+    ["Gerente geral",0,C36>=3?N0(C.gerente)*(1+FER+DEC)*(1+N0(cl.fgts)):0],
+    ["Transporte e alimentação",sumL(lin("Transporte (vale-transporte)"))+sumL(lin("Alimentação")),C39*B28],
+    ["Comissão sobre produtos",sumL(lin("Comissão sobre venda de produtos")),(C32-C33)*N0(pr.comissao)]]);
+  const regAtual=n=>sumL(lin(n));
+  const reg=[["Produtos usados + descartáveis",regAtual("Produtos usados nos serviços")+regAtual("Descartáveis"),C33*B24],
+    ["Produtos para revenda",regAtual("Produtos para revenda (custo do que foi vendido)"),(C32-C33)*N0(pr.custo)],
+    ["Taxa da maquininha",regAtual("Taxa da maquininha"),C32*R.taxa],
+    ["Imposto",regAtual("Imposto (Simples Nacional)"),(C33*(1-B22*B23))*C41+(C32-C33)*C42],
+    ["Contas fixas das lojas",regFix.reduce((a,l)=>a+sumL(l),0),C36*B29],
+    ["Marketing",R.L.filter(l=>l.g==="reg"&&/marketing/i.test(l.nome)).reduce((a,l)=>a+sumL(l),0),C32*N0(C.mkt)]];
+  const nreg=[["Não regulares",T.NREG,C36*B16]];
+  const tot=a=>[a.reduce((x,r)=>x+r[1],0),a.reduce((x,r)=>x+r[2],0)];
+  const tSH=tot(sh),tREG=tot(reg),tNR=tot(nreg),tS=[tSH[0]+tREG[0]+tNR[0],tSH[1]+tREG[1]+tNR[1]];
+  return{base:{B9,B16,B19:T.fat,B20,B21,B22,B23,B24,B25,B26,B27,B28,B29},op:{C32,C33,C34,C35,C36,C37,C38,C39,C40,C41,C42,acima},sh,reg,nreg,tSH,tREG,tNR,tS,
+    lucro:[T.fat-tS[0],C32-tS[1]],margem:[T.fat?(T.fat-tS[0])/T.fat:0,C32?(C32-tS[1])/C32:0],fat:[T.fat,C32]}}
+const DECISAO={"Produção com margem":"MANTER e proteger na agenda","Produção sem margem":"REVISAR: fazer só se gerar margem","Ocupação obrigatória":"DELEGAR","Ocupação dispensável":"ELIMINAR"};
+function intelSeed(emp){
+  const uns=(emp.unidades||[]).map(u=>u.nome);if(!uns.length)uns.push("Geral");const u0=uns[0]||"Unidade 1",u1=uns[1]||uns[0]||"Unidade 1";
+  const V=(a,b)=>{const o={};if(uns.length>=2){o[u0]=a;o[u1]=b}else if(uns.length===1)o[u0]=a+b;return o};
+  const servs=[["Progressiva",250,180,40,.5],["Coloração / mechas",220,150,45,.5],["Corte e escova",80,60,5,.5],["Tratamentos capilares",100,60,15,.5],["Manicure e pedicure",50,60,4,.4],["Estética (sobrancelha, depilação, pele)",90,50,10,.5]].map(([nome,preco,tempo,produto,salao],i)=>({id:"s"+(i+1),nome,preco,tempo,produto,salao}));
+  const eq=[["Cabeleireira","Profissional",2000],["Cabeleireira (Encantadora)","Profissional",2000],["Auxiliar de cabeleireira","Auxiliar",1650],["Manicure","Profissional",1650],["Esteticista","Profissional",1800],["Recepcionista","Recepcionista",1700]];
+  const equipe=[];[u0,u1].forEach((u,k)=>{if(k===1&&uns.length<2)return;eq.forEach(([funcao,grupo,salario],i)=>equipe.push({id:"p"+(k*6+i+1),nome:"Profissional "+String(k*6+i+1).padStart(2,"0"),un:u,funcao,grupo,vinculo:"CLT",salario}))});
+  const geral={};uns.forEach((u,i)=>geral[u]={meta:N0((emp.unidades[i]||{}).meta)||50000,postos:5,horasDia:9,dias:25,caixaIni:i===0?8000:4000});
+  const rbt={};uns.forEach((u,i)=>rbt[u]=ENC_REAL.rbt12[i]||0);
+  const P={v:1,geral,socios:ENC_REAL.socios.map(nome=>({nome,prolabore:4500,rateio:V(.5,.5)})),
+    clt:{fgts:.08,vt:250,vtDesc:.06,alim:250},receb:{pix:.4,din:.05,deb:.2,cred:.35,taxaDeb:.015,taxaCred:.035},
+    prod:{custo:.55,comissao:.1,descartavel:2},imposto:{separados:true,rbt12:rbt,teto:4800000,presumido:.1633},servicos:servs,equipe,
+    status:{geral:"EXEMPLO",socios:"EXEMPLO",clt:"EXEMPLO",receb:"EXEMPLO",prod:"EXEMPLO",imposto:ENC_REAL.rbt12[0]?"REAL":"EXEMPLO",servicos:"EXEMPLO",equipe:"EXEMPLO"},
+    indicMetas:{ticket:130,ocup:.7,margem:.15,sh:.45,retorno:.55,reclam:3,nps:75,enps:50},
+    previs:{},reativ:{base:3000,inativo:.55,volta:.08},quinzena:{},semanal:[],
+    cenario:{alvo:1000000,periodo:"Mensal",ocup:.7,postos:5,pl:[8000,8000],recep:1,aux:1,gerente:4500,mkt:.03},
+    produt:{socios:ENC_REAL.socios.map(nome=>({nome,renda:15000,horas:50})),tarefas:[
+      ["Fechamento financeiro semanal e análise da planilha",0,3,"Produção com margem",""],["Reunião semanal com o time de cada loja",0,2,"Produção com margem",""],["Escrever processos (POPs) e checklist de loja",0,4,"Produção com margem",""],
+      ["Desenvolver o app de gestão",0,10,"Produção sem margem","Congelar até a fase de construção"],["Lançar contas a pagar e conferir comprovantes",0,5,"Ocupação obrigatória","Recepção com conferência semanal"],["Resolver conflitos do dia a dia da equipe",0,6,"Ocupação obrigatória","Supervisora de loja, com regra clara"],
+      ["Responder WhatsApp de agendamento",1,10,"Ocupação obrigatória","Recepcionista com script"],["Campanhas de marketing e reativação da base",1,5,"Produção com margem",""],["Atender clientes na cadeira",1,15,"Produção com margem","Hoje gera caixa. A médio prazo, passar para o time"],
+      ["Compras de reposição e estoque",1,3,"Ocupação obrigatória","Auxiliar com lista mínima de estoque"],["Redes sociais sem planejamento",1,4,"Ocupação dispensável","Calendário de conteúdo semanal"]].map(([tarefa,r,horas,tipo,obs],i)=>({id:"t"+(i+1),tarefa,resp:ENC_REAL.socios[r]||"",horas,tipo,obs}))},
+    histManual:[["2026-05",47600,40500,52510,40230,1500,.44,43100,30300,"Não",3000],["2026-06",44000,37400,50430,38380,900,.41,43100,26000,"Não",4000],["2026-07",46100,39200,51640,39460,2600,.43,43100,19600,"Não",2000],
+      ["2026-08",49200,41800,53410,41020,700,.46,43100,15400,"Sim",0],["2026-09",50700,43100,54280,41800,1100,.48,43100,12000,"Não",0]].map(([mes,a,b,sh,reg,nreg,ocup,fixas,caixa,pl,aporte])=>({mes,fat:V(a,b),sh,reg,nreg,ocup,fixas,caixa,pl,aporte,exemplo:true}))};
+  if(uns.length>=2){P.previs[u0]={leads:120,conv:.35,ativos:260,freq:1.25,leadsM:160,convM:.45,ativosM:300,ticketM:145,freqM:1.35};P.previs[u1]={leads:100,conv:.3,ativos:230,freq:1.2,leadsM:140,convM:.42,ativosM:280,ticketM:140,freqM:1.3}}
+  const prodEx=[[38,16,30,16,0,0],[32,12,34,14,0,0],[0,0,24,12,0,0],[0,0,0,0,115,0],[0,0,0,0,0,82],[],[30,14,26,14,0,0],[26,11,30,12,0,0],[0,0,20,10,0,0],[0,0,0,0,105,0],[0,0,0,0,0,72],[]];
+  const prod={};equipe.forEach((e,i)=>{const r=prodEx[i]||[];const o={};servs.forEach((s,j)=>{if(r[j])o[s.id]=r[j]});prod[e.id]=o});
+  const M={mes:"2026-10",exemplo:true,prod,vendaProd:V(3200,2600),
+    regulares:[["Aluguel",4500,4800],["Luz",1300,1200],["Água",350,300],["Internet",150,150],["Contador",400,400],["Sistema de agendamento",150,150],["Lavanderia",300,250],["Marketing",800,800]].map(([nome,a,b],i)=>({id:"r"+(i+1),nome,tipo:"Despesa",varia:false,v:V(a,b)})),
+    naoReg:[["Manutenção de cadeira, secador e equipamentos",250,0],["Alvará e vigilância sanitária",0,0],["Cursos",600,0],["Uniforme",0,300],["Decoração e reforma",0,800]].map(([nome,a,b],i)=>({id:"n"+(i+1),nome,v:V(a,b)})),
+    caixa:{plPago:{0:V(2250,2250),1:V(2250,1500)},aporte:V(0,0),retirada:V(0,0)},
+    indic:{}};
+  if(uns.length>=2){M.indic[u0]={retorno:.42,reclam:6,nps:62,enps:20};M.indic[u1]={retorno:.38,reclam:9,nps:58,enps:10}}
+  return{P,M}}
+
+/* ================= utilidades das planilhas ================= */
+const fmtD=(v,d)=>(Number(v)||0).toLocaleString("pt-BR",{maximumFractionDigits:d==null?0:d});
+const BRL0=v=>(Number(v)||0).toLocaleString("pt-BR",{style:"currency",currency:"BRL",maximumFractionDigits:0});
+function parseIn(s){s=String(s??"").trim().replace(/[R$\s%]/g,"");if(!s)return 0;if(s.includes(","))s=s.replace(/\./g,"").replace(",",".");else if(/^-?\d{1,3}(\.\d{3})+$/.test(s))s=s.replace(/\./g,"");const n=parseFloat(s);return isFinite(n)?n:0}
+function fmtIn(v,f){if(f==="txt")return v==null?"":String(v);if(v===""||v==null)return"";if(f==="pct")return fmtD(N0(v)*100,2);if(f==="int")return fmtD(v,0);return fmtD(v,2)}
+function getP(o,p){return String(p).split(".").reduce((a,k)=>a==null?a:a[k],o)}
+function setP(o,p,v){const ks=String(p).split(".");let a=o;ks.slice(0,-1).forEach(k=>{if(a[k]==null||typeof a[k]!=="object")a[k]={};a=a[k]});a[ks[ks.length-1]]=v}
+const ci=(o,p,f,ph,w)=>`<input class="ci${f==="txt"?" t":""}" data-k="${esc(p)}" data-f="${f||"num"}" value="${esc(fmtIn(getP(o,p),f))}" ${f==="txt"?"":'inputmode="decimal"'} placeholder="${esc(ph||"")}"${w?` style="width:${w}"`:""} aria-label="${esc(ph||p)}">`;
+const cs=(o,p,ops,lbl)=>`<select class="ci" data-k="${esc(p)}" data-f="txt" aria-label="${esc(lbl||p)}">${ops.map(x=>{const[v,n]=Array.isArray(x)?x:[x,x];return`<option value="${esc(v)}" ${String(getP(o,p)??"")===String(v)?"selected":""}>${esc(n)}</option>`}).join("")}</select>`;
+function ligarCI(root,o,salvar){root.querySelectorAll(".ci[data-k]").forEach(el=>{el.onchange=()=>{const f=el.dataset.f;let v=f==="txt"?el.value.trim():parseIn(el.value);if(f==="pct")v=v/100;setP(o,el.dataset.k,v);salvar(el.dataset.k)}})}
+function rerenderMantendo(fn){setTimeout(()=>{const a=document.activeElement,k=a&&a.dataset?a.dataset.k:null,sx=$$(".tw").map(t=>t.scrollLeft),y=window.scrollY;fn();$$(".tw").forEach((t,i)=>{if(sx[i])t.scrollLeft=sx[i]});window.scrollTo(0,y);
+  if(k){const n=$(`.ci[data-k="${CSS.escape(k)}"]`);if(n){n.focus({preventScroll:true});if(n.select)try{n.select()}catch(e){}}}},0)}
+function tbl(cols,rows,o){o=o||{};return`<div class="tw"${o.id?` id="${o.id}"`:""}><table class="tb2"><thead><tr>${cols.map(c=>`<th class="${c.cl||""}">${c.t}</th>`).join("")}</tr></thead><tbody>${rows.map(r=>`<tr class="${r.cl||""}"${r.attr||""}>${r.c.map((x,i)=>`<td class="${(cols[i]&&cols[i].cl)||""}${r.tdcl&&r.tdcl[i]?" "+r.tdcl[i]:""}">${x??""}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`}
+const stB=(ok,t1,t2)=>`<span class="st ${ok?"ok":"at"}">${ok?(t1||"OK"):(t2||"ATENÇÃO")}</span>`;
+async function carregarScript(src,glob){if(window[glob])return window[glob];await new Promise((res,rej)=>{const s=document.createElement("script");s.src=src;s.onload=res;s.onerror=()=>rej(new Error("load"));document.head.appendChild(s)});return window[glob]}
+async function exportarXLSX(nome,abas){
+  try{const X=await carregarScript("https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js","XLSX");const wb=X.utils.book_new();
+    abas.forEach(a=>{const ws=X.utils.aoa_to_sheet(a.linhas);if(a.larg)ws["!cols"]=a.larg.map(w=>({wch:w}));X.utils.book_append_sheet(wb,ws,a.nome.slice(0,31).replace(/[\\\/\?\*\[\]:]/g,"-"))});
+    const buf=X.write(wb,{bookType:"xlsx",type:"array"});const st=await baixar(nome,new Blob([buf],{type:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"}));if(st==="saved")toast("Planilha Excel salva")}
+  catch(e){console.warn(e);toast("Não foi possível gerar o Excel agora. Tente de novo com internet.")}}
+const podeCtx=k=>!S.usuario||!S.usuario.acesso||S.usuario.acesso==="tudo"||(S.usuario.acesso==="pf"?k==="pf":k!=="pf");
+const ehAdmin=()=>!loginCfg()||!!(S.usuario&&S.usuario.admin);
+
+/* ================= LOGIN E SENHA ================= */
+const b64=a=>btoa(String.fromCharCode(...new Uint8Array(a)));
+const fromB64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+const cryptoOk=()=>!!(window.crypto&&crypto.subtle&&crypto.getRandomValues);
+async function pbkdf2(senha,salt){const k=await crypto.subtle.importKey("raw",new TextEncoder().encode(senha),"PBKDF2",false,["deriveBits"]);return b64(await crypto.subtle.deriveBits({name:"PBKDF2",hash:"SHA-256",salt:fromB64(salt),iterations:150000},k,256))}
+async function novaSenha(senha){const salt=b64(crypto.getRandomValues(new Uint8Array(16)));return{salt,hash:await pbkdf2(senha,salt)}}
+async function sha64(s){return b64(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s)))}
+function gerarCodigo(){const A="ABCDEFGHJKLMNPQRSTUVWXYZ23456789",r=crypto.getRandomValues(new Uint8Array(16));let s="";r.forEach((b,i)=>{s+=A[b%A.length];if(i%4===3&&i<15)s+="-"});return s}
+const loginCfg=()=>S.cfg&&S.cfg.login&&S.cfg.login.ativo&&(S.cfg.login.usuarios||[]).length?S.cfg.login:null;
+const ssGet=k=>{try{return sessionStorage.getItem(k)}catch(e){return null}},ssSet=(k,v)=>{try{v==null?sessionStorage.removeItem(k):sessionStorage.setItem(k,v)}catch(e){}};
+async function criarSessao(u,manter){const L=loginCfg();const exp=Date.now()+(manter?30*864e5:12*36e5);const s=JSON.stringify({id:u.id,exp,sig:await sha64(u.hash+"|"+exp+"|"+((L&&L.ver)||0))});
+  if(manter){lsSet("nf_sess",s);ssSet("nf_sess",null)}else{ssSet("nf_sess",s);lsSet("nf_sess",null)}}
+async function sessaoValida(){const L=loginCfg();if(!L)return true;let s=null;try{s=JSON.parse(ssGet("nf_sess")||lsGet("nf_sess")||"null")}catch(e){}
+  if(!s||!s.id||!s.exp||s.exp<Date.now())return false;const u=L.usuarios.find(x=>x.id===s.id);if(!u)return false;
+  try{if(s.sig!==await sha64(u.hash+"|"+s.exp+"|"+(L.ver||0)))return false}catch(e){return false};S.usuario=u;return true}
+function cortina(){if(lsGet("nf_loginAtivo")!=="1"||$("#cortina"))return;const c=document.createElement("div");c.id="cortina";c.className="lock";c.innerHTML='<p class="mut">Carregando…</p>';document.body.appendChild(c)}
+function tirarCortina(soCortina){const c=$("#cortina");if(c)c.remove();if(!soCortina){const l=$("#loginBox");if(l)l.remove()}}
+function aplicarAcesso(){const u=S.usuario;if(!u)return;if(!podeCtx(S.ctx)){setCtx(u.acesso==="pf"?"pf":((S.cfg.empresas||[])[0]||{id:"pf"}).id)}
+  if(u.pessoa&&S.cfg.pessoas.includes(u.pessoa)){lsSet("nf_eu",u.pessoa);if(S.form&&!S.editId)S.form.quem=u.pessoa}}
+async function verificarLogin(){const L=loginCfg();lsSet("nf_loginAtivo",L?"1":null);
+  if(!L){S.usuario=null;tirarCortina();return true}
+  if(S.usuario){const u=L.usuarios.find(x=>x.id===S.usuario.id);if(u&&u.hash===S.usuario.hash){S.usuario=u;aplicarAcesso();tirarCortina();return true}}
+  if(await sessaoValida()){aplicarAcesso();tirarCortina();return true}
+  S.usuario=null;telaLogin();return false}
+let tentativas=0,bloqueioAte=0;
+function telaLogin(){
+  const L=loginCfg();if(!L)return;tirarCortina(true);let el=$("#loginBox");if(!el){el=document.createElement("div");el.id="loginBox";el.className="lock";document.body.appendChild(el)}
+  const nm=S.cfg.nomeApp||"Nossas Finanças";
+  el.innerHTML=`<form class="loginf" autocomplete="on" novalidate><div class="brandname" style="justify-content:center;margin-bottom:16px"><span class="lg" style="background:var(--brand);color:var(--brand-ink)">${esc(sigla(nm))}</span><span>${esc(nm)}</span></div>
+   <h3 style="text-align:center">Entrar</h3>
+   <label class="lb"><span>Usuário</span><input class="field" id="lgU" name="username" autocomplete="username" autocapitalize="none" spellcheck="false"></label>
+   <label class="lb" style="margin-top:10px"><span>Senha</span><input class="field" id="lgS" name="password" type="password" autocomplete="current-password"></label>
+   <label class="ck" style="margin-top:6px"><input type="checkbox" id="lgM" checked> Manter conectado neste aparelho por 30 dias</label>
+   <button class="btn" type="submit" style="margin-top:10px" id="lgOk">${ic("lock")} Entrar</button>
+   <p class="hint" id="lgMsg" role="alert" style="text-align:center;min-height:20px"></p>
+   <button type="button" class="chip" id="lgEsq" style="margin:2px auto 0;display:flex">Esqueci minha senha</button></form>`;
+  const msg=t=>{el.querySelector("#lgMsg").textContent=t};
+  el.querySelector("form").onsubmit=async e=>{e.preventDefault();if(Date.now()<bloqueioAte){msg("Muitas tentativas. Aguarde "+Math.ceil((bloqueioAte-Date.now())/1000)+" segundos.");return}
+    const lg=el.querySelector("#lgU").value.trim().toLowerCase(),sn=el.querySelector("#lgS").value;if(!lg||!sn){msg("Preencha usuário e senha.");return}
+    const bt=el.querySelector("#lgOk");bt.disabled=true;msg("Conferindo…");
+    const u=L.usuarios.find(x=>x.login===lg);let ok=false;try{ok=!!u&&(await pbkdf2(sn,u.salt))===u.hash}catch(err){}
+    bt.disabled=false;
+    if(!ok){tentativas++;if(tentativas>=5){bloqueioAte=Date.now()+30000;tentativas=0}msg("Usuário ou senha incorretos.");el.querySelector("#lgS").value="";el.querySelector("#lgS").focus();return}
+    tentativas=0;S.usuario=u;await criarSessao(u,el.querySelector("#lgM").checked);el.remove();aplicarAcesso();atualizarEu();render();toast("Olá, "+u.nome)};
+  el.querySelector("#lgEsq").onclick=()=>telaRecuperar();
+  setTimeout(()=>{const i=el.querySelector("#lgU");i&&i.focus()},50)}
+function telaRecuperar(){
+  const L=loginCfg(),el=$("#loginBox");if(!el)return;
+  el.innerHTML=`<form class="loginf" novalidate><h3>Recuperar acesso</h3>
+   <p class="hint" style="margin:-6px 0 12px">Peça para um administrador redefinir sua senha em Ajustes → Login e senha, ou use o código de recuperação que foi mostrado quando o login foi ativado.</p>
+   <label class="lb"><span>Código de recuperação</span><input class="field" id="rcC" autocapitalize="characters" spellcheck="false" placeholder="XXXX-XXXX-XXXX-XXXX"></label>
+   <label class="lb" style="margin-top:10px"><span>Usuário</span><input class="field" id="rcU" autocomplete="username" autocapitalize="none"></label>
+   <label class="lb" style="margin-top:10px"><span>Nova senha (mínimo 6 caracteres)</span><input class="field" id="rcS" type="password" autocomplete="new-password"></label>
+   <label class="lb" style="margin-top:10px"><span>Repita a nova senha</span><input class="field" id="rcS2" type="password" autocomplete="new-password"></label>
+   <div class="btns"><button class="btn ghost" type="button" id="rcV">Voltar</button><button class="btn" type="submit">Redefinir</button></div>
+   <p class="hint" id="rcMsg" role="alert" style="min-height:20px"></p></form>`;
+  const g=s=>el.querySelector(s),msg=t=>g("#rcMsg").textContent=t;
+  g("#rcV").onclick=telaLogin;
+  g("form").onsubmit=async e=>{e.preventDefault();const cod=g("#rcC").value.trim().toUpperCase().replace(/\s/g,""),lg=g("#rcU").value.trim().toLowerCase(),s1=g("#rcS").value,s2=g("#rcS2").value;
+    if(Date.now()<bloqueioAte){msg("Muitas tentativas. Aguarde um pouco.");return}
+    if(s1.length<6){msg("A senha precisa ter pelo menos 6 caracteres.");return}if(s1!==s2){msg("As senhas não conferem.");return}
+    let ok=false;try{ok=!!L.recSalt&&(await pbkdf2(cod,L.recSalt))===L.rec}catch(err){}
+    if(!ok){tentativas++;if(tentativas>=5){bloqueioAte=Date.now()+60000;tentativas=0}msg("Código de recuperação incorreto.");return}
+    const us=clone(L.usuarios),i=us.findIndex(x=>x.login===lg);if(i<0){msg("Usuário não encontrado.");return}
+    Object.assign(us[i],await novaSenha(s1));await salvarCfg({login:Object.assign(clone(L),{usuarios:us})});
+    S.usuario=us[i];await criarSessao(us[i],true);el.remove();aplicarAcesso();atualizarEu();render();toast("Senha redefinida. Gere um novo código de recuperação em Ajustes.",4500)}}
+function sairConta(){ssSet("nf_sess",null);lsSet("nf_sess",null);S.usuario=null;fecharSheet();render();telaLogin()}
+function sheetConta(){const u=S.usuario;if(!u)return perguntarQuem(true);
+  abrirSheet(`${fechar}<h3>${esc(u.nome)}</h3><dl class="kv"><dt>Usuário</dt><dd>${esc(u.login)}</dd><dt>Acesso</dt><dd>${esc(ACESSOS[u.acesso||"tudo"])}${u.admin?" · administrador":""}</dd>${u.pessoa?`<dt>Lança como</dt><dd>${esc(u.pessoa)}</dd>`:""}</dl>
+  <div class="btns"><button class="btn ghost" id="cTroca" type="button">${ic("key")} Trocar senha</button><button class="btn danger" id="cSair" type="button">Sair</button></div>`,box=>{ligaFechar(box);box.querySelector("#cSair").onclick=sairConta;box.querySelector("#cTroca").onclick=sheetTrocarSenha})}
+function sheetTrocarSenha(){const u=S.usuario;
+  abrirSheet(`${fechar}<h3>Trocar minha senha</h3>
+  <label class="lb"><span>Senha atual</span><input class="field" id="tsA" type="password" autocomplete="current-password"></label>
+  <label class="lb" style="margin-top:10px"><span>Nova senha (mínimo 6 caracteres)</span><input class="field" id="tsN" type="password" autocomplete="new-password"></label>
+  <label class="lb" style="margin-top:10px"><span>Repita a nova senha</span><input class="field" id="tsN2" type="password" autocomplete="new-password"></label>
+  <button class="btn" id="tsOk" type="button" style="margin-top:12px">Salvar nova senha</button>`,box=>{ligaFechar(box);const g=s=>box.querySelector(s);
+    g("#tsOk").onclick=async()=>{const L=loginCfg();const a=g("#tsA").value,n=g("#tsN").value;if(n.length<6)return toast("A senha precisa ter pelo menos 6 caracteres");if(n!==g("#tsN2").value)return toast("As senhas não conferem");
+      if((await pbkdf2(a,u.salt))!==u.hash)return toast("Senha atual incorreta");
+      const us=clone(L.usuarios),i=us.findIndex(x=>x.id===u.id);Object.assign(us[i],await novaSenha(n));await salvarCfg({login:Object.assign(clone(L),{usuarios:us})});S.usuario=us[i];await criarSessao(us[i],!!lsGet("nf_sess"));fecharSheet();toast("Senha alterada")}})}
+const ACESSOS={tudo:"Pessoal e empresa",pf:"Só Pessoal",pj:"Só empresa"};
+function mostrarCodigo(cod,depois){abrirSheet(`<h3>Código de recuperação</h3><p class="hint">Guarde este código em lugar seguro (por exemplo, numa foto ou anotado). Ele permite redefinir a senha se alguém esquecer. Ele não será mostrado de novo.</p>
+  <div class="codigo" id="cdTx">${esc(cod)}</div><div class="btns"><button class="btn ghost" id="cdCp" type="button">Copiar código</button><button class="btn" id="cdOk" type="button" disabled>Já guardei</button></div>
+  <label class="ck" style="margin-top:8px"><input type="checkbox" id="cdCk"> Anotei o código em lugar seguro</label>`,box=>{const g=s=>box.querySelector(s);
+  g("#cdCp").onclick=async()=>{try{await navigator.clipboard.writeText(cod);toast("Código copiado")}catch(e){toast("Selecione o código e copie manualmente")}};
+  g("#cdCk").onchange=e=>g("#cdOk").disabled=!e.target.checked;g("#cdOk").onclick=()=>{fecharSheet();depois&&depois()}})}
+function sheetLogin(){
+  if(!cryptoOk())return toast("Este navegador não permite criar senhas com segurança aqui.");
+  const L=loginCfg();
+  if(!L){abrirSheet(`${fechar}<h3>Ativar login e senha</h3><p class="hint">Ao ativar, o app pede usuário e senha ao abrir, em todos os aparelhos. Você será o primeiro administrador e poderá criar acessos para outras pessoas, inclusive acessos só ao Pessoal ou só à empresa.</p>
+    <label class="lb" style="margin-top:10px"><span>Seu nome</span><input class="field" id="liN" value="${esc(euNome())}"></label>
+    <div class="g2" style="margin-top:10px"><label class="lb"><span>Usuário</span><input class="field" id="liU" autocapitalize="none" spellcheck="false" placeholder="ex.: lucas"></label>
+    <label class="lb"><span>Lança como</span><select class="field" id="liP"><option value="">—</option>${S.cfg.pessoas.map(p=>`<option ${euNome()===p?"selected":""}>${esc(p)}</option>`).join("")}</select></label></div>
+    <label class="lb" style="margin-top:10px"><span>Senha (mínimo 6 caracteres)</span><input class="field" id="liS" type="password" autocomplete="new-password"></label>
+    <label class="lb" style="margin-top:10px"><span>Repita a senha</span><input class="field" id="liS2" type="password" autocomplete="new-password"></label>
+    <p class="hint">${Store.mode==="cloud"?"O login protege a abertura do app. Os dados continuam guardados na conta do Claude de quem tem acesso a este link.":"O login protege a abertura do app neste aparelho. Os dados continuam guardados neste navegador."}</p>
+    <button class="btn" id="liOk" type="button" style="margin-top:8px">${ic("lock")} Ativar login</button>`,box=>{ligaFechar(box);const g=s=>box.querySelector(s);
+      g("#liOk").onclick=async()=>{const nome=g("#liN").value.trim(),lg=g("#liU").value.trim().toLowerCase(),s1=g("#liS").value;
+        if(!nome)return toast("Informe seu nome");if(!/^[a-z0-9._-]{3,30}$/.test(lg))return toast("Usuário: 3 a 30 letras minúsculas, números, ponto ou traço");
+        if(s1.length<6)return toast("A senha precisa ter pelo menos 6 caracteres");if(s1!==g("#liS2").value)return toast("As senhas não conferem");
+        g("#liOk").disabled=true;const cod=gerarCodigo(),recSalt=b64(crypto.getRandomValues(new Uint8Array(16)));
+        const u=Object.assign({id:"u"+uid(),nome,login:lg,pessoa:g("#liP").value,acesso:"tudo",admin:true},await novaSenha(s1));
+        const novo={ativo:true,ver:1,usuarios:[u],recSalt,rec:await pbkdf2(cod,recSalt)};
+        await salvarCfg({login:novo});S.usuario=u;await criarSessao(u,true);lsSet("nf_loginAtivo","1");atualizarEu();
+        mostrarCodigo(cod,()=>{toast("Login ativado");render()})}});return}
+  if(!ehAdmin())return toast("Só um administrador pode mudar os acessos");
+  abrirSheet(`${fechar}<h3>Login e senha</h3><p class="hint">Login ativo. Cada pessoa entra com o próprio usuário.</p>
+   <div class="lst" style="margin-top:8px">${L.usuarios.map((u,i)=>`<div class="li"><span class="cb" style="background:${corDe(u.nome)}">${esc(sigla(u.nome))}</span><span style="flex:1">${esc(u.nome)}${u.admin?' <span class="tag">admin</span>':""}<small class="mut" style="display:block;font-size:12.5px">${esc(u.login)} · ${esc(ACESSOS[u.acesso||"tudo"])}${u.pessoa?" · lança como "+esc(u.pessoa):""}</small></span><button class="chip" type="button" data-eu2="${i}">Editar</button></div>`).join("")}</div>
+   <button class="btn" id="lgAdd" type="button" style="margin-top:12px">Adicionar usuário</button>
+   <div class="btns"><button class="btn ghost sm" id="lgCod" type="button">Novo código de recuperação</button><button class="btn ghost sm" id="lgVer" type="button">Desconectar todos</button></div>
+   <button class="btn danger sm" id="lgOff" type="button" style="margin-top:8px">Desativar login</button>
+   <p class="hint">“Desconectar todos” obriga todo mundo a entrar de novo, em todos os aparelhos.</p>`,box=>{ligaFechar(box);const g=s=>box.querySelector(s);
+    box.querySelectorAll("[data-eu2]").forEach(b=>b.onclick=()=>editarUsuario(+b.dataset.eu2));g("#lgAdd").onclick=()=>editarUsuario(-1);
+    g("#lgCod").onclick=async()=>{const cod=gerarCodigo(),recSalt=b64(crypto.getRandomValues(new Uint8Array(16)));await salvarCfg({login:Object.assign(clone(L),{recSalt,rec:await pbkdf2(cod,recSalt)})});mostrarCodigo(cod,()=>toast("Novo código salvo; o anterior deixou de valer",3500))};
+    confirmar(g("#lgVer"),"Confirmar",async()=>{const v=(L.ver||0)+1;await salvarCfg({login:Object.assign(clone(L),{ver:v})});await criarSessao(S.usuario,!!lsGet("nf_sess"));fecharSheet();toast("Todos os outros aparelhos vão pedir login de novo",3500)});
+    confirmar(g("#lgOff"),"Confirmar: desativar",async()=>{await salvarCfg({login:{ativo:false,usuarios:[]}});lsSet("nf_loginAtivo",null);lsSet("nf_sess",null);ssSet("nf_sess",null);S.usuario=null;fecharSheet();atualizarEu();render();toast("Login desativado")})})}
+function editarUsuario(i){const L=loginCfg(),us=clone(L.usuarios),u=i>=0?us[i]:{id:"u"+uid(),nome:"",login:"",pessoa:"",acesso:"tudo",admin:false};
+  const admins=us.filter(x=>x.admin).length,eu=S.usuario&&u.id===S.usuario.id;
+  abrirSheet(`${fechar}<h3>${i>=0?"Editar usuário":"Novo usuário"}</h3>
+   <div class="g2"><label class="lb"><span>Nome</span><input class="field" id="euN" value="${esc(u.nome)}"></label><label class="lb"><span>Usuário</span><input class="field" id="euL" value="${esc(u.login)}" autocapitalize="none" spellcheck="false"></label></div>
+   <div class="g2" style="margin-top:10px"><label class="lb"><span>Acesso</span><select class="field" id="euA">${Object.entries(ACESSOS).map(([k,n])=>`<option value="${k}" ${(u.acesso||"tudo")===k?"selected":""}>${n}</option>`).join("")}</select></label>
+   <label class="lb"><span>Lança como</span><select class="field" id="euP"><option value="">—</option>${S.cfg.pessoas.map(p=>`<option ${u.pessoa===p?"selected":""}>${esc(p)}</option>`).join("")}</select></label></div>
+   <label class="ck" style="margin-top:8px"><input type="checkbox" id="euAd" ${u.admin?"checked":""}> Administrador (gerencia usuários, empresas e backup)</label>
+   <label class="lb" style="margin-top:10px"><span>${i>=0?"Nova senha (deixe vazio para manter)":"Senha (mínimo 6 caracteres)"}</span><input class="field" id="euS" type="password" autocomplete="new-password"></label>
+   <label class="lb" style="margin-top:10px"><span>Repita a senha</span><input class="field" id="euS2" type="password" autocomplete="new-password"></label>
+   <div class="btns">${i>=0&&!eu?'<button class="btn danger" id="euDel" type="button">Remover</button>':"<span></span>"}<button class="btn" id="euOk" type="button">Salvar</button></div>`,box=>{ligaFechar(box);const g=s=>box.querySelector(s);
+    g("#euOk").onclick=async()=>{const nome=g("#euN").value.trim(),lg=g("#euL").value.trim().toLowerCase(),s1=g("#euS").value,adm=g("#euAd").checked;
+      if(!nome)return toast("Informe o nome");if(!/^[a-z0-9._-]{3,30}$/.test(lg))return toast("Usuário: 3 a 30 letras minúsculas, números, ponto ou traço");
+      if(us.some((x,j)=>x.login===lg&&j!==i))return toast("Já existe esse usuário");
+      if(i<0&&s1.length<6)return toast("A senha precisa ter pelo menos 6 caracteres");if(s1&&s1.length<6)return toast("A senha precisa ter pelo menos 6 caracteres");if(s1!==g("#euS2").value)return toast("As senhas não conferem");
+      if(u.admin&&!adm&&admins<=1)return toast("Precisa ficar pelo menos um administrador");
+      Object.assign(u,{nome,login:lg,acesso:g("#euA").value,pessoa:g("#euP").value,admin:adm});if(s1)Object.assign(u,await novaSenha(s1));
+      i>=0?us[i]=u:us.push(u);await salvarCfg({login:Object.assign(clone(L),{usuarios:us})});if(eu){S.usuario=u;if(s1)await criarSessao(u,!!lsGet("nf_sess"));aplicarAcesso();atualizarEu()}fecharSheet();toast("Usuário salvo");sheetLogin()};
+    const d=g("#euDel");if(d)confirmar(d,"Confirmar remoção",async()=>{if(u.admin&&admins<=1)return toast("Precisa ficar pelo menos um administrador");us.splice(i,1);await salvarCfg({login:Object.assign(clone(L),{usuarios:us})});fecharSheet();toast("Usuário removido");sheetLogin()})})}
+
+/* ================= PLANO DE INVESTIMENTOS (modelo KBA) ================= */
+const INV_STATUS=["Não iniciado","Planejado","Em andamento","Feito","Descartado"];
+const INV_AREAS={
+ pf:[
+  ["dev","Desenvolvimento Pessoal","Tudo que faz a cabeça do dono crescer: formação, mentoria e consultoria.",[
+   ["Formação empresarial completa","Junta quem você é com o que você constrói. É a base de tudo que vem depois.","Qualquer momento"],["Imersão de vendas","Parar de vender no feeling e passar a vender com processo.","Qualquer momento"],["Imersão de marketing e posicionamento","Aprender a aparecer, atrair e virar referência no seu mercado.","Qualquer momento"],["Curso de comunicação e oratória","Quem comunica bem vende melhor, lidera melhor e cobra mais caro.","A partir de R$ 10 mil/mês"],["Jornada de identidade e propósito","Clareza de quem você é antes de decidir para onde o negócio vai.","Qualquer momento"],["Formação em IA aplicada ao negócio","Fazer em uma hora o que hoje toma o seu dia inteiro.","A partir de R$ 10 mil/mês"],["Consultoria financeira","Saber para onde o dinheiro está indo antes de tentar crescer.","A partir de R$ 15 mil/mês"],["Consultoria comercial","Montar funil, meta e processo para o time vender sem você.","A partir de R$ 20 mil/mês"],["Curso de gestão e liderança de pessoas","Time bom não se contrata, se forma. E quem forma é o líder.","A partir de R$ 20 mil/mês"],["Mentoria individual com especialista","Alguém de fora olhando o seu negócio junto com você, toda semana.","A partir de R$ 30 mil/mês"],["Livros e assinaturas de conteúdo","O investimento mais barato com o maior retorno por real gasto.","Qualquer momento"],["Mastermind de alto nível","Sentar na mesa com quem já resolveu o problema que é o seu hoje.","A partir de R$ 50 mil/mês"]]],
+  ["soc","Inteligência Social","Onde você senta e com quem você anda. Rede não é luxo, é atalho de anos.",[
+   ["Comunidade recorrente de empresários","Estar todo mês perto de gente que também está construindo.","Qualquer momento"],["Grandes eventos de negócios","Uma conversa de corredor pode valer mais que o palco.","Qualquer momento"],["Congressos e feiras do seu setor","Ver para onde o seu mercado está indo antes dos concorrentes.","A partir de R$ 15 mil/mês"],["Almoços e jantares estratégicos","Relação se constrói na mesa, não no direct.","Qualquer momento"],["Viagens para encontros fora da cidade","Sair da bolha muda o tamanho do que você acha possível.","A partir de R$ 20 mil/mês"],["Associação ou entidade do setor","Nome dentro do meio certo abre porta que anúncio não abre.","A partir de R$ 20 mil/mês"],["Grupo fechado ou mastermind","Poucas pessoas, muita verdade, decisão mais rápida.","A partir de R$ 30 mil/mês"],["Patrocínio de evento local","Sua marca no lugar onde estão os seus clientes.","A partir de R$ 30 mil/mês"],["Clube ou espaço de convivência","Ambiente onde o encontro certo acontece por acaso.","A partir de R$ 50 mil/mês"],["Recepção ou encontro próprio","Quem organiza a mesa é lembrado como referência.","A partir de R$ 30 mil/mês"]]],
+  ["ima","Imagem pessoal","Como o mercado te enxerga antes de você abrir a boca. Você é a primeira embalagem do negócio.",[
+   ["Celular de ponta","É a sua câmera, seu escritório e sua central de vendas.","A partir de R$ 10 mil/mês"],["Vestuário e apresentação pessoal","Você é a primeira embalagem do seu negócio.","A partir de R$ 10 mil/mês"],["Ensaio fotográfico profissional","Imagem boa circula por anos em todo material que você faz.","A partir de R$ 15 mil/mês"],["Carro","Em alguns mercados abre porta. Em outros, é só custo. Seja honesto sobre o seu.","A partir de R$ 50 mil/mês"],["Presença em mídia (podcast, TV, revista)","Autoridade que o concorrente não consegue copiar rápido.","A partir de R$ 50 mil/mês"]]]],
+ pj:[
+  ["mkt","Marketing e Aquisição","O que traz cliente novo para dentro. Sem isso, todo o resto fica parado.",[
+   ["Verba mensal de tráfego pago","É a torneira. Sem verba constante, o fluxo de lead trava.","Qualquer momento"],["Gestor de tráfego","Verba sem gestão vira dinheiro queimado.","Qualquer momento"],["Editor de vídeo","Conteúdo bem editado é o que faz alguém parar e assistir.","A partir de R$ 10 mil/mês"],["Social media ou redator","Manter presença constante sem depender da sua inspiração.","A partir de R$ 10 mil/mês"],["Fotógrafo e banco de imagens da marca","Foto ruim derruba a percepção de valor antes da conversa.","A partir de R$ 10 mil/mês"],["Site e página de vendas","Endereço próprio, que não depende do humor do algoritmo.","A partir de R$ 10 mil/mês"],["Estúdio ou set de gravação montado","Tirar o atrito de gravar. Se é difícil, você não faz.","A partir de R$ 20 mil/mês"],["Campanha de lançamento ou data sazonal","Concentrar esforço e verba em janelas que vendem mais.","A partir de R$ 15 mil/mês"],["Parceria com influenciador local","Pegar audiência pronta de quem já tem a confiança do seu público.","A partir de R$ 20 mil/mês"],["Material impresso e brinde de marca","Lembrança física ainda funciona em venda local.","A partir de R$ 15 mil/mês"],["Programa de indicação","O lead mais barato e mais quente vem de quem já comprou.","Qualquer momento"],["Assessoria de imprensa ou mídia local","Autoridade emprestada de veículo que o seu público respeita.","A partir de R$ 50 mil/mês"]]],
+  ["equ","Equipamentos","Máquina, móvel e ferramenta. O que faz o trabalho acontecer todo dia.",[
+   ["Computador do dono","Trabalhar em máquina lenta é pagar caro em tempo todo mês.","Qualquer momento"],["Computadores do time","Time bom em máquina ruim entrega devagar.","A partir de R$ 15 mil/mês"],["Móveis e estações de trabalho","Ambiente organizado muda o ritmo de quem trabalha nele.","A partir de R$ 10 mil/mês"],["Cadeiras de qualidade","Oito horas por dia sentado. Não é conforto, é produtividade.","A partir de R$ 10 mil/mês"],["Kit de gravação (câmera, microfone, luz)","Conteúdo é ativo. Áudio ruim mata vídeo bom.","A partir de R$ 10 mil/mês"],["Equipamento principal da operação","É o que entrega o seu produto. Ele define a sua capacidade.","Qualquer momento"],["Ferramentas e utensílios do serviço","Ferramenta certa reduz retrabalho e refação.","Qualquer momento"],["Climatização do ambiente","Calor derruba a produtividade do time e a experiência do cliente.","A partir de R$ 15 mil/mês"],["Rede, roteador e internet dedicada","Internet caindo em reunião custa venda.","A partir de R$ 10 mil/mês"],["Nobreak e proteção de energia","Um pico de energia leva embora o que você levou anos para juntar.","A partir de R$ 15 mil/mês"],["Impressora e maquininha de cartão","Não perder venda por falta de meio de pagamento.","Qualquer momento"],["Veículo de operação (entrega ou serviço)","Autonomia para atender sem depender de terceiro.","A partir de R$ 30 mil/mês"]]],
+  ["rh","RH","Quem entra no time e em que ordem. Cada pessoa precisa entregar um resultado claro.",[
+   ["Assistente administrativo","Primeira contratação da maioria. Tira o dono do operacional pequeno.","A partir de R$ 15 mil/mês"],["Vendedor ou closer","Primeira contratação que se paga sozinha se bem feita.","A partir de R$ 20 mil/mês"],["Pré-vendedor (SDR)","Alguém enchendo a agenda para o closer só fechar.","A partir de R$ 30 mil/mês"],["Responsável por marketing interno","Conteúdo e campanha rodando sem depender de agência.","A partir de R$ 30 mil/mês"],["Financeiro","Alguém cuidando do caixa que não seja você às onze da noite.","A partir de R$ 30 mil/mês"],["Operacional (quem executa a entrega)","Aumentar capacidade de atender sem baixar a qualidade.","A partir de R$ 20 mil/mês"],["Gestor comercial","Alguém cobrando meta e acompanhando número todo dia.","A partir de R$ 50 mil/mês"],["Gerente geral","O negócio andar quando você não está na sala.","A partir de R$ 80 mil/mês"],["Estagiário ou jovem aprendiz","Formar gente de dentro custa menos que disputar no mercado.","A partir de R$ 15 mil/mês"],["Treinamento e formação do time","Contratou e não treinou, você contratou o problema.","A partir de R$ 20 mil/mês"],["Comissão, bônus e premiação","Gente boa fica onde performance vira dinheiro no bolso.","A partir de R$ 20 mil/mês"],["Processo seletivo bem feito","Contratação errada custa muito mais caro que o salário.","A partir de R$ 15 mil/mês"]]],
+  ["tec","Tecnologia","Sistema, aplicativo e automação. O que faz o negócio funcionar sem depender de memória.",[
+   ["CRM","Venda que não está no CRM não existe. É onde o dinheiro fica visível.","Qualquer momento"],["Gestor de tarefas e projetos","Todo mundo sabendo o que fazer sem você repetir.","Qualquer momento"],["Sistema de gestão (ERP)","Estoque, nota e caixa no mesmo lugar.","A partir de R$ 20 mil/mês"],["Automação de WhatsApp","Responder rápido é o que ganha a venda. Lead esfria em horas.","A partir de R$ 10 mil/mês"],["Assinaturas de IA","Cabe no orçamento de qualquer negócio e devolve horas por semana.","Qualquer momento"],["Agente de IA para atendimento","Atender fora do horário comercial sem contratar mais gente.","A partir de R$ 20 mil/mês"],["E-mail profissional e nuvem","Passar credibilidade e nunca mais perder arquivo.","Qualquer momento"],["Ferramenta de cobrança e emissão","Receber no automático, sem correr atrás de cliente.","A partir de R$ 10 mil/mês"],["Ferramenta de design","Produzir peça sem parar a operação esperando o designer.","Qualquer momento"],["Aplicativo ou plataforma própria","Deixar de alugar audiência e passar a ter base própria.","A partir de R$ 50 mil/mês"],["Automação e integração entre sistemas","Tirar do time o trabalho de copiar dado de um lugar pro outro.","A partir de R$ 20 mil/mês"],["Backup e segurança de dados","Perder a base de clientes é perder o negócio.","A partir de R$ 15 mil/mês"]]],
+  ["mar","Posicionamento de Marca","Como o mercado enxerga a empresa antes da primeira conversa. Percepção também é preço.",[
+   ["Identidade visual profissional","Marca amadora limita o preço que você consegue cobrar.","Qualquer momento"],["Ambiente de atendimento ao cliente","O cliente decide se confia nos primeiros dez segundos na sala.","A partir de R$ 20 mil/mês"],["Fachada e sinalização","Ponto que não se vê não é lembrado.","A partir de R$ 20 mil/mês"],["Embalagem e experiência de entrega","O momento que vira post do cliente sem você pedir.","A partir de R$ 15 mil/mês"],["Uniforme e padrão visual do time","Time padronizado passa a ideia de empresa, não de improviso.","A partir de R$ 20 mil/mês"],["Papelaria e material de marca","Detalhe pequeno que sustenta a percepção de marca séria.","A partir de R$ 15 mil/mês"],["Escritório ou endereço de referência","Endereço comunica tamanho antes da proposta chegar.","A partir de R$ 80 mil/mês"]]]]};
+const invAreas=x=>INV_AREAS[isPJ(x)?"pj":"pf"];
+const momentoValor=t=>{const m=String(t||"").match(/R\$\s*([\d.,]+)\s*mil/i);return m?parseIn(m[1])*1000:0};
+const notaCl=n=>n==null||n===""?"":n>=9?"n9":n>=7?"n7":n>=5?"n5":"";
+const leitura=(tot,media)=>tot===0?"Nada previsto aqui ainda":media>=7?"Área que você mesmo classificou como urgente":media>=5?"Área importante para o próximo semestre":"Área de baixa prioridade no seu momento";
+let INV_UNSUB=null;
+function assinarInvest(){if(INV_UNSUB)return;INV_UNSUB=Store.watch("invest",[],d=>{S.invest=d;if(S.tab==="invest")render()})}
+function itensInvest(ctx){
+  const docs=(S.invest||[]).filter(d=>ctxDe(d)===ctx);const out=[];
+  invAreas(ctx).forEach(([ak,an,ad,tpl],ai)=>{
+    tpl.forEach(([nome,porque,momento],ti)=>{const key=ak+"|"+ti,d=docs.find(x=>x.tpl===key);if(d&&d.oculto)return;
+      out.push(Object.assign({ord:ai*1000+ti,area:ak,areaNome:an,nome,porque,momento,valor:0,nota:null,status:"Não iniciado",data:"",tpl:key,docId:d?d.id:null},d?{nome:d.nome||nome,porque:d.porque??porque,momento:d.momento??momento,valor:N0(d.valor),nota:d.nota??null,status:d.status||"Não iniciado",data:d.data||""}:{}))});
+    docs.filter(x=>!x.tpl&&x.area===ak&&!x.oculto).forEach((d,k)=>out.push({ord:ai*1000+500+k,area:ak,areaNome:an,nome:d.nome,porque:d.porque||"",momento:d.momento||"",valor:N0(d.valor),nota:d.nota??null,status:d.status||"Não iniciado",data:d.data||"",tpl:null,docId:d.id}))});
+  return out}
+function fatMedioEmpresa(){const e=(S.cfg.empresas||[])[0];if(!e||!S.hist)return null;const ms=[];for(let i=0;i<3;i++)ms.push(addMonth(S.mes,-i));
+  const vals=ms.map(m=>{const os=S.hist.singles.filter(l=>ctxDe(l)===e.id).flatMap(l=>ocorr(l,m,m)).concat(S.planos.filter(l=>ctxDe(l)===e.id).flatMap(l=>ocorr(l,m,m)));return dre(os).RB}).filter(v=>v>0);
+  return vals.length?vals.reduce((a,b)=>a+b,0)/vals.length:null}
+function telaInvest(){
+  assinarInvest();carregarHist();const ctx=S.ctx,its=itensInvest(ctx),areas=invAreas(ctx),fm=fatMedioEmpresa();
+  const vista=S.invVista||"resumo";const ativos=its.filter(i=>i.status!=="Descartado");
+  const totG=ativos.reduce((a,i)=>a+i.valor,0);
+  const porArea=areas.map(([k,n])=>{const xs=ativos.filter(i=>i.area===k),notas=xs.filter(i=>i.nota!=null&&i.nota!=="").map(i=>N0(i.nota));const tot=xs.reduce((a,i)=>a+i.valor,0);const media=notas.length?Math.round(notas.reduce((a,b)=>a+b,0)/notas.length*10)/10:0;return{k,n,qt:xs.length,tot,pct:totG?tot/totG:0,media,lei:leitura(tot,media)}});
+  const ordem=ativos.filter(i=>(i.nota!=null&&i.nota!=="")||i.valor>0).sort((a,b)=>(N0(b.nota)-N0(a.nota))||(a.ord-b.ord));let ac=0;
+  const semData=ativos.filter(i=>N0(i.nota)>=7&&!i.data&&i.status!=="Feito");
+  const head=`<div class="ctxlbl">${esc(nomeCtx(ctx))}</div><h1 class="tt">Plano de investimentos</h1>
+  <p class="hint">Onde o dinheiro deve entrar para ${isPJ(ctx)?"o negócio":"você"} crescer. Só entra investimento: aquilo que devolve mais do que custou. Custo fixo, imposto e conta de luz ficam fora.</p>
+  <div class="subnav">${[["resumo","Resumo"],["ordem","Ordem de investimento"]].concat(areas.map(([k,n])=>[k,n])).concat([["guia","Como usar"]]).map(([k,n])=>`<button type="button" class="chip" data-iv="${k}" aria-pressed="${vista===k}">${esc(n)}</button>`).join("")}</div>`;
+  let body="";
+  if(vista==="resumo"){
+    body=`<div class="kpis k4"><div class="kpi"><small>Total previsto</small><b>${BRL0(totG)}</b></div><div class="kpi"><small>Itens avaliados</small><b>${ativos.filter(i=>i.nota!=null&&i.nota!=="").length} de ${ativos.length}</b></div><div class="kpi"><small>Nota média</small><b>${porArea.filter(a=>a.media).length?fmtD(porArea.filter(a=>a.media).reduce((x,a)=>x+a.media,0)/porArea.filter(a=>a.media).length,1):"—"}</b></div><div class="kpi"><small>Faturamento médio da empresa</small><b>${fm!=null?BRL0(fm):"—"}</b></div></div>
+    ${semData.length?`<p class="note"><b>Regra de ouro:</b> nota alta sem data é só desejo. ${semData.length} item(ns) com nota 7 ou mais ainda sem data prevista: ${semData.slice(0,4).map(i=>esc(i.nome)).join(", ")}${semData.length>4?"…":""}.</p>`:""}
+    <h2>Resumo geral</h2>`+tbl([{t:"Área"},{t:"Itens",cl:"num"},{t:"Total previsto",cl:"num"},{t:"% do total",cl:"num"},{t:"Nota média",cl:"num"},{t:"Leitura rápida"}],
+      porArea.map(a=>({c:[esc(a.n),a.qt,BRL0(a.tot),PCT(a.pct),a.media?fmtD(a.media,1):"—",`<span class="mut">${esc(a.lei)}</span>`],cl:"clk",attr:` data-iv2="${a.k}"`})).concat([{cl:"tot",c:["Total geral",porArea.reduce((x,a)=>x+a.qt,0),BRL0(totG),totG?"100%":"0%","",isPJ(ctx)?"Tamanho do plano de investimento do negócio":"Tamanho do seu plano de investimento pessoal"]}]))+
+    `<div class="row" style="margin-top:12px;gap:8px;flex-wrap:wrap"><button class="btn ghost sm" id="ivXls" type="button" style="width:auto">${ic("dl")} Exportar para Excel</button><button class="btn ghost sm" id="ivNovo" type="button" style="width:auto">${ic("plus")} Novo item</button></div>`}
+  else if(vista==="ordem"){
+    body=`<p class="hint">A sua fila, montada sozinha pela nota que você deu. Comece de cima e desça. Itens descartados não entram.</p>`+(ordem.length?tbl([{t:"#",cl:"num"},{t:"O que investir"},{t:"Área"},{t:"Nota",cl:"num"},{t:"Valor",cl:"num"},{t:"Acumulado",cl:"num"},{t:"Status"},{t:"Data"}],
+      ordem.map((i,k)=>{ac+=i.valor;return{cl:"clk",attr:` data-ied="${esc(i.docId||i.tpl)}"`,c:[k+1,esc(i.nome),`<span class="mut">${esc(i.areaNome)}</span>`,`<span class="nb ${notaCl(i.nota)}">${i.nota??"–"}</span>`,BRL0(i.valor),BRL0(ac),esc(i.status),i.data?brDate(i.data):(N0(i.nota)>=7&&i.status!=="Feito"?'<span class="st at">definir</span>':"")]}})):'<div class="empty">Dê nota e valor aos itens das áreas para montar a fila.</div>')}
+  else if(vista==="guia"){
+    body=`<div class="card"><h3 style="margin:0 0 6px;font-size:16px">Como preencher</h3><p class="hint">Abra cada área e toque no item. Preencha a faixa de valor, a nota de prioridade de 0 a 10, o status e a data prevista. Já deixamos itens sugeridos para você não começar da folha em branco: edite, remova e acrescente à vontade.</p>
+    <h3 style="margin:14px 0 6px;font-size:16px">A nota de 0 a 10</h3>${tbl([{t:"Nota"},{t:"O que significa"}],[["0 a 2","Não é hora. Ignore por enquanto."],["3 a 4","Seria bom ter, mas não muda o seu jogo agora."],["5 a 6","Importante. Entra no próximo semestre."],["7 a 8","Alto. Se você não fizer, o crescimento trava."],["9 a 10","É o gargalo do negócio hoje. Doeu ler? Então é 10."]].map(r=>({c:r,tdcl:[0,"wrap"]})))}
+    <h3 style="margin:14px 0 6px;font-size:16px">Onde ver o resultado</h3><p class="hint">O Resumo mostra quanto vai para cada área. Se está tudo em equipamento e nada em gente, você enxerga na hora. A Ordem de investimento organiza tudo do mais estratégico para o menos, com o valor acumulado.</p>
+    <h3 style="margin:14px 0 6px;font-size:16px">Momento certo</h3><p class="hint">Cada sugestão indica a partir de qual faturamento mensal ela faz sentido. O app compara com o faturamento médio da empresa nos últimos 3 meses e marca “momento atingido”.</p>
+    <h3 style="margin:14px 0 6px;font-size:16px">Regra de ouro</h3><p class="hint">Nota alta sem data prevista é só desejo. Toda linha com nota 7 ou mais precisa de uma data.</p></div>`}
+  else{
+    const ar=areas.find(a=>a[0]===vista)||areas[0];const xs=its.filter(i=>i.area===ar[0]);const tot=xs.filter(i=>i.status!=="Descartado").reduce((a,i)=>a+i.valor,0);
+    const notas=xs.filter(i=>i.status!=="Descartado"&&i.nota!=null&&i.nota!=="").map(i=>N0(i.nota));
+    body=`<p class="hint">${esc(ar[2])}</p>`+tbl([{t:"Item"},{t:"Por que investir"},{t:"Momento certo"},{t:"Valor",cl:"num"},{t:"Nota",cl:"num"},{t:"Status"},{t:"Data prevista"}],
+      xs.map(i=>{const mv=momentoValor(i.momento),ok=fm!=null&&fm>=mv;return{cl:"clk"+(i.status==="Descartado"?" out":""),attr:` data-ied="${esc(i.docId||i.tpl)}"`,c:[`<b>${esc(i.nome)}</b>`,`<span class="mut">${esc(i.porque)}</span>`,`${esc(i.momento)}${i.momento&&fm!=null?` <span class="st ${ok?"ok":"at"}">${ok?"atingido":"ainda não"}</span>`:""}`,i.valor?BRL0(i.valor):'<span class="mut">—</span>',i.nota!=null&&i.nota!==""?`<span class="nb ${notaCl(i.nota)}">${i.nota}</span>`:'<span class="mut">—</span>',esc(i.status),i.data?brDate(i.data):(N0(i.nota)>=7&&i.status!=="Feito"?'<span class="st at">definir</span>':"")],tdcl:[0,"wrap"]}}).concat([{cl:"tot",c:["Total previsto nesta área","","",BRL0(tot),notas.length?fmtD(notas.reduce((a,b)=>a+b,0)/notas.length,1):"","",""]}]))+
+    `<button class="btn ghost sm" id="ivNovo" type="button" style="width:auto;margin-top:12px">${ic("plus")} Adicionar item nesta área</button>`}
+  $("#app").innerHTML=head+body;
+  $$("[data-iv]").forEach(b=>b.onclick=()=>{S.invVista=b.dataset.iv;telaInvest()});
+  $$("[data-iv2]").forEach(b=>b.onclick=()=>{S.invVista=b.dataset.iv2;telaInvest()});
+  $$("[data-ied]").forEach(b=>b.onclick=()=>{const k=b.dataset.ied;editarInvest(its.find(i=>(i.docId||i.tpl)===k))});
+  if($("#ivNovo"))$("#ivNovo").onclick=()=>editarInvest({area:areas.find(a=>a[0]===vista)?vista:areas[0][0],nome:"",porque:"",momento:"Qualquer momento",valor:0,nota:null,status:"Não iniciado",data:"",tpl:null,docId:null});
+  if($("#ivXls"))$("#ivXls").onclick=()=>{let a2=0;exportarXLSX(`plano-investimentos-${isPJ(ctx)?"empresa":"pessoal"}-${HOJE()}.xlsx`,[
+    {nome:"Resumo",larg:[28,8,16,10,12,48],linhas:[["Plano de investimentos - "+nomeCtx(ctx)],[],["Área","Itens","Total previsto (R$)","% do total","Nota média","Leitura rápida"]].concat(porArea.map(a=>[a.n,a.qt,a.tot,Math.round(a.pct*1000)/10+"%",a.media||"",a.lei])).concat([["Total geral",porArea.reduce((x,a)=>x+a.qt,0),totG,"100%","",""]])},
+    {nome:"Ordem de investimento",larg:[6,44,26,8,14,14,14,12],linhas:[["Ordem","O que investir","Área","Nota","Valor (R$)","Acumulado (R$)","Status","Data prevista"]].concat(ordem.map((i,k)=>{a2+=i.valor;return[k+1,i.nome,i.areaNome,i.nota??"",i.valor,a2,i.status,i.data?brDate(i.data):""]}))}]
+    .concat(areas.map(([k,n])=>({nome:n,larg:[40,60,26,14,10,14,12],linhas:[["Item","Por que investir","Momento certo","Valor (R$)","Nota (0 a 10)","Status","Data prevista"]].concat(its.filter(i=>i.area===k).map(i=>[i.nome,i.porque,i.momento,i.valor,i.nota??"",i.status,i.data?brDate(i.data):""]))}))))}}
+function editarInvest(it){if(!it)return;const ctx=S.ctx,areas=invAreas(ctx);const f=clone(it);
+  abrirSheet(`${fechar}<h3>${it.docId||it.tpl?"Item do plano":"Novo item"}</h3>
+  <label class="lb"><span>Item</span><input class="field" id="ivN" value="${esc(f.nome)}" ${it.tpl?"":'placeholder="Ex.: Cadeira nova para a loja"'}></label>
+  <label class="lb" style="margin-top:10px"><span>Por que investir</span><input class="field" id="ivP" value="${esc(f.porque)}"></label>
+  <div class="g2" style="margin-top:10px"><label class="lb"><span>Área</span><select class="field" id="ivA" ${it.tpl?"disabled":""}>${areas.map(([k,n])=>`<option value="${k}" ${f.area===k?"selected":""}>${esc(n)}</option>`).join("")}</select></label>
+  <label class="lb"><span>Momento certo (faturamento mensal)</span><input class="field" id="ivM" value="${esc(f.momento)}" placeholder="Ex.: A partir de R$ 20 mil/mês"></label></div>
+  <div class="g2" style="margin-top:10px"><label class="lb"><span>Faixa de valor (R$)</span><input class="field" id="ivV" inputmode="numeric" value="${f.valor?BRL(f.valor):""}" placeholder="R$ 0,00"></label>
+  <label class="lb"><span>Data prevista</span><input class="field" id="ivD" type="date" value="${esc(f.data||"")}"></label></div>
+  <p class="hint" style="margin:12px 0 6px">Prioridade estratégica (0 a 10)</p><div class="nota" role="group" aria-label="Nota">${[0,1,2,3,4,5,6,7,8,9,10].map(n=>`<button type="button" data-nt="${n}" aria-pressed="${f.nota!=null&&f.nota!==""&&N0(f.nota)===n}">${n}</button>`).join("")}<button type="button" data-nt="" aria-pressed="${f.nota==null||f.nota===""}" style="width:auto;padding:0 10px">sem nota</button></div>
+  <p class="hint" style="margin:12px 0 6px">Status</p><div class="chips">${INV_STATUS.map(s=>`<button type="button" class="chip" data-ivs="${esc(s)}" aria-pressed="${f.status===s}">${esc(s)}</button>`).join("")}</div>
+  <div class="btns">${it.docId||it.tpl?'<button class="btn danger" id="ivDel" type="button">Remover</button>':"<span></span>"}<button class="btn" id="ivOk" type="button">Salvar</button></div>
+  ${it.status==="Feito"&&it.valor?`<button class="btn ghost sm" id="ivLanc" type="button" style="margin-top:8px">${ic("plus")} Lançar este investimento como saída</button>`:""}`,box=>{ligaFechar(box);const g=s=>box.querySelector(s);mascaraDinheiro(g("#ivV"),()=>{});
+    box.querySelectorAll("[data-nt]").forEach(b=>b.onclick=()=>{f.nota=b.dataset.nt===""?null:+b.dataset.nt;box.querySelectorAll("[data-nt]").forEach(x=>x.setAttribute("aria-pressed",x===b))});
+    box.querySelectorAll("[data-ivs]").forEach(b=>b.onclick=()=>{f.status=b.dataset.ivs;box.querySelectorAll("[data-ivs]").forEach(x=>x.setAttribute("aria-pressed",x===b))});
+    g("#ivOk").onclick=async()=>{const nome=g("#ivN").value.trim();if(!nome)return toast("Dê um nome ao item");
+      if(N0(f.nota)>=7&&!g("#ivD").value&&f.status!=="Feito"&&f.status!=="Descartado")toast("Nota 7 ou mais pede uma data prevista. Salvo assim mesmo.",3500);
+      const doc={ctx,area:it.tpl?it.area:g("#ivA").value,tpl:it.tpl||null,nome,porque:g("#ivP").value.trim(),momento:g("#ivM").value.trim(),valor:numBR(g("#ivV").value),nota:f.nota,status:f.status,data:g("#ivD").value,oculto:false,atualizado:new Date().toISOString()};
+      const id=it.docId||(it.tpl?("iv_"+ctx+"_"+it.tpl.replace(/\W/g,"_")):"iv"+uid());try{await Store.set("invest",id,doc);fecharSheet();toast("Item salvo")}catch(e){toast("Não foi possível salvar")}};
+    const d=g("#ivDel");if(d)confirmar(d,"Confirmar remoção",async()=>{try{if(it.tpl){await Store.set("invest",it.docId||("iv_"+ctx+"_"+it.tpl.replace(/\W/g,"_")),{ctx,area:it.area,tpl:it.tpl,oculto:true})}else await Store.del("invest",it.docId);fecharSheet();toast("Item removido")}catch(e){toast("Não foi possível remover")}});
+    const l=g("#ivLanc");if(l)l.onclick=()=>{fecharSheet();S.form=novoForm();S.form.tipo="despesa";S.form.valor=it.valor;S.form.desc=it.nome;irPara("lancar");toast("Escolha a categoria e salve o lançamento")}})}
+
+/* ================= INTELIGÊNCIA FINANCEIRA: telas ================= */
+const IV={P:null,meses:[],emp:null,unP:null,unM:null,pendP:0,pendM:0,tP:null,tM:null,carregado:false};
+function intelUns(){const u=unidadesCtx().map(x=>x.nome);return u.length?u:["Geral"]}
+function assinarIntel(){const e=empresaAtual();if(!e)return;if(IV.emp===e.id)return;
+  if(IV.unP)IV.unP();if(IV.unM)IV.unM();IV.emp=e.id;IV.P=null;IV.meses=[];IV.carregado=false;
+  IV.unP=Store.watchDoc("intel",e.id,async d=>{if(IV.emp!==e.id)return;
+    if(!d){if(IV.criando)return;IV.criando=true;const sd=intelSeed(e);try{await Store.set("intel",e.id,sd.P);await Store.set("intelmes",e.id+"_"+sd.M.mes,Object.assign(sd.M,{emp:e.id}))}catch(err){}return}
+    if(IV.pendP&&Date.now()-IV.pendP<4000)return;IV.P=d;IV.carregado=true;if(S.tab==="intel"&&!document.activeElement.classList.contains("ci"))render()});
+  IV.unM=Store.watch("intelmes",[["emp","==",e.id]],d=>{if(IV.emp!==e.id)return;if(IV.pendM&&Date.now()-IV.pendM<4000)return;IV.meses=d;if(S.tab==="intel"&&!document.activeElement.classList.contains("ci"))render()})}
+function salvarP(){IV.pendP=Date.now();clearTimeout(IV.tP);IV.tP=setTimeout(async()=>{try{await Store.set("intel",IV.emp,IV.P)}catch(e){toast("Não foi possível salvar as premissas")}IV.pendP=Date.now()},500)}
+function mesDoc(m){return IV.meses.find(x=>x.mes===m)||null}
+function salvarM(M){IV.pendM=Date.now();const i=IV.meses.findIndex(x=>x.mes===M.mes);if(i<0)IV.meses.push(M);clearTimeout(IV.tM);IV.tM=setTimeout(async()=>{try{await Store.set("intelmes",IV.emp+"_"+M.mes,Object.assign(clone(M),{emp:IV.emp}))}catch(e){toast("Não foi possível salvar o mês")}IV.pendM=Date.now()},500)}
+function mesAnteriorCom(m){return IV.meses.filter(x=>x.mes<m).sort((a,b)=>b.mes.localeCompare(a.mes))[0]||null}
+function comecarMes(m){const ant=mesAnteriorCom(m),uns=intelUns();const M={mes:m,prod:{},vendaProd:{},regulares:[],naoReg:[],caixa:{plPago:{},aporte:{},retirada:{}},indic:{},caixaIni:{}};
+  if(ant){M.regulares=clone(ant.regulares||[]);M.naoReg=(ant.naoReg||[]).map(r=>({id:r.id,nome:r.nome,v:{}}));const R=calcIntel(IV.P,ant,uns);uns.forEach(u=>M.caixaIni[u]=Math.round(R.U[u].fim*100)/100)}
+  else M.regulares=[["Aluguel"],["Luz"],["Água"],["Internet"],["Contador"],["Sistema"],["Marketing"]].map(([nome],i)=>({id:"r"+(i+1),nome,tipo:"Despesa",varia:false,v:{}}));
+  salvarM(M);return M}
+function histIntel(P,mesAtual,uns){const rows=[];
+  for(let i=5;i>=0;i--){const m=addMonth(mesAtual,-i),d=mesDoc(m);let r;
+    if(d){const R=calcIntel(P,d,uns);r={mes:m,fat:{},tot:R.T.fat,sh:R.T.SH,reg:R.T.REG,nreg:R.T.NREG,lucro:R.T.res,ml:R.T.ml,ocup:R.T.ocup,fixas:R.T.fixas,caixa:R.T.fim,reserva:R.T.reserva,pl:R.plCompleto?"Sim":"Não",aporte:R.T.aporte,calc:true};uns.forEach(u=>r.fat[u]=R.U[u].fat)}
+    else{const h=(P.histManual||[]).find(x=>x.mes===m);if(h){const tot=uns.reduce((a,u)=>a+N0((h.fat||{})[u]),0),lucro=tot-N0(h.sh)-N0(h.reg)-N0(h.nreg);r={mes:m,fat:Object.assign({},h.fat),tot,sh:N0(h.sh),reg:N0(h.reg),nreg:N0(h.nreg),lucro,ml:tot?lucro/tot:0,ocup:N0(h.ocup),fixas:N0(h.fixas),caixa:N0(h.caixa),reserva:N0(h.fixas)?N0(h.caixa)/N0(h.fixas):0,pl:h.pl||"Não",aporte:N0(h.aporte),manual:true,exemplo:h.exemplo}}else r={mes:m,vazio:true}}
+    rows.push(r)}
+  let prev=null;rows.forEach(r=>{if(r.vazio){r.seq=prev;return}r.seq=r.aporte>0?0:(prev==null?1:prev+1);prev=r.seq});return rows}
+const SUBS=[["resumo","Resumo"],["producao","Produção"],["saidas","Receitas e saídas"],["margem","Margem e preço"],["historico","Histórico"],["premissas","Premissas"],["cenario","Cenário"],["indicadores","Indicadores"],["previs","Previsibilidade"],["produt","Produtividade"],["guia","Como usar"]];
+function telaIntel(){
+  if(!isPJ()){$("#app").innerHTML=`<h1 class="tt">Inteligência financeira</h1><div class="card" style="margin-top:12px"><p style="margin:0 0 10px">Esta planilha é da empresa. Selecione a empresa no topo para abrir.</p><button class="btn sm" id="irPJ" type="button" style="width:auto">${ic("building")} Abrir na empresa</button></div>`;$("#irPJ").onclick=()=>{setCtx((S.cfg.empresas||[])[0].id);render()};return}
+  assinarIntel();const emp=empresaAtual();
+  if(!IV.P){$("#app").innerHTML=`<div class="ctxlbl">${esc(emp.nome)}</div><h1 class="tt">Inteligência financeira</h1><p class="empty">Preparando a planilha…</p>`;return}
+  const P=IV.P,uns=intelUns(),sub=S.intelSub||"resumo",M=mesDoc(S.mes);
+  let h=`<div class="ctxlbl">${esc(emp.nome)}</div><h1 class="tt">Inteligência financeira</h1>
+  <p class="hint">Modelo VAZK: Receitas − Seres humanos − Regulares − Não regulares = Lucro.</p>
+  <div class="subnav" role="tablist">${SUBS.map(([k,n])=>`<button type="button" class="chip" data-isub="${k}" aria-pressed="${sub===k}">${n}</button>`).join("")}</div>`;
+  const precisaMes=["resumo","producao","saidas","margem","indicadores"].includes(sub);
+  if(precisaMes||sub==="historico")h+=mesNav();
+  if(precisaMes&&!M){const ant=mesAnteriorCom(S.mes);
+    h+=`<div class="card" style="margin-top:10px"><p style="margin:0 0 6px"><b>${esc(mesLabel(S.mes))}</b> ainda não tem dados na planilha.</p><p class="hint" style="margin:0 0 12px">${ant?`Ao começar, as contas regulares de ${esc(mesLabel(ant.mes))} são copiadas e o caixa inicial vira o caixa final daquele mês.`:"Ao começar, você digita os atendimentos e as contas do mês."}</p>
+    <div class="row" style="gap:8px;flex-wrap:wrap"><button class="btn sm" id="ivComeca" type="button" style="width:auto">Começar ${esc(mesLabel(S.mes))}</button>${ant?`<button class="btn ghost sm" id="ivUlt" type="button" style="width:auto">Ver ${esc(mesLabel(ant.mes))}</button>`:""}</div></div>`;
+    $("#app").innerHTML=h;ligarIntelNav();ligarMesNav();
+    $("#ivComeca").onclick=()=>{comecarMes(S.mes);render()};if($("#ivUlt"))$("#ivUlt").onclick=()=>{S.mes=ant.mes;assinarMes();render()};return}
+  const R=M?calcIntel(P,M,uns):null;
+  const cols=[{t:"Indicador"}].concat(uns.map(u=>({t:esc(u),cl:"num"}))).concat(uns.length>1?[{t:"Consolidado",cl:"num"}]:[]);
+  const linha=(nome,f,fmt,cl)=>({cl,c:[nome].concat(uns.map(u=>fmt(f(R.U[u])))).concat(uns.length>1?[fmt(f(R.T))]:[])});
+  const salvaM=()=>{salvarM(M);rerenderMantendo(render)},salvaP=()=>{salvarP();rerenderMantendo(render)};
+  if(sub==="resumo"){
+    const hs=histIntel(P,S.mes,uns),cur=hs[hs.length-1],res=[R.T.reserva>=1,R.plCompleto,(cur.seq||0)>=3],oks=res.filter(Boolean).length;
+    h+=`<div class="kpis k4"><div class="kpi"><small>Faturamento</small><b>${BRL0(R.T.fat)}</b></div><div class="kpi"><small>Lucro do mês</small><b class="${R.T.res>=0?"pos":"neg"}">${BRL0(R.T.res)}</b></div><div class="kpi"><small>Margem líquida</small><b>${PCT(R.T.ml)}</b></div><div class="kpi"><small>Ponto de equilíbrio</small><b>${BRL0(R.T.pe)}</b></div></div>
+    <h2>Resumo do mês</h2>`+tbl(cols.concat([{t:"Meta / leitura"}]),[
+      linha("Faturamento",x=>x.fat,BRL0),linha("Meta de faturamento",x=>x.meta,BRL0),linha("% da meta",x=>x.meta?x.fat/x.meta:0,PCT),linha("Lucro do mês",x=>x.res,BRL0),
+      linha("Margem líquida",x=>x.ml,PCT),linha("Ponto de equilíbrio",x=>x.pe,BRL0),linha("Folga sobre o ponto de equilíbrio",x=>x.folga,v=>`<span class="${v>=0?"pos":"neg"}">${BRL0(v)}</span>`),
+      linha("Ocupação das cadeiras",x=>x.ocup,PCT),linha("Seres humanos (% do faturamento)",x=>x.fat?x.SH/x.fat:0,PCT),linha("Regulares (% do faturamento)",x=>x.fat?x.REG/x.fat:0,PCT),linha("Não regulares (% do faturamento)",x=>x.fat?x.NREG/x.fat:0,PCT)
+    ].map((r,i)=>(r.c.push(["","","","","Saudável para salão: 10% a 20%","Faturamento mínimo para não ter prejuízo","Negativo = loja abaixo do empate","Acima de 70% = hora de pensar em mais postos","","",""][i]?`<span class="mut">${["","","","","Saudável para salão: 10% a 20%","Faturamento mínimo para não ter prejuízo","Negativo = loja abaixo do empate","Acima de 70% = hora de pensar em mais postos"][i]}</span>`:""),r)))+
+    `<h2>Diagnóstico VAZK</h2>`+tbl([{t:"Diagnóstico"},{t:"Resultado",cl:"num"},{t:"Meta",cl:"num"},{t:"Status"},{t:"O que significa"}],[
+      {c:["1. Reserva em caixa (meses de saídas fixas)",fmtD(R.T.reserva,2),"1",stB(res[0]),"Ter em caixa pelo menos 1 mês de saídas fixas"],tdcl:[0,0,0,0,"wrap"]},
+      {c:["2. Pró-labore pago completo",R.plCompleto?"Sim":"Não","Sim",stB(res[1]),R.plSocio.map(s=>`${esc(s.nome)}: ${fmtD(s.pago)} de ${fmtD(s.def)}`).join(" · ")],tdcl:[0,0,0,0,"wrap"]},
+      {c:["3. Meses seguidos sem colocar dinheiro do bolso",cur.seq??0,"3",stB(res[2]),"A empresa se paga sozinha, sem aporte dos sócios"],tdcl:[0,0,0,0,"wrap"]}])+
+    `<p class="note"><b>${oks===3?"Diagnóstico: empresa saudável nos 3 números.":`Diagnóstico: ${oks} de 3 números no verde. Prioridade é fechar os que estão em ATENÇÃO.`}</b></p>
+    <div class="row" style="gap:8px;flex-wrap:wrap"><button class="btn ghost sm" id="inXls" type="button" style="width:auto">${ic("dl")} Exportar mês para Excel</button></div>`}
+  else if(sub==="producao"){
+    h+=`<p class="hint">Digite quantos atendimentos cada profissional fez de cada serviço no mês. Profissionais e serviços são cadastrados em Premissas.</p><div class="legenda"><span><i></i>Você preenche</span></div>`;
+    uns.forEach(u=>{const ps=R.profs.filter(p=>p.e.un===u);
+      h+=`<h2>${esc(u)}</h2>`+(ps.length?tbl([{t:"Profissional"},{t:"Vínculo"}].concat((P.servicos||[]).map(s=>({t:esc(s.nome),cl:"num"}))).concat([{t:"Atendimentos",cl:"num"},{t:"Faturamento",cl:"num"},{t:"Parte do parceiro",cl:"num"},{t:"Parte do salão",cl:"num"},{t:"Horas ocupadas",cl:"num"},{t:"Produto usado",cl:"num"}]),
+        ps.map(p=>({c:[`${esc(p.e.nome)}<small class="mut" style="display:block">${esc(p.e.funcao||"")}</small>`,esc(p.e.vinculo)].concat((P.servicos||[]).map(s=>ci(M,"prod."+p.e.id+"."+s.id,"int","0","64px"))).concat([fmtD(p.n),BRL0(p.fat),BRL0(p.parc),BRL0(p.salao),fmtD(p.h,1),BRL0(p.prod)])}))
+        .concat([{cl:"tot",c:["Total",""].concat((P.servicos||[]).map(s=>fmtD(ps.reduce((a,p)=>a+p.porS[s.id],0)))).concat([fmtD(ps.reduce((a,p)=>a+p.n,0)),BRL0(ps.reduce((a,p)=>a+p.fat,0)),BRL0(ps.reduce((a,p)=>a+p.parc,0)),BRL0(ps.reduce((a,p)=>a+p.salao,0)),fmtD(ps.reduce((a,p)=>a+p.h,0),1),BRL0(ps.reduce((a,p)=>a+p.prod,0))])}])):'<p class="hint">Nenhum profissional nesta unidade. Cadastre em Premissas → Equipe.</p>')});
+    h+=`<h2>Venda de produtos no mês</h2>`+tbl([{t:"Unidade"},{t:"Venda de produtos (R$)",cl:"num"}],uns.map(u=>({c:[esc(u),ci(M,"vendaProd."+u,"num","0,00")]})))+
+    `<p class="hint">Parceiro: a parte do profissional sai do % definido em Premissas → Serviços. CLT: o faturamento fica todo com o salão e o salário entra em Seres humanos.</p>`}
+  else if(sub==="saidas"){
+    const c2=[{t:"Item"},{t:"Tipo"},{t:"Varia com a venda?"}].concat(uns.map(u=>({t:esc(u),cl:"num"}))).concat(uns.length>1?[{t:"Total",cl:"num"}]:[]).concat([{t:"% do fat.",cl:"num"}]);
+    const T=R.T,pf=v=>T.fat?PCT(v/T.fat):"—",rowL=(l,extra)=>({cl:"sub",c:[esc(l.nome),l.tipo,l.varia?"Sim":"Não"].concat(uns.map(u=>BRL(l.v[u]))).concat(uns.length>1?[BRL(uns.reduce((a,u)=>a+l.v[u],0))]:[]).concat([pf(uns.reduce((a,u)=>a+l.v[u],0))])});
+    const totRow=(nome,f,cl)=>({cl:cl||"tot",c:[nome,"",""].concat(uns.map(u=>BRL(f(R.U[u])))).concat(uns.length>1?[BRL(f(T))]:[]).concat([pf(f(T))])});
+    const hd=t=>({cl:"hd",c:[t,"",""].concat(uns.map(()=>"")).concat(uns.length>1?[""]:[]).concat([""])});
+    const edit=(arr,key,i,r)=>({cl:"sub",c:[ci(M,key+"."+i+".nome","txt","Nome da conta"),key==="regulares"?cs(M,key+"."+i+".tipo",["Despesa","Custo","Imposto"],"Tipo"):"Despesa",key==="regulares"?cs(M,key+"."+i+".varia",[["","Não"],["1","Sim"]],"Varia"):"Não"].concat(uns.map(u=>ci(M,key+"."+i+".v."+u,"num","0,00"))).concat(uns.length>1?[BRL(uns.reduce((a,u)=>a+N0(r.v&&r.v[u]),0))]:[]).concat([`<button class="x" type="button" data-rm="${key}.${i}" aria-label="Remover">✕</button>`])});
+    const rows=[hd("Receitas")].concat(R.recServ.map(r=>({cl:"sub",c:[esc(r.nome),"Receita","—"].concat(uns.map(u=>BRL(r.v[u]))).concat(uns.length>1?[BRL(uns.reduce((a,u)=>a+r.v[u],0))]:[]).concat([pf(uns.reduce((a,u)=>a+r.v[u],0))])})))
+      .concat([{cl:"sub",c:["Venda de produtos","Receita","—"].concat(uns.map(u=>ci(M,"vendaProd."+u,"num","0,00"))).concat(uns.length>1?[BRL(T.venda)]:[]).concat([pf(T.venda)])},totRow("Faturamento total",x=>x.fat),
+        {cl:"sub",c:["dos quais: parte dos parceiros","",""].concat(uns.map(u=>BRL(R.U[u].parc))).concat(uns.length>1?[BRL(T.parc)]:[]).concat([""])},{cl:"sub",c:["receita própria do salão (base do imposto)","",""].concat(uns.map(u=>BRL(R.U[u].propria))).concat(uns.length>1?[BRL(T.propria)]:[]).concat([""])},
+        hd("Saídas com seres humanos")]).concat(R.L.filter(l=>l.g==="sh").map(l=>rowL(l))).concat([totRow("Total seres humanos",x=>x.SH),hd("Saídas regulares (todo mês)")])
+      .concat(R.L.filter(l=>l.g==="reg").slice(0,5).map(l=>rowL(l))).concat((M.regulares||[]).map((r,i)=>edit(M.regulares,"regulares",i,r)))
+      .concat([{c:[`<button class="chip" type="button" data-add="regulares">+ Adicionar conta regular</button>`,"",""].concat(uns.map(()=>"")).concat(uns.length>1?[""]:[]).concat([""])},totRow("Total regulares",x=>x.REG),hd("Saídas não regulares (só em alguns meses)")])
+      .concat((M.naoReg||[]).map((r,i)=>edit(M.naoReg,"naoReg",i,r))).concat([{c:[`<button class="chip" type="button" data-add="naoReg">+ Adicionar saída não regular</button>`,"",""].concat(uns.map(()=>"")).concat(uns.length>1?[""]:[]).concat([""])},totRow("Total não regulares",x=>x.NREG),
+        totRow("Total de saídas",x=>x.sai),totRow("Resultado do mês (lucro ou prejuízo)",x=>x.res,"fim"),{cl:"pct",c:["Margem líquida","",""].concat(uns.map(u=>PCT(R.U[u].ml))).concat(uns.length>1?[PCT(T.ml)]:[]).concat([""])}]);
+    h+=`<div class="legenda"><span><i></i>Você preenche</span><span>O resto é calculado a partir da produção e das premissas</span></div>
+    <div class="row" style="gap:8px;flex-wrap:wrap;margin:8px 0"><button class="btn ghost sm" id="inImp" type="button" style="width:auto">${ic("dl")} Puxar contas dos lançamentos do mês</button></div>`+tbl(c2,rows);
+    const sc=(P.socios||[]);
+    h+=`<h2>Caixa do mês</h2>`+tbl([{t:"Item"}].concat(uns.map(u=>({t:esc(u),cl:"num"}))).concat(uns.length>1?[{t:"Total",cl:"num"}]:[]),[
+      {c:["Caixa no início do mês"].concat(uns.map(u=>ci(M,"caixaIni."+u,"num",fmtD(N0(((P.geral||{})[u]||{}).caixaIni),2)))).concat(uns.length>1?[BRL(T.ini)]:[])},
+      {c:["(+) Resultado do mês"].concat(uns.map(u=>BRL(R.U[u].res))).concat(uns.length>1?[BRL(T.res)]:[])}]
+      .concat(sc.map((s,i)=>({c:["Pró-labore efetivamente pago — "+esc(s.nome)].concat(uns.map(u=>ci(M,"caixa.plPago."+i+"."+u,"num","0,00"))).concat(uns.length>1?[BRL(uns.reduce((a,u)=>a+N0(getP(M,"caixa.plPago."+i+"."+u)),0))]:[])})))
+      .concat([{c:["(+) Pró-labore lançado e não pago (ficou no caixa)"].concat(uns.map(u=>BRL(R.U[u].naoPago))).concat(uns.length>1?[BRL(T.naoPago)]:[])},
+        {c:["(+) Dinheiro que coloquei do bolso"].concat(uns.map(u=>ci(M,"caixa.aporte."+u,"num","0,00"))).concat(uns.length>1?[BRL(T.aporte)]:[])},
+        {c:["(−) Retirada de lucro"].concat(uns.map(u=>ci(M,"caixa.retirada."+u,"num","0,00"))).concat(uns.length>1?[BRL(T.retirada)]:[])},
+        {cl:"fim",c:["(=) Caixa no fim do mês"].concat(uns.map(u=>BRL(R.U[u].fim))).concat(uns.length>1?[BRL(T.fim)]:[])},
+        {c:["Saídas fixas do mês (não variam com a venda)"].concat(uns.map(u=>BRL(R.U[u].fixas))).concat(uns.length>1?[BRL(T.fixas)]:[])},
+        {cl:"tot",c:["Reserva em caixa (meses de saídas fixas)"].concat(uns.map(u=>fmtD(R.U[u].reserva,2))).concat(uns.length>1?[fmtD(T.reserva,2)]:[])}]));
+    h+=`<p class="hint">Meta VAZK: reserva de pelo menos 1 mês de saídas fixas. O caixa inicial vem preenchido com o caixa final do mês anterior quando você começa um mês novo.</p>`}
+  else if(sub==="margem"){
+    const T=R.T,sim=P.sim||(P.sim={loja:uns[0],tempo:120,produto:30,lucro:.2,parceiro:"Sim",pctParc:.5});const sr=simuladorPreco(R,P,{loja:sim.loja,tempo:sim.tempo,produto:sim.produto,lucro:sim.lucro,parceiro:sim.parceiro==="Sim",pctParc:sim.pctParc});
+    h+=`<h2>Margens do mês</h2>`+tbl(cols,[linha("Faturamento",x=>x.fat,BRL),linha("(−) Custos (o que vai para o serviço)",x=>x.custos,BRL,"sub"),linha("(=) Margem bruta",x=>x.mb,BRL,"tot"),linha("Margem bruta %",x=>x.mbp,PCT,"pct"),
+      linha("(−) Saídas que variam com a venda",x=>x.variaveis,BRL,"sub"),linha("(=) Margem de contribuição",x=>x.mc,BRL,"tot"),linha("Margem de contribuição %",x=>x.mcp,PCT,"pct"),
+      linha("(−) Saídas fixas (não variam com a venda)",x=>x.fixas,BRL,"sub"),linha("(=) Lucro líquido",x=>x.lucro,BRL,"fim"),linha("Margem líquida %",x=>x.ml,PCT,"pct"),
+      linha("Ponto de equilíbrio (faturamento para empatar)",x=>x.pe,BRL),linha("Folga (faturamento − ponto de equilíbrio)",x=>x.folga,v=>`<span class="${v>=0?"pos":"neg"}">${BRL(v)}</span>`)])+
+    `<h2>Ocupação das cadeiras</h2>`+tbl(cols,[linha("Horas disponíveis (postos × horas no mês)",x=>x.hd,v=>fmtD(v,0)),linha("Horas ocupadas (atendimentos × tempo)",x=>x.ho,v=>fmtD(v,1)),linha("Ocupação",x=>x.ocup,PCT,"tot"),
+      linha("Custo da hora de cadeira (saídas fixas ÷ horas disponíveis)",x=>x.custoHora,BRL),linha("Faturamento de serviço por hora ocupada",x=>x.fatHora,BRL)])+
+    `<h2>Margem por tipo de serviço (por atendimento)</h2>`+tbl([{t:"Serviço"},{t:"Preço",cl:"num"},{t:"Produto + descartável",cl:"num"},{t:"Imposto",cl:"num"},{t:"Maquininha",cl:"num"},{t:"Repasse (parceiro)",cl:"num"},{t:"Sobra — parceiro",cl:"num"},{t:"% parceiro",cl:"num"},{t:"Custo de cadeira",cl:"num"},{t:"Sobra — CLT",cl:"num"},{t:"% CLT",cl:"num"}],
+      R.margemServ.map(x=>({c:[esc(x.s.nome),BRL(x.preco),BRL(x.C),BRL(x.D),BRL(x.E),BRL(x.F),BRL(x.G),PCT(x.H),BRL(x.I),BRL(x.J),PCT(x.K)]})))+
+    `<p class="hint">Parceiro: o salão só paga imposto sobre a parte dele. CLT: o salário já está no custo da hora de cadeira.</p>
+    <h2>Simulador de preço</h2><div class="card"><div class="kgrid">
+      <label class="lb"><span>Loja</span>${cs(P,"sim.loja",uns.concat(uns.length>1?["Consolidado"]:[]),"Loja")}</label>
+      <label class="lb"><span>Tempo do serviço (min)</span>${ci(P,"sim.tempo","int","120","100%")}</label>
+      <label class="lb"><span>Produto usado (R$)</span>${ci(P,"sim.produto","num","30","100%")}</label>
+      <label class="lb"><span>Lucro que quero (% do preço)</span>${ci(P,"sim.lucro","pct","20","100%")}</label>
+      <label class="lb"><span>Feito por parceiro?</span>${cs(P,"sim.parceiro",["Sim","Não"],"Parceiro")}</label>
+      <label class="lb"><span>% do profissional parceiro</span>${ci(P,"sim.pctParc","pct","50","100%")}</label></div>
+      <div class="tb" style="margin-top:12px"><div class="tr"><span>Custo da hora de cadeira da loja</span><b>${BRL(sr.ch)}</b></div><div class="tr"><span>Custo de cadeira deste serviço</span><b>${BRL(sr.cad)}</b></div><div class="tr"><span>Produto + descartável</span><b>${BRL(sr.prod)}</b></div><div class="tr"><span>% que sai do preço (imposto + maquininha + parceiro + lucro)</span><b>${PCT(sr.pct)}</b></div>
+      <div class="tr"><span>Preço sugerido</span><b style="font-size:18px">${sr.preco==null?"Revise: % acima de 100%":BRL(sr.preco)}</b></div></div>
+      <p class="hint">Preço = (custo de cadeira + produto) ÷ (1 − % que sai do preço).</p></div>`}
+  else if(sub==="historico"){
+    const hs=histIntel(P,S.mes,uns),ok=hs.filter(r=>!r.vazio),av=k=>ok.length?ok.reduce((a,r)=>a+N0(r[k]),0)/ok.length:0;
+    h+=`<p class="hint">Últimos 6 meses. Meses com planilha preenchida são calculados sozinhos. Meses antigos podem ser digitados à mão (resumo do mês).</p>`+
+    tbl([{t:"Mês"}].concat(uns.map(u=>({t:"Fat. "+esc(u),cl:"num"}))).concat([{t:"Faturamento",cl:"num"},{t:"Seres humanos",cl:"num"},{t:"Regulares",cl:"num"},{t:"Não regulares",cl:"num"},{t:"Lucro",cl:"num"},{t:"Margem",cl:"num"},{t:"Ocupação",cl:"num"},{t:"Saídas fixas",cl:"num"},{t:"Caixa fim",cl:"num"},{t:"Reserva (meses)",cl:"num"},{t:"Pró-labore completo?"},{t:"Do bolso",cl:"num"},{t:"Meses sem aporte",cl:"num"},{t:""}]),
+      hs.map(r=>r.vazio?{cl:"out",c:[esc(mesLabel(r.mes))].concat(uns.map(()=>"—")).concat(["—","","","","","","","","","","","","",`<button class="chip" type="button" data-hm="${r.mes}">Digitar</button>`])}:
+        {c:[esc(mesLabel(r.mes))+(r.calc?' <span class="tag">planilha</span>':r.exemplo?' <span class="tag amb">exemplo</span>':' <span class="tag">digitado</span>')].concat(uns.map(u=>BRL0((r.fat||{})[u]))).concat([BRL0(r.tot),BRL0(r.sh),BRL0(r.reg),BRL0(r.nreg),`<span class="${r.lucro>=0?"pos":"neg"}">${BRL0(r.lucro)}</span>`,PCT(r.ml),PCT(r.ocup),BRL0(r.fixas),BRL0(r.caixa),fmtD(r.reserva,2),r.pl,BRL0(r.aporte),r.seq??"",r.manual?`<button class="chip" type="button" data-hm="${r.mes}">Editar</button>`:""])})
+      .concat([{cl:"tot",c:["Média 6 meses"].concat(uns.map(u=>BRL0(ok.length?ok.reduce((a,r)=>a+N0((r.fat||{})[u]),0)/ok.length:0))).concat([BRL0(av("tot")),BRL0(av("sh")),BRL0(av("reg")),BRL0(av("nreg")),BRL0(av("lucro")),PCT(av("ml")),PCT(av("ocup")),BRL0(av("fixas")),BRL0(av("caixa")),"","",BRL0(av("aporte")),"",""])}]))}
+  else if(sub==="premissas"){
+    const st=k=>{const v=(P.status||{})[k]||"EXEMPLO";return`<button type="button" class="st ${v==="REAL"?"re":"ex"}" data-st="${k}" title="Tocar para alternar">${v==="REAL"?"REAL":"EXEMPLO"}</button>`};
+    const tUn=(rows)=>tbl([{t:"Premissa"}].concat(uns.map(u=>({t:esc(u),cl:"num"}))),rows);
+    h+=`<div class="legenda"><span><i></i>Você preenche</span><span><span class="st ex">EXEMPLO</span> troque para <span class="st re">REAL</span> quando confirmar o número</span></div>
+    <h2>Geral ${st("geral")}</h2>`+tUn([["Meta de faturamento da loja no mês","meta","num"],["Postos de atendimento (cadeiras + bancadas + macas)","postos","int"],["Horas de atendimento por dia","horasDia","num"],["Dias de funcionamento no mês","dias","int"],["Caixa inicial (primeiro mês da planilha)","caixaIni","num"]].map(([n,k,f])=>({c:[n].concat(uns.map(u=>ci(P,"geral."+u+"."+k,f,"0")))})).concat([{cl:"sub",c:["Horas disponíveis por posto no mês"].concat(uns.map(u=>fmtD(N0(getP(P,"geral."+u+".horasDia"))*N0(getP(P,"geral."+u+".dias")))))},{cl:"sub",c:["Horas disponíveis da loja no mês"].concat(uns.map(u=>fmtD(N0(getP(P,"geral."+u+".horasDia"))*N0(getP(P,"geral."+u+".dias"))*N0(getP(P,"geral."+u+".postos")))))}]))+
+    `<h2>Sócios: pró-labore definido ${st("socios")}</h2>`+tbl([{t:"Sócio"},{t:"Pró-labore mensal",cl:"num"}].concat(uns.map(u=>({t:"% pago por "+esc(u),cl:"num"}))).concat([{t:""}]),(P.socios||[]).map((s,i)=>({c:[ci(P,"socios."+i+".nome","txt","Nome"),ci(P,"socios."+i+".prolabore","num","0,00")].concat(uns.map(u=>ci(P,"socios."+i+".rateio."+u,"pct","0","70px"))).concat([`<button class="x" type="button" data-prm="socios.${i}" aria-label="Remover">✕</button>`])})))+`<button class="chip" type="button" data-padd="socios" style="margin-top:8px">+ Adicionar sócio</button>
+    <h2>CLT: encargos e benefícios ${st("clt")}</h2>`+tbl([{t:"Premissa"},{t:"Valor",cl:"num"}],[["FGTS (%)",ci(P,"clt.fgts","pct")],["Provisão de férias + 1/3 (sobre o salário)",PCT(FER)],["Provisão de 13º (sobre o salário)",PCT(DEC)],["Vale-transporte por pessoa (bruto no mês)",ci(P,"clt.vt","num")],["Desconto do VT no salário (máximo legal, %)",ci(P,"clt.vtDesc","pct")],["Alimentação por pessoa no mês",ci(P,"clt.alim","num")]].map(r=>({c:r})))+
+    `<h2>Recebimentos ${st("receb")}</h2>`+tbl([{t:"Premissa"},{t:"Valor",cl:"num"}],[["% das vendas no Pix",ci(P,"receb.pix","pct")],["% das vendas em dinheiro",ci(P,"receb.din","pct")],["% das vendas no débito",ci(P,"receb.deb","pct")],["% das vendas no crédito",ci(P,"receb.cred","pct")],["Taxa da maquininha — débito (%)",ci(P,"receb.taxaDeb","pct")],["Taxa da maquininha — crédito, média com parcelado (%)",ci(P,"receb.taxaCred","pct")],["Taxa efetiva sobre o faturamento",PCT(taxaEfetiva(P))],["Conferência: soma do mix de pagamento (precisa dar 100%)",(()=>{const s=N0(getP(P,"receb.pix"))+N0(getP(P,"receb.din"))+N0(getP(P,"receb.deb"))+N0(getP(P,"receb.cred"));return Math.abs(s-1)<.0001?stB(true,"100%"):stB(false,"",PCT(s))})()]].map(r=>({c:r})))+
+    `<h2>Produtos ${st("prod")}</h2>`+tbl([{t:"Premissa"},{t:"Valor",cl:"num"}],[["Custo do produto de revenda (% do preço de venda)",ci(P,"prod.custo","pct")],["Comissão sobre venda de produtos (% da venda)",ci(P,"prod.comissao","pct")],["Descartáveis por atendimento (luva, touca, lixa, papel), R$",ci(P,"prod.descartavel","num")]].map(r=>({c:r})));
+    const al=aliqUnid(P,uns);
+    h+=`<h2>Imposto: Simples Nacional ${st("imposto")}</h2>`+tUn([{c:["As unidades são CNPJs separados?"].concat(uns.map((u,i)=>i===0?cs(P,"imposto.separados",[["true","Sim"],["false","Não"]],"CNPJs separados"):""))},{c:["Receita bruta dos últimos 12 meses (RBT12)"].concat(uns.map(u=>ci(P,"imposto.rbt12."+u,"num","0,00","120px")))},
+      {c:["Teto do Simples Nacional (12 meses)"].concat(uns.map((u,i)=>i===0?ci(P,"imposto.teto","num","4.800.000","120px"):""))},{c:["Alíquota estimada acima do teto (Lucro Presumido, serviços)"].concat(uns.map((u,i)=>i===0?ci(P,"imposto.presumido","pct"):""))},
+      {cl:"sub",c:["RBT12 usado para achar a faixa"].concat(uns.map(u=>BRL(al[u].base)))},{cl:"tot",c:["Alíquota efetiva — serviços (Anexo III)"].concat(uns.map(u=>PCT(al[u].serv)))},{cl:"tot",c:["Alíquota efetiva — revenda de produtos (Anexo I)"].concat(uns.map(u=>PCT(al[u].prod)))}])+
+    `<p class="hint">Confirme o anexo com a contabilidade. Cálculo: (RBT12 × alíquota − dedução) ÷ RBT12. Se for um CNPJ só, a faixa usa a soma das unidades.</p>
+    <h2>Serviços ${st("servicos")}</h2>`+tbl([{t:"Serviço"},{t:"Preço médio",cl:"num"},{t:"Tempo (min)",cl:"num"},{t:"Produto por atendimento",cl:"num"},{t:"% do salão (parceria)",cl:"num"},{t:"% do parceiro",cl:"num"},{t:""}],(P.servicos||[]).map((s,i)=>({c:[ci(P,"servicos."+i+".nome","txt","Serviço"),ci(P,"servicos."+i+".preco","num"),ci(P,"servicos."+i+".tempo","int","","70px"),ci(P,"servicos."+i+".produto","num"),ci(P,"servicos."+i+".salao","pct","","70px"),PCT(1-N0(s.salao)),`<button class="x" type="button" data-prm="servicos.${i}" aria-label="Remover">✕</button>`]})))+`<button class="chip" type="button" data-padd="servicos" style="margin-top:8px">+ Adicionar serviço</button>
+    <p class="hint">Lei do Salão-Parceiro (13.352/2016): a cota do profissional parceiro não entra na receita do salão para fins de imposto.</p>
+    <h2>Equipe ${st("equipe")}</h2>`+tbl([{t:"Nome"},{t:"Unidade"},{t:"Função"},{t:"Grupo"},{t:"Vínculo"},{t:"Salário base",cl:"num"},{t:"Férias + 1/3",cl:"num"},{t:"13º",cl:"num"},{t:"FGTS",cl:"num"},{t:"Salário + encargos",cl:"num"},{t:"VT (empresa)",cl:"num"},{t:"Alimentação",cl:"num"},{t:"Custo total",cl:"num"},{t:""}],
+      (P.equipe||[]).map((e,i)=>{const c=custoPessoa(e,P);return{c:[ci(P,"equipe."+i+".nome","txt","Nome"),cs(P,"equipe."+i+".un",uns,"Unidade"),ci(P,"equipe."+i+".funcao","txt","Função"),cs(P,"equipe."+i+".grupo",["Profissional","Recepcionista","Auxiliar"],"Grupo"),cs(P,"equipe."+i+".vinculo",["CLT","Parceiro"],"Vínculo"),ci(P,"equipe."+i+".salario","num"),BRL(c.fer),BRL(c.dec),BRL(c.fgts),BRL(c.J),BRL(c.K),BRL(c.L),BRL(c.M),`<button class="x" type="button" data-prm="equipe.${i}" aria-label="Remover">✕</button>`]}})
+      .concat([{cl:"tot",c:["Total","","","","",BRL((P.equipe||[]).reduce((a,e)=>a+(e.vinculo==="CLT"?N0(e.salario):0),0))].concat(["fer","dec","fgts","J","K","L","M"].map(k=>BRL((P.equipe||[]).reduce((a,e)=>a+custoPessoa(e,P)[k],0)))).concat([""])}]))+
+    `<button class="chip" type="button" data-padd="equipe" style="margin-top:8px">+ Adicionar pessoa</button><p class="hint">Parceiro não tem salário: recebe o repasse da parte dele, calculado na produção.</p>
+    <h2>Tabelas do Simples Nacional</h2>`+tbl([{t:"Faixa",cl:"num"},{t:"RBT12 a partir de",cl:"num"},{t:"Anexo III — alíquota",cl:"num"},{t:"Anexo III — dedução",cl:"num"},{t:"Anexo I — alíquota",cl:"num"},{t:"Anexo I — dedução",cl:"num"}],SIMPLES_TAB.map((x,i)=>({c:[i+1,BRL(x[0]),PCT(x[1]),BRL(x[2]),PCT(x[3]),BRL(x[4])]})))}
+  else if(sub==="cenario"){
+    const Mref=M||mesAnteriorCom(addMonth(S.mes,1));if(!Mref){h+='<div class="empty">Preencha pelo menos um mês da planilha para simular o cenário.</div>'}else{
+    const Rr=calcIntel(P,Mref,uns),hs=histIntel(P,Mref.mes,uns).filter(r=>!r.vazio),C=P.cenario||(P.cenario={alvo:1000000,periodo:"Mensal",ocup:.7,postos:5,pl:(P.socios||[]).map(()=>8000),recep:1,aux:1,gerente:4500,mkt:.03});
+    (P.socios||[]).forEach((s,i)=>{if(C.pl[i]==null)C.pl[i]=8000});const X=calcCenario(Rr,P,C,hs);
+    h+=`<p class="hint">Quanto seria o gasto real para faturar o valor-alvo, usando ${esc(mesLabel(Mref.mes))} como base: mesmo preço por hora, mesmo produto por serviço e mesma divisão parceiro/CLT.</p>
+    <h2>Premissas do cenário</h2><div class="card"><div class="kgrid">
+     <label class="lb"><span>Faturamento-alvo</span>${ci(P,"cenario.alvo","num","1.000.000","100%")}</label><label class="lb"><span>Esse valor é por</span>${cs(P,"cenario.periodo",["Mensal","Anual"],"Período")}</label>
+     <label class="lb"><span>Ocupação-alvo das cadeiras</span>${ci(P,"cenario.ocup","pct","70","100%")}</label><label class="lb"><span>Postos por loja</span>${ci(P,"cenario.postos","int","5","100%")}</label>
+     ${(P.socios||[]).map((s,i)=>`<label class="lb"><span>Pró-labore ${esc(s.nome)}</span>${ci(P,"cenario.pl."+i,"num","8.000","100%")}</label>`).join("")}
+     <label class="lb"><span>Recepcionistas por loja</span>${ci(P,"cenario.recep","int","1","100%")}</label><label class="lb"><span>Auxiliares por loja</span>${ci(P,"cenario.aux","int","1","100%")}</label>
+     <label class="lb"><span>Gerente geral (a partir de 3 lojas)</span>${ci(P,"cenario.gerente","num","4.500","100%")}</label><label class="lb"><span>Marketing (% do faturamento)</span>${ci(P,"cenario.mkt","pct","3","100%")}</label></div>
+     <p class="hint">Não regulares por loja no mês: ${BRL(X.base.B16)} (média do histórico).</p></div>
+    <h2>Operação necessária</h2>`+tbl([{t:"Item"},{t:"Cenário",cl:"num"}],[["Faturamento por mês",BRL0(X.op.C32)],["Faturamento de serviço por mês",BRL0(X.op.C33)],["Horas de atendimento necessárias",fmtD(X.op.C34)],["Profissionais/postos necessários",X.op.C35],["Lojas necessárias",`<b>${X.op.C36}</b>`],["Profissionais CLT",X.op.C37],["Profissionais parceiros",X.op.C38],["Total de pessoas CLT (profissionais + recepção + auxiliares + gerente)",X.op.C39],["Faturamento 12 meses usado no imposto (por CNPJ)",BRL0(X.op.C40)],["Alíquota — serviços",PCT(X.op.C41)],["Alíquota — produtos",PCT(X.op.C42)],["Enquadramento",X.op.acima?'<span class="st at">Acima do teto do Simples: fale com o contador</span>':'<span class="st ok">Dentro do Simples Nacional</span>']].map(r=>({c:r})))+
+    `<h2>Saídas no cenário</h2>`+tbl([{t:"Item"},{t:"Mês atual",cl:"num"},{t:"Cenário (mês)",cl:"num"},{t:"Cenário (ano)",cl:"num"},{t:"% do faturamento",cl:"num"}],
+      [{cl:"tot",c:["Faturamento",BRL0(X.fat[0]),BRL0(X.fat[1]),BRL0(X.fat[1]*12),"100%"]},{cl:"hd",c:["Seres humanos","","","",""]}].concat(X.sh.map(r=>({cl:"sub",c:[esc(r[0]),BRL0(r[1]),BRL0(r[2]),BRL0(r[2]*12),PCT(X.fat[1]?r[2]/X.fat[1]:0)]})))
+      .concat([{cl:"tot",c:["Total seres humanos",BRL0(X.tSH[0]),BRL0(X.tSH[1]),BRL0(X.tSH[1]*12),PCT(X.fat[1]?X.tSH[1]/X.fat[1]:0)]},{cl:"hd",c:["Regulares","","","",""]}]).concat(X.reg.map(r=>({cl:"sub",c:[esc(r[0]),BRL0(r[1]),BRL0(r[2]),BRL0(r[2]*12),PCT(X.fat[1]?r[2]/X.fat[1]:0)]})))
+      .concat([{cl:"tot",c:["Total regulares",BRL0(X.tREG[0]),BRL0(X.tREG[1]),BRL0(X.tREG[1]*12),PCT(X.fat[1]?X.tREG[1]/X.fat[1]:0)]},{c:["Não regulares",BRL0(X.tNR[0]),BRL0(X.tNR[1]),BRL0(X.tNR[1]*12),PCT(X.fat[1]?X.tNR[1]/X.fat[1]:0)]},
+        {cl:"tot",c:["Total de saídas",BRL0(X.tS[0]),BRL0(X.tS[1]),BRL0(X.tS[1]*12),PCT(X.fat[1]?X.tS[1]/X.fat[1]:0)]},{cl:"fim",c:["Lucro",BRL0(X.lucro[0]),BRL0(X.lucro[1]),BRL0(X.lucro[1]*12),PCT(X.margem[1])]},{cl:"pct",c:["Margem líquida",PCT(X.margem[0]),PCT(X.margem[1]),"",""]}]))}}
+  else if(sub==="indicadores"){
+    const mt=P.indicMetas||(P.indicMetas={}),ind=M.indic||(M.indic={});
+    const defs=[["Faturamento do mês","Quantitativo","Vem de Receitas e saídas",null,u=>R.U[u].fat,BRL0,true,u=>R.U[u].meta],["Ticket médio por atendimento","Quantitativo","Faturamento ÷ atendimentos","ticket",u=>R.U[u].ticket,BRL,true],["Ocupação das cadeiras","Quantitativo","Horas ocupadas ÷ horas disponíveis","ocup",u=>R.U[u].ocup,PCT,true],["Margem líquida","Quantitativo","Lucro ÷ faturamento","margem",u=>R.U[u].ml,PCT,true],["Seres humanos (% do faturamento)","Quantitativo","Folha + pró-labore ÷ faturamento","sh",u=>R.U[u].fat?R.U[u].SH/R.U[u].fat:0,PCT,false],
+      ["Clientes que voltaram em 90 dias","Quantitativo","Relatório de clientes do sistema","retorno",null,PCT,true,null,"pct"],["Reclamações / refação no mês","Quantitativo (inimigo)","Caderno de ocorrências","reclam",null,v=>fmtD(v),false,null,"int"],["NPS — satisfação das clientes","Qualitativo","Pesquisa 0–10 no WhatsApp após o atendimento","nps",null,v=>fmtD(v),true,null,"int"],["eNPS — satisfação do time","Qualitativo","Pesquisa anônima trimestral 0–10","enps",null,v=>fmtD(v),true,null,"int"]];
+    h+=`<p class="hint">Mínimo de 5 indicadores de número e 2 de satisfação. Revise toda semana com o time. Campos âmbar: medir e digitar.</p>`+
+    tbl([{t:"Indicador"},{t:"Tipo"},{t:"Como é medido"},{t:"Meta",cl:"num"}].concat(uns.map(u=>({t:esc(u),cl:"num"}))).concat(uns.map(u=>({t:"Status "+esc(u)}))),defs.map(([n,tp,como,mk,fn,fmt,maior,fmeta,fin])=>{
+      const meta=u=>fmeta?fmeta(u):N0(mt[mk]);const val=u=>fn?fn(u):N0((ind[u]||{})[mk]);
+      return{c:[`<b>${n}</b>`,`<span class="mut">${tp}</span>`,`<span class="mut">${como}</span>`,mk?ci(P,"indicMetas."+mk,mk==="ocup"||mk==="margem"||mk==="sh"||mk==="retorno"?"pct":"num","","80px"):'<span class="mut">meta da loja</span>']
+        .concat(uns.map(u=>fn?fmt(val(u)):ci(M,"indic."+u+"."+mk,fin,"","80px"))).concat(uns.map(u=>{const v=val(u),m=meta(u);return stB(maior?v>=m:v<=m)})),tdcl:[0,0,"wrap"]}}));
+    const sem=P.semanal&&P.semanal.length?P.semanal:(P.semanal=Array.from({length:13},(_,i)=>({sem:"Semana "+String(i+1).padStart(2,"0")})));
+    h+=`<h2>Acompanhamento semanal (reunião de 20 min com o time)</h2>`+tbl([{t:"Semana"}].concat(uns.map(u=>({t:"Fat. "+esc(u),cl:"num"}))).concat(uns.map(u=>({t:"Atend. "+esc(u),cl:"num"}))).concat([{t:"Reclamações",cl:"num"},{t:"Reconhecimento da semana"},{t:"Ajuste combinado"}]),
+      sem.map((s,i)=>({c:[ci(P,"semanal."+i+".sem","txt","Semana","110px")].concat(uns.map(u=>ci(P,"semanal."+i+".fat."+u,"num","","90px"))).concat(uns.map(u=>ci(P,"semanal."+i+".at."+u,"int","","70px"))).concat([ci(P,"semanal."+i+".rec","int","","60px"),ci(P,"semanal."+i+".reconhec","txt",""),ci(P,"semanal."+i+".ajuste","txt","")])})))+
+    `<button class="chip" type="button" id="semLimpa" style="margin-top:8px">Limpar e começar novo trimestre</button>`}
+  else if(sub==="previs"){
+    const pv=P.previs||(P.previs={}),Mref=M||mesAnteriorCom(addMonth(S.mes,1)),Rr=Mref?calcIntel(P,Mref,uns):null;
+    const g=(u,k)=>N0((pv[u]||{})[k]),tk=u=>Rr?Rr.U[u].ticket:0;
+    const calc=(u,meta)=>{const leads=g(u,meta?"leadsM":"leads"),conv=g(u,meta?"convM":"conv"),at=g(u,meta?"ativosM":"ativos"),t=meta?g(u,"ticketM"):tk(u),fr=g(u,meta?"freqM":"freq");const nov=leads*conv,tot=nov+at,rec=tot*t*fr;return{nov,tot,rec,dif:rec-N0(((P.geral||{})[u]||{}).meta)}};
+    const colsP=[{t:"Métrica"}].concat(uns.flatMap(u=>[{t:"Atual "+esc(u),cl:"num"},{t:"Meta 90 dias "+esc(u),cl:"num"}])).concat([{t:"Como medir"}]);
+    const r=(n,k,km,f,como)=>({c:[n].concat(uns.flatMap(u=>[k==="ticket"?BRL(tk(u)):ci(P,"previs."+u+"."+k,f,"","80px"),ci(P,"previs."+u+"."+km,f,"","80px")])).concat([`<span class="mut">${como}</span>`]),tdcl:[]});
+    h+=`<p class="hint">Receita = Leads × Conversão × Ticket × Frequência. Atual vs. meta de 90 dias por unidade.</p>`+tbl(colsP,[
+      r("Leads por mês (contatos novos)","leads","leadsM","int","Mensagens novas de quem nunca foi cliente"),r("Taxa de conversão (lead que agenda e comparece)","conv","convM","pct","Agendados que vieram ÷ leads"),r("Clientes ativos atendidos no mês","ativos","ativosM","int","Relatório do sistema"),
+      r("Ticket médio (R$)","ticket","ticketM","num","Atual vem de Indicadores"),r("Frequência (visitas por cliente no mês)","freq","freqM","num","Atendimentos ÷ clientes únicos"),
+      {cl:"sub",c:["Clientes novos no mês"].concat(uns.flatMap(u=>[fmtD(calc(u).nov),fmtD(calc(u,1).nov)])).concat([""])},{cl:"sub",c:["Total de clientes no mês"].concat(uns.flatMap(u=>[fmtD(calc(u).tot),fmtD(calc(u,1).tot)])).concat([""])},
+      {cl:"tot",c:["Receita projetada"].concat(uns.flatMap(u=>[BRL0(calc(u).rec),BRL0(calc(u,1).rec)])).concat([""])},{c:["Diferença para a meta da loja"].concat(uns.flatMap(u=>[`<span class="${calc(u).dif>=0?"pos":"neg"}">${BRL0(calc(u).dif)}</span>`,`<span class="${calc(u,1).dif>=0?"pos":"neg"}">${BRL0(calc(u,1).dif)}</span>`])).concat([""])}]);
+    const ra=P.reativ||(P.reativ={}),reat=Math.round(N0(ra.base)*N0(ra.inativo)*N0(ra.volta)),tkm=uns.length?uns.reduce((a,u)=>a+g(u,"ticketM"),0)/uns.length:0;
+    h+=`<h2>Reativação da base de clientes (WhatsApp)</h2>`+tbl([{t:"Item"},{t:"Valor",cl:"num"},{t:"Observação"}],[["Clientes cadastrados na base",ci(P,"reativ.base","int"),"Base total das unidades"],["% sem visita há mais de 90 dias",ci(P,"reativ.inativo","pct"),"Tirar do relatório do sistema"],["% que volta com uma campanha bem feita",ci(P,"reativ.volta","pct"),"Referência de mercado: 5% a 12%"],["Clientes reativados",fmtD(reat),""],["Faturamento extra da campanha",BRL0(reat*tkm),"Reativados × ticket médio meta"]].map(x=>({c:[x[0],x[1],`<span class="mut">${x[2]}</span>`]})))+
+    `<h2>Relatório de resultado — 15 dias</h2>`+tbl([{t:"Métrica"},{t:"Meta",cl:"num"},{t:"Resultado real",cl:"num"},{t:"Diferença",cl:"num"},{t:"Aprendizado"}],[["Leads prospectados","leads"],["Conversas / avaliações feitas","conv"],["Orçamentos enviados","orc"],["Vendas fechadas","vendas"],["Faturamento gerado (R$)","fat"]].map(([n,k])=>{const q=(P.quinzena||(P.quinzena={}))[k]||{};const dif=q.meta==null||q.meta===""?"":fmtD(N0(q.real)-N0(q.meta),0);return{c:[n,ci(P,"quinzena."+k+".meta","num","","80px"),ci(P,"quinzena."+k+".real","num","","80px"),dif,ci(P,"quinzena."+k+".apr","txt","")]}}))}
+  else if(sub==="produt"){
+    const pd=P.produt||(P.produt={socios:[],tarefas:[]}),so=pd.socios||[];const vh=n=>{const s=so.find(x=>x.nome===n);return s&&N0(s.horas)?N0(s.renda)/(N0(s.horas)*4.33):0};
+    h+=`<p class="hint">Quanto vale a sua hora e onde ela está indo. Toda tarefa que outra pessoa faz por menos que o valor da sua hora deve ser delegada.</p>
+    <h2>Quanto vale a sua hora?</h2>`+tbl([{t:"Item"}].concat(so.map(s=>({t:esc(s.nome),cl:"num"}))),[{c:["Nome"].concat(so.map((s,i)=>ci(P,"produt.socios."+i+".nome","txt","","110px")))},{c:["Renda mensal que você quer ter (pró-labore + lucro)"].concat(so.map((s,i)=>ci(P,"produt.socios."+i+".renda","num")))},{c:["Horas trabalhadas por semana"].concat(so.map((s,i)=>ci(P,"produt.socios."+i+".horas","num","","70px")))},
+      {cl:"sub",c:["Horas trabalhadas no mês"].concat(so.map(s=>fmtD(N0(s.horas)*4.33,1)))},{cl:"tot",c:["Valor da sua hora"].concat(so.map(s=>BRL(vh(s.nome))))},{c:["Valor da hora hoje (pró-labore definido ÷ horas)"].concat(so.map((s,i)=>{const pl=N0(((P.socios||[])[i]||{}).prolabore),hm=N0(s.horas)*4.33;return BRL(hm?pl/hm:0)}))}])+
+    `<button class="chip" type="button" data-padd="produt.socios" style="margin-top:8px">+ Adicionar sócio</button>`;
+    const tipos=Object.keys(DECISAO);const nomes=so.map(s=>s.nome);
+    h+=`<h2>Tarefas</h2>`+tbl([{t:"Tarefa"},{t:"Responsável"},{t:"Horas/semana",cl:"num"},{t:"Tipo"},{t:"Decisão"},{t:"Custo no mês",cl:"num"},{t:"Para quem delegar / observação"},{t:""}],(pd.tarefas||[]).map((t,i)=>({c:[ci(P,"produt.tarefas."+i+".tarefa","txt","Tarefa"),cs(P,"produt.tarefas."+i+".resp",nomes.length?nomes:[""],"Responsável"),ci(P,"produt.tarefas."+i+".horas","num","","60px"),cs(P,"produt.tarefas."+i+".tipo",tipos,"Tipo"),`<b>${esc(DECISAO[t.tipo]||"")}</b>`,BRL(N0(t.horas)*4.33*vh(t.resp)),ci(P,"produt.tarefas."+i+".obs","txt",""),`<button class="x" type="button" data-prm="produt.tarefas.${i}" aria-label="Remover">✕</button>`]})))+
+    `<button class="chip" type="button" data-padd="produt.tarefas" style="margin-top:8px">+ Adicionar tarefa</button>`;
+    const totH=(pd.tarefas||[]).reduce((a,t)=>a+N0(t.horas),0);
+    h+=`<h2>Resumo por tipo</h2>`+tbl([{t:"Tipo"}].concat(so.map(s=>({t:esc(s.nome)+" (h/sem)",cl:"num"}))).concat([{t:"% do tempo",cl:"num"},{t:"Custo no mês",cl:"num"}]),tipos.map(tp=>{const ts=(pd.tarefas||[]).filter(t=>t.tipo===tp),hs=ts.reduce((a,t)=>a+N0(t.horas),0);return{c:[tp].concat(so.map(s=>fmtD(ts.filter(t=>t.resp===s.nome).reduce((a,t)=>a+N0(t.horas),0),1))).concat([PCT(totH?hs/totH:0),BRL(ts.reduce((a,t)=>a+N0(t.horas)*4.33*vh(t.resp),0))])}}))+
+    (()=>{const pc=totH?(pd.tarefas||[]).filter(t=>t.tipo==="Produção com margem").reduce((a,t)=>a+N0(t.horas),0)/totH:0;return`<p class="note"><b>Meta:</b> pelo menos 60% do tempo dos sócios em Produção com margem. Hoje: ${PCT(pc)} ${stB(pc>=.6)}</p>`})()}
+  else if(sub==="guia"){
+    h+=`<div class="card"><h3 style="margin:0 0 6px;font-size:16px">O que é</h3><p class="hint">A planilha de inteligência financeira do salão, dentro do app. Ela calcula o resultado do mês pela produção de cada profissional e pelas contas, separa as saídas em Seres humanos, Regulares e Não regulares e mostra lucro, ponto de equilíbrio, ocupação e o diagnóstico VAZK.</p>
+    <h3 style="margin:14px 0 6px;font-size:16px">Passo a passo</h3><ol class="hint" style="padding-left:18px"><li>Premissas: confirme cada número marcado como EXEMPLO e troque para REAL.</li><li>Premissas → Equipe: cadastre todo mundo, a unidade, a função e se é CLT ou parceiro.</li><li>Produção: digite quantos atendimentos cada profissional fez de cada serviço.</li><li>Receitas e saídas: digite a venda de produtos e as contas do mês, ou use “Puxar contas dos lançamentos do mês”.</li><li>Caixa do mês: digite o pró-labore pago de verdade, o dinheiro que veio do bolso e as retiradas.</li><li>Confira o Resumo: lucro, ponto de equilíbrio e os 3 números do diagnóstico VAZK.</li><li>Use o simulador (Margem e preço) antes de criar ou reajustar um preço.</li></ol>
+    <h3 style="margin:14px 0 6px;font-size:16px">Como virar o mês</h3><p class="hint">Avance o mês no seletor e toque em “Começar”. O app copia as contas regulares do mês anterior, zera os atendimentos e já coloca o caixa inicial igual ao caixa final do mês que passou. O histórico se monta sozinho.</p>
+    <h3 style="margin:14px 0 6px;font-size:16px">Cores e campos</h3><p class="hint">Campos com fundo âmbar são para preencher. Todo o resto é calculado. Toque em EXEMPLO/REAL para marcar quais premissas já foram confirmadas.</p>
+    <h3 style="margin:14px 0 6px;font-size:16px">Perguntas para os números ficarem reais</h3>${tbl([{t:"Pergunta"},{t:"Onde mudar"}],[["As unidades são um CNPJ só ou dois?","Premissas → Imposto"],["Qual o faturamento dos últimos 12 meses de cada unidade (RBT12)?","Premissas → Imposto"],["O contador confirma Anexo III para serviços e Anexo I para produtos?","Premissas → Tabelas"],["Quem é CLT e quem é parceiro hoje?","Premissas → Equipe"],["Qual % fica com o salão em cada serviço na parceria?","Premissas → Serviços"],["Preço médio, tempo e produto de cada serviço?","Premissas → Serviços"],["Quantos postos e qual horário em cada unidade?","Premissas → Geral"],["Pró-labore de cada sócio e quanto cada unidade paga?","Premissas → Sócios"],["Salário de cada pessoa, vale-transporte e alimentação?","Premissas → Equipe e CLT"],["Como os clientes pagam e quais as taxas da maquininha?","Premissas → Recebimentos"],["Custo dos produtos de revenda e comissão de quem vende?","Premissas → Produtos"],["Contas fixas de cada unidade?","Receitas e saídas → Regulares"]].map(r=>({c:r,tdcl:["wrap"]})))}</div>`}
+  $("#app").innerHTML=h;ligarIntelNav();if(precisaMes||sub==="historico")ligarMesNav();
+  const root=$("#app");
+  if(M)ligarCI(root,M,k=>{if(k.startsWith("indicMetas")||k.startsWith("previs"))return;salvaM()});
+  root.querySelectorAll(".ci[data-k]").forEach(el=>{const k=el.dataset.k;const ehP=/^(geral|socios|clt|receb|prod\.|imposto|servicos|equipe|sim|cenario|indicMetas|semanal|previs|reativ|quinzena|produt)/.test(k)&&!(k.startsWith("prod.")&&sub==="producao");
+    if(ehP||!M){el.onchange=()=>{const f=el.dataset.f;let v=f==="txt"?el.value.trim():parseIn(el.value);if(f==="pct")v=v/100;if(k==="imposto.separados")v=el.value==="true";if(/\.varia$/.test(k))v=!!el.value;setP(P,k,v);salvaP()}}
+    else if(/\.varia$/.test(k)){el.onchange=()=>{setP(M,k,!!el.value);salvaM()}}});
+  $$("[data-st]").forEach(b=>b.onclick=()=>{P.status=P.status||{};P.status[b.dataset.st]=(P.status[b.dataset.st]==="REAL")?"EXEMPLO":"REAL";salvaP()});
+  $$("[data-add]").forEach(b=>b.onclick=()=>{const k=b.dataset.add;(M[k]=M[k]||[]).push(k==="regulares"?{id:"r"+uid(),nome:"",tipo:"Despesa",varia:false,v:{}}:{id:"n"+uid(),nome:"",v:{}});salvaM()});
+  $$("[data-rm]").forEach(b=>confirmar(b,"?",()=>{const[k,i]=b.dataset.rm.split(".");M[k].splice(+i,1);salvaM()}));
+  $$("[data-padd]").forEach(b=>b.onclick=()=>{const k=b.dataset.padd,arr=getP(P,k)||[];if(!getP(P,k))setP(P,k,arr);
+    if(k==="socios")arr.push({nome:"Sócio "+(arr.length+1),prolabore:0,rateio:{}});else if(k==="servicos")arr.push({id:"s"+uid(),nome:"Novo serviço",preco:0,tempo:60,produto:0,salao:.5});
+    else if(k==="equipe")arr.push({id:"p"+uid(),nome:"",un:uns[0],funcao:"",grupo:"Profissional",vinculo:"CLT",salario:0});else if(k==="produt.socios")arr.push({nome:"Sócio",renda:0,horas:44});else if(k==="produt.tarefas")arr.push({id:"t"+uid(),tarefa:"",resp:((P.produt||{}).socios||[{}])[0].nome||"",horas:1,tipo:"Produção com margem",obs:""});salvaP()});
+  $$("[data-prm]").forEach(b=>confirmar(b,"?",()=>{const p=b.dataset.prm.split("."),i=+p.pop(),arr=getP(P,p.join("."));arr.splice(i,1);salvaP()}));
+  $$("[data-hm]").forEach(b=>b.onclick=()=>editarHistManual(b.dataset.hm));
+  if($("#semLimpa"))confirmar($("#semLimpa"),"Confirmar limpeza",()=>{P.semanal=Array.from({length:13},(_,i)=>({sem:"Semana "+String(i+1).padStart(2,"0")}));salvaP()});
+  if($("#inImp"))$("#inImp").onclick=()=>importarContasMes(M);
+  if($("#inXls"))$("#inXls").onclick=()=>exportarIntelXLSX(P,M,R,uns)}
+function ligarIntelNav(){$$("[data-isub]").forEach(b=>b.onclick=()=>{S.intelSub=b.dataset.isub;window.scrollTo(0,0);render()})}
+function editarHistManual(m){const P=IV.P,uns=intelUns();P.histManual=P.histManual||[];let h=P.histManual.find(x=>x.mes===m);const novo=!h;if(!h)h={mes:m,fat:{},sh:0,reg:0,nreg:0,ocup:0,fixas:0,caixa:0,pl:"Não",aporte:0};const f=clone(h);
+  abrirSheet(`${fechar}<h3>${esc(mesLabel(m))} (resumo digitado)</h3><p class="hint">Para meses antes da planilha. Digite os totais do mês.</p><div class="kgrid">
+   ${uns.map(u=>`<label class="lb"><span>Faturamento ${esc(u)}</span>${ci(f,"fat."+u,"num","0","100%")}</label>`).join("")}
+   <label class="lb"><span>Seres humanos</span>${ci(f,"sh","num","0","100%")}</label><label class="lb"><span>Regulares</span>${ci(f,"reg","num","0","100%")}</label><label class="lb"><span>Não regulares</span>${ci(f,"nreg","num","0","100%")}</label>
+   <label class="lb"><span>Ocupação (%)</span>${ci(f,"ocup","pct","0","100%")}</label><label class="lb"><span>Saídas fixas</span>${ci(f,"fixas","num","0","100%")}</label><label class="lb"><span>Caixa no fim do mês</span>${ci(f,"caixa","num","0","100%")}</label>
+   <label class="lb"><span>Pró-labore pago completo?</span>${cs(f,"pl",["Sim","Não"],"Pró-labore")}</label><label class="lb"><span>Dinheiro do bolso</span>${ci(f,"aporte","num","0","100%")}</label></div>
+   <div class="btns">${novo?"<span></span>":'<button class="btn danger" id="hmDel" type="button">Apagar mês</button>'}<button class="btn" id="hmOk" type="button">Salvar</button></div>`,box=>{ligaFechar(box);ligarCI(box,f,()=>{});
+    box.querySelector("#hmOk").onclick=()=>{box.querySelectorAll(".ci").forEach(el=>el.onchange&&el.onchange());delete f.exemplo;const i=P.histManual.findIndex(x=>x.mes===m);i>=0?P.histManual[i]=f:P.histManual.push(f);salvarP();fecharSheet();render()};
+    const d=box.querySelector("#hmDel");if(d)confirmar(d,"Confirmar",()=>{P.histManual=P.histManual.filter(x=>x.mes!==m);salvarP();fecharSheet();render()})})}
+async function importarContasMes(M){const e=empresaAtual(),uns=intelUns(),m=M.mes;
+  let singles=[];try{singles=await Store.get("lanc",[["plano","==",false],["mes","==",m]])}catch(err){}
+  const ocs=singles.filter(l=>ctxDe(l)===e.id).flatMap(l=>ocorr(l,m,m)).concat(S.planos.filter(l=>ctxDe(l)===e.id).flatMap(l=>ocorr(l,m,m)));
+  const reg={},nreg={},venda={};let n=0;const put=(map,cat,un,v)=>{map[cat]=map[cat]||{};const alvo=un&&uns.includes(un)?[un]:uns;alvo.forEach(u=>map[cat][u]=(map[cat][u]||0)+v/alvo.length)};
+  ocs.forEach(o=>{const g=grupoDe(o),c=o.l.cat;if(o.l.tipo==="receita"){if(/produto/i.test(c)){put(venda,"v",o.l.unid,o.valor);n++}return}
+    if(["ocupacao","admin","marketing","financeira","deducao"].includes(g)&&!/DAS|imposto/i.test(c)){put(reg,c,o.l.unid,o.valor);n++}else if(g==="investimento"){put(nreg,c,o.l.unid,o.valor);n++}});
+  if(!n)return toast("Nenhuma conta da empresa encontrada nos lançamentos de "+mesLabel(m),3500);
+  abrirSheet(`${fechar}<h3>Puxar contas dos lançamentos</h3><p class="hint">Encontrei em ${esc(mesLabel(m))}: ${Object.keys(reg).length} conta(s) regular(es), ${Object.keys(nreg).length} não regular(es)${venda.v?" e venda de produtos":""}. Lançamentos sem unidade são divididos igualmente entre as unidades. Salários, comissões, insumos e impostos não entram aqui, porque a planilha calcula pela produção e pela equipe.</p>
+   <div class="lst">${Object.entries(reg).map(([c,v])=>`<div class="li"><span style="flex:1">${esc(c)}</span><b>${BRL(Object.values(v).reduce((a,b)=>a+b,0))}</b></div>`).join("")}${Object.entries(nreg).map(([c,v])=>`<div class="li"><span style="flex:1">${esc(c)} <span class="tag">não regular</span></span><b>${BRL(Object.values(v).reduce((a,b)=>a+b,0))}</b></div>`).join("")}</div>
+   <div class="btns"><button class="btn ghost" data-fechar type="button">Cancelar</button><button class="btn" id="impOk" type="button">Substituir contas do mês</button></div>`,box=>{ligaFechar(box);box.querySelector("#impOk").onclick=()=>{
+    const rd=o=>{const x={};Object.entries(o).forEach(([u,v])=>x[u]=Math.round(v*100)/100);return x};
+    M.regulares=Object.entries(reg).map(([c,v])=>{const old=(M.regulares||[]).find(r=>r.nome===c);return{id:old?old.id:"r"+uid(),nome:c,tipo:old?old.tipo:"Despesa",varia:old?old.varia:false,v:rd(v)}});
+    M.naoReg=Object.entries(nreg).map(([c,v])=>({id:"n"+uid(),nome:c,v:rd(v)}));if(venda.v)M.vendaProd=rd(venda.v);salvarM(M);fecharSheet();render();toast("Contas atualizadas a partir dos lançamentos")}})}
+function exportarIntelXLSX(P,M,R,uns){const U=uns,T=R.T,sm=a=>U.reduce((x,u)=>x+N0(a[u]),0);
+  const rs=[["Receitas e saídas — "+mesLabel(M.mes)],[],["Grupo","Item","Tipo","Varia com a venda?"].concat(U).concat(["Total","% do faturamento"])];
+  R.recServ.forEach(r=>rs.push(["Receita",r.nome,"Receita",""].concat(U.map(u=>r.v[u])).concat([sm(r.v),T.fat?sm(r.v)/T.fat:0])));
+  rs.push(["Receita","Venda de produtos","Receita",""].concat(U.map(u=>R.U[u].venda)).concat([T.venda,T.fat?T.venda/T.fat:0]));rs.push(["","FATURAMENTO TOTAL","",""].concat(U.map(u=>R.U[u].fat)).concat([T.fat,1]));
+  [["sh","Seres humanos","TOTAL SERES HUMANOS","SH"],["reg","Regulares","TOTAL REGULARES","REG"],["nreg","Não regulares","TOTAL NÃO REGULARES","NREG"]].forEach(([g,n,tn,k])=>{R.L.filter(l=>l.g===g).forEach(l=>rs.push([n,l.nome,l.tipo,l.varia?"Sim":"Não"].concat(U.map(u=>l.v[u])).concat([sm(l.v),T.fat?sm(l.v)/T.fat:0])));rs.push(["",tn,"",""].concat(U.map(u=>R.U[u][k])).concat([T[k],T.fat?T[k]/T.fat:0]))});
+  rs.push(["","TOTAL DE SAÍDAS","",""].concat(U.map(u=>R.U[u].sai)).concat([T.sai,T.fat?T.sai/T.fat:0]));rs.push(["","RESULTADO DO MÊS","",""].concat(U.map(u=>R.U[u].res)).concat([T.res,T.ml]));
+  const mg=[["Margem — "+mesLabel(M.mes)],[],["Indicador"].concat(U).concat(["Consolidado"])];[["Faturamento","fat"],["(−) Custos","custos"],["(=) Margem bruta","mb"],["(−) Saídas variáveis","variaveis"],["(=) Margem de contribuição","mc"],["Margem de contribuição %","mcp"],["(−) Saídas fixas","fixas"],["(=) Lucro líquido","lucro"],["Margem líquida %","ml"],["Ponto de equilíbrio","pe"],["Folga","folga"],["Horas disponíveis","hd"],["Horas ocupadas","ho"],["Ocupação","ocup"],["Custo da hora de cadeira","custoHora"],["Faturamento de serviço por hora ocupada","fatHora"],["Caixa no fim do mês","fim"],["Reserva (meses)","reserva"]].forEach(([n,k])=>mg.push([n].concat(U.map(u=>R.U[u][k])).concat([T[k]])));
+  const pr=[["Produção — "+mesLabel(M.mes)],[],["Profissional","Unidade","Vínculo"].concat((P.servicos||[]).map(s=>s.nome)).concat(["Atendimentos","Faturamento","Parte do parceiro","Parte do salão","Horas","Produto"])];R.profs.forEach(p=>pr.push([p.e.nome,p.e.un,p.e.vinculo].concat((P.servicos||[]).map(s=>p.porS[s.id])).concat([p.n,p.fat,p.parc,p.salao,p.h,p.prod])));
+  exportarXLSX(`inteligencia-financeira-${M.mes}.xlsx`,[{nome:"Receitas e saídas",larg:[16,44,10,10].concat(U.map(()=>14)).concat([14,12]),linhas:rs},{nome:"Margem",larg:[40].concat(U.map(()=>14)).concat([14]),linhas:mg},{nome:"Produção",larg:[22,18,10].concat((P.servicos||[]).map(()=>12)).concat([12,14,14,14,10,12]),linhas:pr}])}
+
+/* ================= DRE ANUAL (planilha completa) ================= */
+const DREV={ano:null,singles:null,carregando:false,abertos:{}};
+async function carregarAno(y){if(DREV.ano===y&&DREV.singles)return;DREV.ano=y;DREV.singles=null;
+  try{const s=await Store.get("lanc",[["plano","==",false],["mes",">=",y+"-01"],["mes","<=",y+"-12"]]);if(DREV.ano===y){DREV.singles=s;if(S.tab==="dre")render()}}catch(e){DREV.singles=[];if(S.tab==="dre")render()}}
+const LINHAS_DRE=[
+  ["g","receita","Receita bruta",1],["g","deducao","(−) Impostos sobre vendas",-1],["t","RL","= Receita líquida"],
+  ["g","custo","(−) Custos variáveis",-1],["t","MC","= Margem de contribuição"],["p","MCp","Margem de contribuição %"],
+  ["g","pessoal","(−) Pessoal",-1],["g","ocupacao","(−) Ocupação",-1],["g","admin","(−) Administrativas",-1],["g","marketing","(−) Marketing",-1],["t","RO","= Resultado operacional (EBITDA)"],
+  ["g","fin_r","(+) Receitas financeiras",1],["g","financeira","(−) Despesas financeiras",-1],["t","LL","= Lucro líquido"],["p","LLp","Margem líquida %"],
+  ["g","retirada","(−) Pró-labore e retiradas",-1],["f","RF","= Resultado após retiradas"],
+  ["g","investimento","Investimentos (fora do resultado)",-1,"out"],["g","aporte","Aportes dos sócios (fora do resultado)",1,"out"],["t","CX","= Variação de caixa"],
+  ["i","PE","Ponto de equilíbrio (faturamento)"],["i","META","Meta de faturamento"],["i","METAp","% da meta"]];
+function dreAnual(y,un,real){const meses=Array.from({length:12},(_,i)=>y+"-"+String(i+1).padStart(2,"0"));const emp=empresaAtual()||{unidades:[]};
+  const metaMes=(emp.unidades||[]).filter(u=>un==="Todas"||u.nome===un).reduce((a,u)=>a+N0(u.meta),0);
+  const col=meses.map(m=>{let os=(DREV.singles||[]).filter(naCtx).flatMap(l=>ocorr(l,m,m)).concat(S.planos.filter(naCtx).flatMap(l=>ocorr(l,m,m)));
+    if(un!=="Todas")os=os.filter(o=>(o.l.unid||"")===un);if(real)os=os.filter(o=>o.pago);
+    const d=dre(os),cats={};os.forEach(o=>{const g=grupoDe(o);cats[g]=cats[g]||{};cats[g][o.l.cat]=(cats[g][o.l.cat]||0)+o.valor});
+    return{m,d,cats,CX:d.RF-d.inv+d.apo,META:metaMes,METAp:metaMes?d.RB/metaMes:0}});
+  return{meses,col}}
+function valDRE(c,k){const d=c.d;switch(k){case"RL":return d.RL;case"MC":return d.MC;case"MCp":return d.RB?d.MC/d.RB:null;case"RO":return d.RO;case"LL":return d.LL;case"LLp":return d.RB?d.LL/d.RB:null;case"RF":return d.RF;case"CX":return c.CX;case"PE":return d.PE;case"META":return c.META;case"METAp":return c.METAp}
+  return d.g[k]||0}
+function telaDRE(){
+  if(!isPJ()){$("#app").innerHTML=`<h1 class="tt">DRE anual</h1><div class="card" style="margin-top:12px"><p style="margin:0 0 10px">A DRE anual é da empresa. Selecione a empresa no topo para abrir.</p><button class="btn sm" id="irPJ" type="button" style="width:auto">${ic("building")} Abrir na empresa</button></div>`;$("#irPJ").onclick=()=>{setCtx((S.cfg.empresas||[])[0].id);render()};return}
+  const y=S.dreAno||S.mes.slice(0,4);carregarAno(y);const emp=empresaAtual(),uns=unidadesCtx();const un=S.dreUn||"Todas",real=!!S.dreReal,av=!!S.dreAV;
+  let h=`<div class="ctxlbl">${esc(emp.nome)}</div><h1 class="tt">DRE anual</h1>
+  <p class="hint">Demonstrativo do resultado mês a mês, com total do ano e análise vertical. Toque numa linha com ▸ para abrir as categorias.</p>
+  <div class="mes"><button type="button" id="dAnt" aria-label="Ano anterior">‹</button><span class="l">${esc(y)}</span><button type="button" id="dProx" aria-label="Próximo ano">›</button></div>
+  <div class="row" style="gap:8px;flex-wrap:wrap;margin:6px 0">${uns.length?`<div class="chips">${[["Todas","Todas as unidades"],["","Geral / rateio"]].concat(uns.map(u=>[u.nome,u.nome])).map(([k,n])=>`<button type="button" class="chip" data-dun="${esc(k)}" aria-pressed="${un===k}">${esc(n)}</button>`).join("")}</div>`:""}</div>
+  <div class="row" style="gap:16px;flex-wrap:wrap"><label class="ck"><input type="checkbox" id="dReal" ${real?"checked":""}> Só realizado (pago e recebido)</label><label class="ck"><input type="checkbox" id="dAV" ${av?"checked":""}> Mostrar % da receita (análise vertical)</label></div>`;
+  if(!DREV.singles){$("#app").innerHTML=h+'<p class="empty">Carregando o ano…</p>';ligarDRE(y);return}
+  const A=dreAnual(y,un,real),tot={d:{g:{}},cats:{}};
+  A.col.forEach(c=>{Object.entries(c.d.g).forEach(([k,v])=>tot.d.g[k]=(tot.d.g[k]||0)+v);Object.entries(c.cats).forEach(([g,o])=>{tot.cats[g]=tot.cats[g]||{};Object.entries(o).forEach(([n,v])=>tot.cats[g][n]=(tot.cats[g][n]||0)+v)})});
+  const sumK=k=>A.col.reduce((a,c)=>a+(valDRE(c,k)||0),0);const RBt=tot.d.g.receita||0;
+  const tv={RL:sumK("RL"),MC:sumK("MC"),RO:sumK("RO"),LL:sumK("LL"),RF:sumK("RF"),CX:sumK("CX"),META:sumK("META")};tv.MCp=RBt?tv.MC/RBt:null;tv.LLp=RBt?tv.LL/RBt:null;tv.METAp=tv.META?RBt/tv.META:null;
+  const fixT=(tot.d.g.pessoal||0)+(tot.d.g.ocupacao||0)+(tot.d.g.admin||0)+(tot.d.g.marketing||0)+(tot.d.g.financeira||0)-(tot.d.g.fin_r||0);tv.PE=RBt&&tv.MC>0?fixT/(tv.MC/RBt):null;
+  const mesesCom=A.col.filter(c=>c.d.RB||c.d.LL).length||1;
+  const fmt=(v,k,pct)=>v==null?"—":pct||k==="MCp"||k==="LLp"||k==="METAp"?PCT(v):BRL0(v);
+  const cel=(v,rb,k)=>av&&!["MCp","LLp","METAp","PE","META"].includes(k)?(rb?PCT((v||0)/rb):"—"):fmt(v,k);
+  const cols=[{t:"Linha"}].concat(A.meses.map(m=>({t:MESES[+m.slice(5)-1].slice(0,3),cl:"num"}))).concat([{t:"Total "+y,cl:"num"},{t:"Média/mês",cl:"num"},{t:"% receita",cl:"num"}]);
+  const rows=[];
+  LINHAS_DRE.forEach(([tp,k,nome,sinal,extra])=>{
+    if(tp==="g"){const t=tot.d.g[k]||0;const temCats=tot.cats[k]&&Object.keys(tot.cats[k]).length;const ab=DREV.abertos[k];
+      rows.push({cl:(k==="receita"?"tot":"")+(extra?" out":"")+(temCats?" clk":""),attr:temCats?` data-dab="${k}"`:"",c:[(temCats?(ab?"▾ ":"▸ "):"")+nome].concat(A.col.map(c=>cel(c.d.g[k]||0,c.d.RB,k))).concat([`<b>${cel(t,RBt,k)}</b>`,cel(t/mesesCom,RBt/mesesCom,k),RBt?PCT(t/RBt):"—"])});
+      if(ab&&temCats)Object.entries(tot.cats[k]).sort((a,b)=>b[1]-a[1]).forEach(([n,v])=>rows.push({cl:"sub",c:[esc(n)].concat(A.col.map(c=>cel((c.cats[k]||{})[n]||0,c.d.RB,k))).concat([cel(v,RBt,k),cel(v/mesesCom,RBt/mesesCom,k),RBt?PCT(v/RBt):"—"])}))}
+    else{const isP=tp==="p"||k==="METAp";rows.push({cl:tp==="t"?"tot":tp==="f"?"fim":tp==="p"?"pct":"out",c:[nome].concat(A.col.map(c=>{const v=valDRE(c,k);return isP?fmt(v,k):k==="PE"||k==="META"?fmt(v,k):cel(v,c.d.RB,k)})).concat([isP?fmt(tv[k],k):k==="PE"?fmt(tv.PE,k):cel(tv[k],RBt,k),isP||k==="PE"?"":cel((tv[k]||0)/mesesCom,RBt/mesesCom,k),!isP&&k!=="PE"&&k!=="META"&&RBt?PCT((tv[k]||0)/RBt):""])})}});
+  h+=`<div class="kpis k4"><div class="kpi"><small>Receita bruta ${y}</small><b class="pos">${BRL0(RBt)}</b></div><div class="kpi"><small>Lucro líquido ${y}</small><b class="${tv.LL>=0?"pos":"neg"}">${BRL0(tv.LL)}</b></div><div class="kpi"><small>Margem líquida</small><b>${tv.LLp==null?"—":PCT(tv.LLp)}</b></div><div class="kpi"><small>Resultado após retiradas</small><b class="${tv.RF>=0?"pos":"neg"}">${BRL0(tv.RF)}</b></div></div>
+  <div style="margin-top:14px">${tbl(cols,rows,{id:"dreTab"})}</div>
+  <p class="hint">Visão gerencial pela data de vencimento; compras no cartão entram no mês da fatura. A média mensal considera só os meses com movimento (${mesesCom}). O grupo de cada categoria é ajustável em Ajustes → Categorias.</p>
+  <div class="row" style="gap:8px;flex-wrap:wrap;margin-top:8px"><button class="btn ghost sm" id="dXls" type="button" style="width:auto">${ic("dl")} Exportar DRE para Excel</button><button class="btn ghost sm" id="dAbre" type="button" style="width:auto">${Object.values(DREV.abertos).some(Boolean)?"Recolher categorias":"Abrir todas as categorias"}</button></div>`;
+  $("#app").innerHTML=h;ligarDRE(y);
+  $$("[data-dab]").forEach(r=>r.onclick=()=>{const k=r.dataset.dab;DREV.abertos[k]=!DREV.abertos[k];rerenderMantendo(render)});
+  $("#dAbre").onclick=()=>{const abrir=!Object.values(DREV.abertos).some(Boolean);LINHAS_DRE.forEach(([tp,k])=>{if(tp==="g")DREV.abertos[k]=abrir});rerenderMantendo(render)};
+  $("#dXls").onclick=()=>{const L=[["DRE anual "+y+" — "+emp.nome+(un!=="Todas"?" — "+(un||"Geral / rateio"):"")+(real?" (só realizado)":"")],[],["Linha"].concat(A.meses.map(m=>MESES[+m.slice(5)-1])).concat(["Total "+y,"Média/mês","% da receita"])];
+    LINHAS_DRE.forEach(([tp,k,nome])=>{if(tp==="g"){const t=tot.d.g[k]||0;L.push([nome].concat(A.col.map(c=>Math.round((c.d.g[k]||0)*100)/100)).concat([Math.round(t*100)/100,Math.round(t/mesesCom*100)/100,RBt?Math.round(t/RBt*10000)/100+"%":""]));
+        Object.entries(tot.cats[k]||{}).sort((a,b)=>b[1]-a[1]).forEach(([n,v])=>L.push(["    "+n].concat(A.col.map(c=>Math.round(((c.cats[k]||{})[n]||0)*100)/100)).concat([Math.round(v*100)/100,Math.round(v/mesesCom*100)/100,RBt?Math.round(v/RBt*10000)/100+"%":""])))}
+      else{const isP=tp==="p"||k==="METAp";L.push([nome].concat(A.col.map(c=>{const v=valDRE(c,k);return v==null?"":isP?Math.round(v*10000)/100+"%":Math.round(v*100)/100})).concat([tv[k]==null?"":isP?Math.round(tv[k]*10000)/100+"%":Math.round(tv[k]*100)/100,"",""]))}});
+    exportarXLSX(`DRE-${y}-${(emp.nome||"empresa").replace(/\W+/g,"-")}.xlsx`,[{nome:"DRE "+y,larg:[40].concat(A.meses.map(()=>13)).concat([15,13,11]),linhas:L}])}}
+function ligarDRE(y){$("#dAnt").onclick=()=>{S.dreAno=String(+y-1);render()};$("#dProx").onclick=()=>{S.dreAno=String(+y+1);render()};
+  $$("[data-dun]").forEach(b=>b.onclick=()=>{S.dreUn=b.dataset.dun;render()});$("#dReal").onchange=e=>{S.dreReal=e.target.checked;render()};$("#dAV").onchange=e=>{S.dreAV=e.target.checked;render()}}
+
+/* ================= MANUAL DO APP ================= */
+const AJUDA=[
+ ["Começando",[
+  ["inicio","Visão geral","<p>O app controla as finanças da família (Pessoal) e da empresa no mesmo lugar, separadas. Tudo o que entra e sai é um <b>lançamento</b>. A partir dos lançamentos, o app monta extrato, painel, DRE, vencimentos e relatórios.</p><p>No celular, as abas principais ficam na barra de baixo: Lançar, Extrato, Painel, Vencimentos e Mais. No computador, ficam na lateral esquerda.</p>"],
+  ["ambiente","Pessoal × Empresa (seletor do topo)","<p>O seletor no topo escolhe o <b>ambiente</b>: Pessoal ou o nome da empresa. Lançar, Extrato, Painel, Cartões, Contas, Empréstimos, Metas, Relatórios e o Plano de investimentos mostram só o ambiente selecionado.</p><ul><li>Categorias, formas de pagamento, contas e cartões são próprios de cada ambiente.</li><li>Vencimentos mostra os dois juntos, com filtro.</li><li>Para trocar de ambiente durante uma edição, termine ou cancele a edição antes.</li></ul>"],
+  ["quem","Quem está usando o aparelho","<p>No primeiro uso, o app pergunta quem está usando o aparelho. Os lançamentos já saem com esse nome em “Quem comprou/recebeu”. Para trocar, toque no seu nome no canto superior direito. Com login ativo, o nome vem do usuário que entrou.</p>"]]],
+ ["Movimento",[
+  ["lancar","Lançar","<p>É onde se registra cada entrada ou saída.</p><ol><li>Escolha <b>Saída</b> ou <b>Entrada</b> e digite o valor só com números (1250 vira R$ 12,50).</li><li>Escolha se é <b>variável</b> (acontece uma vez) ou <b>fixa todo mês</b> (aluguel, assinatura). Na fixa, informe o 1º vencimento e o último pagamento.</li><li>Escolha a <b>categoria</b>. Algumas categorias abrem detalhes: itens de mercado com preço por unidade, combustível com litros e posto, peças e serviços da oficina, itens escolares.</li><li>Escolha a <b>forma de pagamento</b> e a conta ou cartão. No crédito, você pode dividir em parcelas, informar entrada, outros pagamentos e juros.</li><li>Marque se já foi pago ou se fica a pagar.</li><li>Anexe a foto do comprovante (até 6). Pela regra padrão, compra paga não salva sem comprovante; conta a pagar pede o comprovante só na hora de marcar como paga.</li></ol><h4>Na empresa</h4><p>Aparecem também fornecedor ou cliente, nota fiscal e <b>unidade</b> (ou Geral / rateio). Ao lançar <b>Pró-labore e retiradas</b>, o app pode lançar a mesma quantia como entrada no Pessoal automaticamente.</p>"],
+  ["extrato","Extrato","<p>Lista os lançamentos do mês escolhido, por dia, com filtros por pessoa (Pessoal) ou por unidade (empresa). Toque num lançamento para ver os detalhes, as fotos, marcar como pago, alterar o valor de um mês, editar, encerrar uma conta fixa ou excluir.</p><div class=\"ex\">Contas fixas: “alterar só este mês” muda o valor daquele mês; “encerrar a partir deste mês” para as próximas cobranças sem apagar o histórico.</div>"],
+  ["painel","Painel (Pessoal)","<p>Mostra o mês: quanto entrou, saiu e sobrou, a taxa de economia, saídas por categoria, gastos por pessoa, limites do mês, uso dos cartões e a evolução dos últimos 12 meses.</p>"],
+  ["painelpj","Painel da empresa","<p>Mostra faturamento, custos e despesas, lucro líquido e margem líquida. Abaixo: metas de faturamento por unidade com projeção do mês e quanto falta por dia, a <b>DRE</b> do mês, resultado por unidade, despesas por categoria, orçamento e a evolução de faturamento e lucro em 12 meses.</p>"],
+  ["vencimentos","Vencimentos","<p>Reúne o que vence nos próximos 45 dias: contas fixas, parcelas, faturas de cartão, empréstimos, metas e cheque especial, do Pessoal e da empresa. Dá para marcar como pago, mandar lembrete no WhatsApp e adicionar ao calendário do celular (Google Agenda um por um, ou arquivo .ics com avisos de 10, 5 e 1 dia antes e no dia).</p>"]]],
+ ["Controle",[
+  ["cartoes","Cartões de crédito","<p>Cadastre cada cartão com limite, dia de fechamento e dia de vencimento. Cada compra no crédito abate do limite e entra na fatura certa. Ao pagar a fatura, o limite volta.</p>"],
+  ["contas","Contas e cheque especial","<p>Cadastre contas correntes, poupança e dinheiro em espécie. Em cada conta você informa o limite do cheque especial, os juros ao mês ou ao ano (o outro é calculado), o IOF e o saldo atual, inclusive negativo. Em “Usos do limite”, informe valor e datas de início e fim: o app calcula juros, IOF e o total a pagar. A tarifa mensal da conta vira uma conta fixa automática.</p><p>Em Editar → Ambiente, uma conta pode ser movida do Pessoal para a empresa e vice-versa.</p>"],
+  ["emprestimos","Empréstimos","<p>Registra dinheiro que você emprestou ou pegou emprestado, com parcelas, juros, datas e dados de pagamento. Para cobrar, o app monta a mensagem educada no WhatsApp com Pix, boleto ou link.</p>"],
+  ["metas","Metas e reservas","<p>Defina quanto quer juntar e até quando. O app mostra quanto guardar por mês. Cada aporte pode ser registrado como saída (no Pessoal, em Reserva / Investimento; na empresa, fora do resultado).</p>"]]],
+ ["Planejamento",[
+  ["investimentos","Plano de investimentos","<p>Um mapa de onde o dinheiro deve entrar para crescer. Existe no Pessoal (desenvolvimento pessoal, inteligência social, imagem pessoal) e na empresa (marketing, equipamentos, RH, tecnologia, posicionamento de marca).</p><ul><li><b>Áreas</b>: itens sugeridos com o porquê e o momento certo. Toque num item para dar valor, nota de 0 a 10, status e data prevista.</li><li><b>Resumo</b>: total previsto, % por área, nota média e leitura rápida.</li><li><b>Ordem de investimento</b>: a fila automática pela nota, com valor acumulado.</li><li><b>Momento certo</b>: compara a sugestão com o faturamento médio da empresa nos últimos 3 meses.</li><li><b>Regra de ouro</b>: nota 7 ou mais precisa de data.</li></ul><div class=\"ex\">Nota 0–2: não é hora · 3–4: seria bom · 5–6: próximo semestre · 7–8: se não fizer, o crescimento trava · 9–10: é o gargalo de hoje.</div>"],
+  ["intel","Inteligência financeira (empresa)","<p>A planilha de inteligência financeira do salão, no modelo VAZK: <b>Receitas − Seres humanos − Regulares − Não regulares = Lucro</b>. Campos com fundo âmbar são para preencher; o resto é calculado.</p>"],
+  ["intel-resumo","Inteligência › Resumo","<p>Faturamento, meta, lucro, margem, ponto de equilíbrio, folga, ocupação e o peso de cada grupo de saída, por unidade e consolidado. Inclui o <b>Diagnóstico VAZK</b>: reserva em caixa de pelo menos 1 mês de saídas fixas, pró-labore pago completo e 3 meses seguidos sem colocar dinheiro do bolso.</p>"],
+  ["intel-producao","Inteligência › Produção","<p>Digite quantos atendimentos cada profissional fez de cada serviço. O app calcula faturamento, parte do parceiro, parte do salão, horas ocupadas e produto usado. Também é aqui que entra a venda de produtos do mês.</p>"],
+  ["intel-saidas","Inteligência › Receitas e saídas","<p>Mostra as receitas por serviço e todas as saídas: seres humanos (pró-labore, CLT com encargos, recepção, auxiliar, VT, alimentação, comissões), regulares (produtos, descartáveis, revenda, maquininha, Simples e as contas do mês) e não regulares. O botão “Puxar contas dos lançamentos do mês” preenche as contas a partir do que foi lançado no app. Embaixo, o <b>Caixa do mês</b>: caixa inicial, resultado, pró-labore pago, aportes, retiradas, caixa final e reserva.</p>"],
+  ["intel-margem","Inteligência › Margem e preço","<p>Margem bruta, margem de contribuição, lucro, ponto de equilíbrio, ocupação das cadeiras, custo da hora de cadeira e a margem de cada serviço feito por parceiro e por CLT. O <b>simulador de preço</b> sugere o preço de um serviço a partir do tempo, do produto e do lucro desejado.</p>"],
+  ["intel-historico","Inteligência › Histórico","<p>Os últimos 6 meses com faturamento, saídas, lucro, ocupação, caixa e reserva. Meses preenchidos na planilha são calculados sozinhos; meses antigos podem ser digitados como resumo.</p>"],
+  ["intel-premissas","Inteligência › Premissas","<p>Os números-base: meta, postos, horas e dias por unidade; pró-labore de cada sócio e quanto cada unidade paga; encargos CLT; mix de recebimento e taxas da maquininha; custo e comissão de produtos; Simples Nacional (RBT12, CNPJs separados, alíquota efetiva calculada); serviços com preço, tempo, produto e % do salão; e a equipe com custo total por pessoa. Toque em EXEMPLO para marcar como REAL quando confirmar.</p>"],
+  ["intel-cenario","Inteligência › Cenário","<p>Simula quanto custaria faturar um valor-alvo (por exemplo, R$ 1 milhão por mês ou por ano): quantos postos, lojas e pessoas seriam necessários, o imposto e o lucro esperado, mantendo o preço por hora e a operação do mês-base.</p>"],
+  ["intel-indicadores","Inteligência › Indicadores","<p>Sete indicadores com meta e status OK/ATENÇÃO por unidade: faturamento, ticket médio, ocupação, margem, peso da folha, retorno de clientes em 90 dias, reclamações, NPS e eNPS. Inclui a tabela de acompanhamento semanal para a reunião de 20 minutos com o time.</p>"],
+  ["intel-previs","Inteligência › Previsibilidade","<p>Receita = Leads × Conversão × Ticket × Frequência, atual e meta de 90 dias por unidade. Calcula também o potencial de uma campanha de reativação da base pelo WhatsApp e tem o relatório de resultado de 15 dias.</p>"],
+  ["intel-produt","Inteligência › Produtividade","<p>Quanto vale a hora de cada sócio e onde ela está indo. Cada tarefa recebe um tipo e o app sugere manter, revisar, delegar ou eliminar, com o custo no mês. Meta: pelo menos 60% do tempo em produção com margem.</p>"],
+  ["intel-mes","Inteligência › Virar o mês","<p>Avance o mês no seletor e toque em “Começar”. O app copia as contas regulares do mês anterior, zera os atendimentos e usa o caixa final do mês anterior como caixa inicial. Não é preciso copiar nada à mão.</p>"],
+  ["dre","DRE anual (empresa)","<p>A planilha de DRE completa, mês a mês, com total do ano, média mensal e % da receita. Linhas: receita bruta, impostos, receita líquida, custos variáveis, margem de contribuição, pessoal, ocupação, administrativas, marketing, resultado operacional, financeiro, lucro líquido, retiradas, investimentos, aportes, variação de caixa, ponto de equilíbrio e meta.</p><ul><li>Toque numa linha com ▸ para ver as categorias.</li><li>Filtre por unidade e marque “Só realizado” para ver apenas o que foi pago e recebido.</li><li>“Mostrar % da receita” troca os valores pela análise vertical.</li><li>Exporte para Excel com um toque.</li></ul><div class=\"ex\">Cada categoria da empresa pertence a um grupo do DRE. Ajuste em Ajustes → Categorias.</div>"]]],
+ ["Relatórios e dados",[
+  ["pdf","Relatórios em PDF","<p>Gera um PDF do período escolhido, do ambiente selecionado, com resumo, DRE (na empresa), despesas por categoria, por pessoa ou unidade, a lista de lançamentos e, se quiser, as fotos dos comprovantes.</p>"],
+  ["backup","Backup e planilha","<p>Em Ajustes → Backup e planilha você baixa uma cópia completa (lançamentos, empréstimos, metas, planos de investimento, inteligência financeira e ajustes), com ou sem fotos. A mesma tela restaura um backup e exporta os lançamentos para Excel (.csv).</p><p>Use o backup para guardar uma cópia no Google Drive ou levar os dados para a versão independente.</p>"]]],
+ ["Ajustes e segurança",[
+  ["ajustes","Ajustes","<ul><li><b>Empresas e unidades</b>: nome, CNPJ, regime, alíquota e as unidades com meta de faturamento.</li><li><b>Categorias</b>: nome, ícone, limite, formulário de detalhes e, na empresa, o grupo do DRE.</li><li><b>Limites do mês</b>, <b>formas de pagamento</b>, <b>cartões</b> e <b>contas</b> do ambiente selecionado.</li><li><b>Nome do app</b>, <b>pessoas e WhatsApp</b>, <b>mensagens de cobrança</b> e <b>dados para receber</b> (Pix, banco, boleto, link).</li><li><b>Regras dos lançamentos</b>: comprovante obrigatório ou opcional.</li><li><b>Aparência</b>: tema claro, escuro ou automático e categorias com siglas ou ícones.</li></ul>"],
+  ["login","Login e senha","<p>Em Ajustes → Login e senha, ative o login criando o primeiro administrador. A partir daí, o app pede usuário e senha ao abrir.</p><ul><li>Crie um usuário para cada pessoa, com acesso a tudo, só ao Pessoal ou só à empresa.</li><li>“Lança como” liga o usuário a uma pessoa da família.</li><li>“Manter conectado” guarda o acesso no aparelho por 30 dias.</li><li>Ao ativar, o app mostra um <b>código de recuperação</b>. Guarde: ele permite redefinir uma senha esquecida na tela de entrada.</li><li>“Desconectar todos” pede login de novo em todos os aparelhos.</li><li>Para trocar a própria senha ou sair, toque no seu nome no topo.</li></ul><div class=\"ex\">O login protege a abertura do app. No link do Claude, os dados continuam na conta de quem tem acesso ao link; na versão independente, ficam no navegador do aparelho.</div>"],
+  ["pin","PIN do aparelho","<p>Além do login, cada aparelho pode ter um PIN de 4 dígitos, pedido toda vez que o app abre naquele aparelho.</p>"]]],
+ ["Versões e dúvidas",[
+  ["versoes","Link do Claude × versão independente","<p><b>Link do Claude</b>: os dados ficam na nuvem do Claude e aparecem em todos os aparelhos de quem usa o link.</p><p><b>Versão independente (GitHub)</b>: abre sem conta no Claude e pode ser instalada na tela inicial. Os dados ficam só no aparelho e navegador onde você lança. Para levar dados de um lugar para outro, use backup e restauração.</p>"],
+  ["faq","Perguntas frequentes","<h4>Lancei na empresa, mas queria no Pessoal.</h4><p>Abra o lançamento, toque em Editar e troque o “Ambiente deste lançamento”.</p><h4>Por que a DRE não bate com a Inteligência financeira?</h4><p>A DRE usa os lançamentos reais. A Inteligência financeira calcula pela produção de cada profissional e pelas premissas. A diferença mostra onde o planejado e o realizado se afastaram.</p><h4>O comprovante entra nas somas?</h4><p>Não. As fotos servem só para controle.</p><h4>Esqueci a senha.</h4><p>Peça ao administrador para redefinir, ou use o código de recuperação na tela de entrada.</p>"],
+  ["glossario","Glossário","<ul><li><b>DRE</b>: demonstrativo do resultado; mostra como a receita vira lucro.</li><li><b>Margem de contribuição</b>: o que sobra da venda depois dos custos que variam com ela.</li><li><b>Ponto de equilíbrio</b>: faturamento mínimo para não ter prejuízo.</li><li><b>Pró-labore</b>: remuneração mensal dos sócios pelo trabalho.</li><li><b>RBT12</b>: receita bruta dos últimos 12 meses, usada para achar a faixa do Simples.</li><li><b>Ocupação</b>: horas atendidas ÷ horas disponíveis das cadeiras.</li><li><b>Ticket médio</b>: faturamento ÷ número de atendimentos.</li><li><b>NPS / eNPS</b>: satisfação de clientes / do time, de 0 a 10.</li><li><b>VAZK</b>: modelo Receitas − Seres humanos − Regulares − Não regulares = Lucro.</li></ul>"]]]];
+function telaAjuda(){
+  const q=(S.ajudaQ||"").trim().toLowerCase(),norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase(),qn=norm(q);
+  const secs=AJUDA.flatMap(([g,xs])=>xs.map(x=>({g,id:x[0],t:x[1],h:x[2]}))).filter(s=>!qn||norm(s.t+" "+s.h.replace(/<[^>]+>/g," ")).includes(qn));
+  $("#app").innerHTML=`<div class="manual"><h1 class="tt">Manual do app</h1><p class="hint">Como funciona cada aba, item por item. Use o índice ou a busca.</p>
+  <input class="field" id="ajQ" type="search" placeholder="Buscar no manual (ex.: DRE, senha, cartão)" value="${esc(S.ajudaQ||"")}" style="margin:10px 0">
+  ${qn?"":`<div class="sec"><h3>Índice</h3><ul class="indice">${AJUDA.map(([g,xs])=>`<li class="g">${esc(g)}</li>`+xs.map(x=>`<li><button type="button" data-aj="${x[0]}">${esc(x[1])}</button></li>`).join("")).join("")}</ul></div>`}
+  ${secs.length?secs.map((s,i)=>`${i===0||secs[i-1].g!==s.g?`<h2>${esc(s.g)}</h2>`:""}<div class="sec" id="aj-${s.id}"><h3>${esc(s.t)}</h3>${s.h}</div>`).join(""):'<div class="empty">Nada encontrado para essa busca.</div>'}</div>`;
+  $("#ajQ").oninput=e=>{S.ajudaQ=e.target.value;clearTimeout(S.ajT);S.ajT=setTimeout(()=>{telaAjuda();const i=$("#ajQ");i.focus();i.setSelectionRange(i.value.length,i.value.length)},250)};
+  $$("[data-aj]").forEach(b=>b.onclick=()=>{const el=$("#aj-"+b.dataset.aj);if(el)el.scrollIntoView({behavior:"smooth",block:"start"})})}
 
 
 iniciar().catch(e=>{console.error(e);$("#app").innerHTML='<p class="note">Não foi possível iniciar o app. Recarregue a página.</p>'});
